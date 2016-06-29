@@ -14,7 +14,7 @@
         <Rule>
           <Name>Rule 1</Name>
           <Title>OrangeStar</Title>
-          <Abstract>A orange fill with an 11 pixel size</Abstract>
+          <Abstract>A orange fill with an 8 pixel size</Abstract>
           <PointSymbolizer>
             <Graphic>
               <Mark>
@@ -23,7 +23,7 @@
                   <CssParameter name="fill">#FF7B00</CssParameter>
                 </Fill>
               </Mark>
-              <Size>6</Size>
+              <Size>8</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
