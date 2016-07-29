@@ -6,11 +6,11 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <Name>RLS_Site_Clusters</Name>
+    <Name>RLS Site Clusters name</Name>
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
-      <Title>RLS_Site_Clusters</Title>
-      <Abstract>RLS_Site_Clusters</Abstract>
+      <Title>RLS Site Clusters title</Title>
+      <Abstract>RLS Site Clusters abstract</Abstract>
       <FeatureTypeStyle>
         <Transformation>
           <ogc:Function name="vec:PointStacker">
@@ -43,7 +43,7 @@
         </Transformation>
         <Rule>
           <Name>rule1</Name>
-          <Title>Volcano</Title>
+          <Title>Site</Title>
           <ogc:Filter>
             <ogc:PropertyIsLessThanOrEqualTo>
               <ogc:PropertyName>count</ogc:PropertyName>
@@ -64,7 +64,7 @@
         </Rule>
         <Rule>
           <Name>rule29</Name>
-          <Title>2-9 Volcanoes</Title>
+          <Title>2-9 Sites</Title>
           <ogc:Filter>
             <ogc:PropertyIsBetween>
               <ogc:PropertyName>count</ogc:PropertyName>
@@ -119,7 +119,7 @@
         </Rule>
         <Rule>
           <Name>rule10</Name>
-          <Title>10 Volcanoes</Title>
+          <Title>10 Sites</Title>
           <ogc:Filter>
             <ogc:PropertyIsGreaterThan>
               <ogc:PropertyName>count</ogc:PropertyName>
