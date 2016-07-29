@@ -13,7 +13,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>Rule 1</Name>
-          <Title>BlueSquare</Title>
+          <Title>Blue Circle</Title>
           <Abstract>A blue fill with an 11 pixel size</Abstract>
           <PointSymbolizer>
             <Graphic>
@@ -22,6 +22,9 @@
                 <Fill>
                   <CssParameter name="fill">#3399CC</CssParameter>
                 </Fill>
+                <Stroke>
+                  <CssParameter name="stroke">#FFFFFF</CssParameter>
+                </Stroke>
               </Mark>
               <Size>11</Size>
             </Graphic>
