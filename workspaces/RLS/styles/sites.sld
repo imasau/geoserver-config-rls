@@ -14,7 +14,7 @@
         <Rule>
           <Name>Rule 1</Name>
           <Title>Blue Circle</Title>
-          <Abstract>A blue fill with an 11 pixel size</Abstract>
+          <Abstract>A blue fill white stroke</Abstract>
           <PointSymbolizer>
             <Graphic>
               <Mark>
@@ -24,9 +24,10 @@
                 </Fill>
                 <Stroke>
                   <CssParameter name="stroke">#FFFFFF</CssParameter>
+                  <CssParameter name="stroke-width">0.5</CssParameter>
                 </Stroke>
               </Mark>
-              <Size>11</Size>
+              <Size>15</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
