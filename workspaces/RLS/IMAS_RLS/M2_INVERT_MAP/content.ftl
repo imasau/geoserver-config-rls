@@ -5,7 +5,7 @@
 <#if (feature_index < 1) >
 
 <div class="feature">
-  <b>Survey Date:</b> ${feature.SurveyDate.value[0..10]}<BR>
+  <b>Survey Date:</b> ${feature.SurveyDate.value[0..11]}<BR>
   <b>Class:</b> ${feature.Class.value}<BR>
   <b>Family:</b> ${feature.Family.value}<BR>
   <b>Taxon:</b> ${feature.Taxon.value}<BR>
