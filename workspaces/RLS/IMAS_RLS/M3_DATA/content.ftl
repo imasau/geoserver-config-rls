@@ -1,3 +1,4 @@
+<#import "config.ftl" as my>
 <h3>This is a sample of the data available at this point</h3><BR>
 
 <#list features as feature>
