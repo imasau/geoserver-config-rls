@@ -18408,3 +18408,1104 @@ Request: getFeature
     resultType = results
 2018-01-29 11:23:45,361 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 5852ms
 2018-01-29 11:23:46,049 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 899ms
+2018-01-29 11:31:38,272 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:38,276 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:38,330 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" took 57ms
+2018-01-29 11:31:40,081 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:40,085 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:40,109 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:40,112 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" took 31ms
+2018-01-29 11:31:40,569 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:40,570 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:40,577 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:40,579 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" took 10ms
+2018-01-29 11:31:41,125 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:41,125 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:41,131 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:41,132 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" took 7ms
+2018-01-29 11:31:41,749 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:41,750 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:41,755 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:41,757 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" took 7ms
+2018-01-29 11:31:42,573 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:42,574 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:42,579 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:42,581 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" took 8ms
+2018-01-29 11:31:43,387 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:43,388 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:43,393 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:43,395 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" took 8ms
+2018-01-29 11:31:44,191 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" "Java/1.8.0_151" "" " "" 
+2018-01-29 11:31:44,192 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-01-29 11:31:44,197 ERROR [geoserver.ows] - 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:172)
+	at sun.reflect.GeneratedMethodAccessor298.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor377.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at au.org.emii.geoserver.extensions.filters.layer.data.io.PossibleValuesReader.read(PossibleValuesReader.java:66)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.getUniqueValuesDocument(LayerFiltersService.java:208)
+	at au.org.emii.geoserver.extensions.filters.LayerFiltersService.uniqueValues(LayerFiltersService.java:169)
+	... 92 more
+Caused by: java.lang.NullPointerException
+	at org.geotools.data.sqlserver.SQLServerDialect.getSpatialIndexes(SQLServerDialect.java:951)
+	at org.geotools.data.sqlserver.SQLServerDialect.handleSelectHints(SQLServerDialect.java:910)
+	at org.geotools.jdbc.JDBCDataStore.applySearchHints(JDBCDataStore.java:3232)
+	at org.geotools.jdbc.JDBCDataStore.doSelectAggregateSQL(JDBCDataStore.java:3822)
+	at org.geotools.jdbc.JDBCDataStore.selectAggregateSQL(JDBCDataStore.java:3715)
+	at org.geotools.jdbc.JDBCDataStore.getAggregateValue(JDBCDataStore.java:1436)
+	... 98 more
+2018-01-29 11:31:44,200 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" took 9ms
+2018-01-29 11:38:07,990 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:38:07,993 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:38:07,997 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:38:08,450 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 460ms
+2018-01-29 11:38:08,875 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:38:08,876 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:38:08,877 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:38:09,252 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 377ms
+2018-01-29 11:38:57,161 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:38:57,161 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:38:57,166 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:38:57,166 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:38:57,169 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:38:57,169 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:38:58,576 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 1415ms
+2018-01-29 11:38:58,697 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 1536ms
+2018-01-29 11:41:03,243 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:41:03,247 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:41:03,250 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:41:03,255 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:41:03,255 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:41:03,256 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:41:11,210 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 7955ms
+2018-01-29 11:41:11,242 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 7998ms
+2018-01-29 11:42:46,353 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:42:46,358 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:42:46,362 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:42:47,459 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:42:47,461 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:42:47,462 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:42:52,335 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 5981ms
+2018-01-29 11:42:53,346 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 5887ms
+2018-01-29 11:49:13,689 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "" " "" 
+2018-01-29 11:49:13,694 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" took 5ms
+2018-01-29 11:49:14,300 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/index.html" " "" 
+2018-01-29 11:49:14,393 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/" took 93ms
+2018-01-29 11:49:14,701 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/screen.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,703 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/screen.css" took 2ms
+2018-01-29 11:49:14,951 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/print.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,951 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,951 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery-1.2.6.min.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,951 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery.inline-info.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,953 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" took 2ms
+2018-01-29 11:49:14,954 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery-1.2.6.min.js" took 3ms
+2018-01-29 11:49:14,954 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/print.css" took 3ms
+2018-01-29 11:49:14,955 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/mappreview_keyshortcut.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:14,957 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery.inline-info.js" took 6ms
+2018-01-29 11:49:15,023 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/mappreview_keyshortcut.js" took 68ms
+2018-01-29 11:49:15,471 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/ajax-loader.gif" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:15,471 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/null/img/icons/geosilk/map.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:15,471 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.AboutGeoServerPage/img/icons/silk/help.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:49:15,483 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/ajax-loader.gif" took 12ms
+2018-01-29 11:49:15,483 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.AboutGeoServerPage/img/icons/silk/help.png" took 11ms
+2018-01-29 11:49:15,484 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/null/img/icons/geosilk/map.png" took 13ms
+2018-01-29 11:49:15,755 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/favicon.ico" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "" " "" 
+2018-01-29 11:49:15,763 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/logo.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:15,763 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/button-gradient.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:15,764 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/door_in.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:15,764 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/main-bg.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:15,766 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/main-wrap-bg.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:15,781 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/door_in.png" took 17ms
+2018-01-29 11:49:15,781 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/button-gradient.png" took 18ms
+2018-01-29 11:49:15,781 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/main-bg.png" took 17ms
+2018-01-29 11:49:15,783 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/favicon.ico" took 28ms
+2018-01-29 11:49:15,783 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/main-wrap-bg.png" took 17ms
+2018-01-29 11:49:15,783 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/logo.png" took 20ms
+2018-01-29 11:49:16,026 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/page-header-bg.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:16,026 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/page-bg.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:49:16,028 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/page-header-bg.png" took 2ms
+2018-01-29 11:49:16,028 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/page-bg.png" took 2ms
+2018-01-29 11:50:00,545 INFO [geoserver.filters] - 127.0.0.1 "POST /geoserver/j_spring_security_check" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "application/x-www-form-urlencoded"  request-size: 33 body: 
+username=admin&password=iNM760wH8
+
+2018-01-29 11:50:00,548 INFO [geoserver.filters] - 127.0.0.1 "POST /geoserver/j_spring_security_check" took 3ms
+2018-01-29 11:50:00,804 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:00,805 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web" took 1ms
+2018-01-29 11:50:01,067 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,298 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/" took 231ms
+2018-01-29 11:50:01,654 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.StatusPage/null/img/icons/silk/server_error.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,656 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.StatusPage/null/img/icons/silk/server_error.png" took 2ms
+2018-01-29 11:50:01,910 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.layer.LayerPage/null/null/img/icons/silk/picture_empty.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,913 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.layer.LayerPage/null/null/img/icons/silk/picture_empty.png" took 3ms
+2018-01-29 11:50:01,913 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.LogPage/null/img/icons/silk/page_white_text.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,913 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.ContactPage/null/img/icons/silk/vcard.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,914 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.store.StorePage/null/null/img/icons/silk/database.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,915 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.workspace.WorkspacePage/null/null/img/icons/silk/folder.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,915 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.ProcessStatusPage/null/null/web/img/icons/silk/cog.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:01,917 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.store.StorePage/null/null/img/icons/silk/database.png" took 3ms
+2018-01-29 11:50:01,919 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.ContactPage/null/img/icons/silk/vcard.png" took 6ms
+2018-01-29 11:50:01,919 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.LogPage/null/img/icons/silk/page_white_text.png" took 6ms
+2018-01-29 11:50:01,919 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.workspace.WorkspacePage/null/null/img/icons/silk/folder.png" took 4ms
+2018-01-29 11:50:01,920 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.ProcessStatusPage/null/null/web/img/icons/silk/cog.png" took 4ms
+2018-01-29 11:50:02,159 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.layergroup.LayerGroupPage/null/null/img/icons/silk/layers.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,160 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.data.layergroup.LayerGroupPage/null/null/img/icons/silk/layers.png" took 1ms
+2018-01-29 11:50:02,165 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wms.web.data.StylePage/palette.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,165 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wcs.web.WCSAdminPage/server_raster.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,167 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wfs.web.WFSAdminPage/server_vector.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,168 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.WPSAdminPage/server_gear.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,169 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wms.web.WMSAdminPage/server_map.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,196 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wcs.web.WCSAdminPage/server_raster.png" took 31ms
+2018-01-29 11:50:02,205 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wfs.web.WFSAdminPage/server_vector.png" took 38ms
+2018-01-29 11:50:02,217 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wms.web.data.StylePage/palette.png" took 52ms
+2018-01-29 11:50:02,217 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wms.web.WMSAdminPage/server_map.png" took 48ms
+2018-01-29 11:50:02,230 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.WPSAdminPage/server_gear.png" took 62ms
+2018-01-29 11:50:02,405 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.GlobalSettingsPage/null/img/icons/silk/server.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,407 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.GlobalSettingsPage/null/img/icons/silk/server.png" took 1ms
+2018-01-29 11:50:02,446 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.JAIPage/null/img/icons/silk/cog_photo.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,447 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.JAIPage/null/img/icons/silk/cog_photo.png" took 1ms
+2018-01-29 11:50:02,452 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.CoverageAccessPage/null/img/icons/silk/cog_photo.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,454 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.admin.CoverageAccessPage/null/img/icons/silk/cog_photo.png" took 2ms
+2018-01-29 11:50:02,466 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.auth.AuthenticationPage/null/img/icons/silk/shield.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,479 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.passwd.PasswordPage/null/img/icons/silk/lock.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,501 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.auth.AuthenticationPage/null/img/icons/silk/shield.png" took 35ms
+2018-01-29 11:50:02,502 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.passwd.PasswordPage/null/img/icons/silk/lock.png" took 23ms
+2018-01-29 11:50:02,651 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.UserGroupRoleServicesPage/img/icons/silk/group.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,652 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.UserGroupRoleServicesPage/img/icons/silk/group.png" took 1ms
+2018-01-29 11:50:02,696 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.data.DataSecurityPage/null/img/icons/silk/database_key.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,697 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.data.DataSecurityPage/null/img/icons/silk/database_key.png" took 1ms
+2018-01-29 11:50:02,702 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.service.ServiceAccessRulePage/null/img/icons/silk/shape_square_key.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,703 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.security.web.service.ServiceAccessRulePage/null/img/icons/silk/shape_square_key.png" took 1ms
+2018-01-29 11:50:02,746 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.WPSAccessRulePage/server_key.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:02,747 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/door_out.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:02,748 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/door_out.png" took 1ms
+2018-01-29 11:50:02,749 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.wps.web.WPSAccessRulePage/server_key.png" took 3ms
+2018-01-29 11:50:02,897 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/add.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:02,898 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/add.png" took 1ms
+2018-01-29 11:50:02,940 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/error.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:02,942 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/error.png" took 2ms
+2018-01-29 11:50:02,948 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/information.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:02,949 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/information.png" took 1ms
+2018-01-29 11:50:03,018 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/wrench.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:03,019 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/wrench.png" took 1ms
+2018-01-29 11:50:05,253 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:05,366 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" took 113ms
+2018-01-29 11:50:05,673 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:05,674 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:05,674 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:05,675 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:05,702 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.js" took 28ms
+2018-01-29 11:50:05,703 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" took 28ms
+2018-01-29 11:50:05,732 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js" took 59ms
+2018-01-29 11:50:05,732 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js" took 58ms
+2018-01-29 11:50:06,265 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/tick.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:06,267 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/tick.png" took 2ms
+2018-01-29 11:50:06,267 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerApplication/img/icons/geosilk/database_vector.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:06,268 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerApplication/img/icons/geosilk/database_vector.png" took 1ms
+2018-01-29 11:50:06,284 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/delete.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:06,284 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:06,285 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/delete.png" took 1ms
+2018-01-29 11:50:06,285 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" took 1ms
+2018-01-29 11:50:07,878 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.workspace.WorkspaceEditPage&name=RLS" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:08,011 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.workspace.WorkspaceEditPage&name=RLS" took 133ms
+2018-01-29 11:50:08,389 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/help.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/geoserver.css" " "" 
+2018-01-29 11:50:08,391 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/silk/help.png" took 2ms
+2018-01-29 11:50:13,908 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-01-29 11:50:13,927 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" took 19ms
+2018-01-29 11:50:15,550 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.DataAccessEditPage&storeName=IMAS_RLS&wsName=RLS" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.StorePage" " "" 
+2018-01-29 11:50:15,597 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.DataAccessEditPage&storeName=IMAS_RLS&wsName=RLS" took 47ms
+2018-01-29 11:53:49,499 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.layer.LayerPage" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.store.DataAccessEditPage&storeName=IMAS_RLS&wsName=RLS" " "" 
+2018-01-29 11:53:49,556 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.layer.LayerPage" took 56ms
+2018-01-29 11:53:49,917 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/geosilk/vector.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.layer.LayerPage" " "" 
+2018-01-29 11:53:49,920 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/img/icons/geosilk/vector.png" took 3ms
+2018-01-29 11:53:55,580 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.resource.ResourceConfigurationPage&name=M1_DATA&wsName=RLS" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.layer.LayerPage" " "" 
+2018-01-29 11:53:55,796 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.data.resource.ResourceConfigurationPage&name=M1_DATA&wsName=RLS" took 216ms
+2018-01-29 11:57:20,023 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:57:20,027 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:57:20,029 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:57:20,313 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:57:20,314 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:57:20,315 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:57:21,412 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 1388ms
+2018-01-29 11:57:22,995 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 2681ms
+2018-01-29 11:58:10,679 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:58:10,682 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:58:10,684 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:58:11,562 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-01-29 11:58:11,563 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-01-29 11:58:11,564 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-01-29 11:58:13,350 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 1788ms
+2018-01-29 11:58:21,460 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 10781ms
