@@ -14586,3 +14586,445 @@ Request: getFeature
 2018-02-15 23:24:33,328 INFO [geoserver.security] - Reloading user/groups successful for service named default
 2018-02-15 23:24:33,457 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
 2018-02-15 23:24:33,458 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2018-02-15 23:31:12,381 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:31:12,437 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:31:13,089 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:31:13,512 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 1130ms
+2018-02-15 23:32:09,740 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:32:09,755 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:32:09,854 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:32:09,912 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 168ms
+2018-02-15 23:33:36,624 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-180,-22.5,-157.5&WIDTH=256&HEIGHT=256" "Java/1.8.0_151" "" " "" 
+2018-02-15 23:33:36,669 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-02-15 23:33:37,941 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	Palette = null
+	Styles = [StyleImpl[ name=point_purple_cross]]
+	FeatureVersion = null
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Tiled = false
+	MaxFeatures = null
+	Layers = [org.geoserver.wms.MapLayerInfo@6e8576e8]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	ViewParams = null
+	FeatureId = null
+	Elevation = []
+	Bbox = SRSEnvelope[-45.0 : -22.5, -180.0 : -157.5]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Interpolations = []
+	Env = {}
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	Filter = null
+	Time = []
+	Format = image/png
+	Buffer = 0
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:SurveyList, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-45,-180,-22.5,-157.5, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-02-15 23:33:38,008 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-180,-22.5,-157.5&WIDTH=256&HEIGHT=256" took 1383ms
+2018-02-15 23:34:15,302 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:34:15,318 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:34:15,401 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:34:15,476 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 172ms
+2018-02-15 23:35:56,784 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:35:56,799 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:35:56,915 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:35:56,950 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 164ms
+2018-02-15 23:36:15,861 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:36:15,872 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:36:15,881 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:36:15,923 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 61ms
+2018-02-15 23:36:15,924 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:36:15,928 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:36:15,930 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:36:15,953 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 29ms
+2018-02-15 23:37:02,763 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:37:02,776 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:37:02,786 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:37:02,825 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 61ms
+2018-02-15 23:37:03,302 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:37:03,308 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:37:03,316 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:37:03,341 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 39ms
+2018-02-15 23:38:53,709 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:38:53,730 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:38:53,743 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:38:53,831 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 121ms
+2018-02-15 23:38:54,300 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:38:54,303 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:38:54,307 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:38:54,338 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 38ms
+2018-02-15 23:38:57,957 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=RLS:SiteListQ&outputFormat=text%2Fjavascript&format_options=callback:loadFeatures&srsname=EPSG:3857&_=1518698335489" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0" "https://reeflifesurvey.com/reef-life-survey/survey-data/" " "" 
+2018-02-15 23:38:57,962 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:38:58,387 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.1.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        srsName = EPSG:3857
+        typeName[0] = {RLS}SiteListQ
+    outputFormat = text/javascript
+    resultType = results
+    formatOptions = {CALLBACK=loadFeatures}
+2018-02-15 23:38:58,390 INFO [wfs.json] - about to encode JSON
+2018-02-15 23:38:58,902 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=RLS:SiteListQ&outputFormat=text%2Fjavascript&format_options=callback:loadFeatures&srsname=EPSG:3857&_=1518698335489" took 945ms
+2018-02-15 23:39:06,604 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=RLS:SiteListQ&outputFormat=text%2Fjavascript&format_options=callback:loadFeatures&srsname=EPSG:3857&_=1518698345320" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0" "https://reeflifesurvey.com/reef-life-survey/survey-data/" " "" 
+2018-02-15 23:39:06,610 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:39:06,626 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.1.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        srsName = EPSG:3857
+        typeName[0] = {RLS}SiteListQ
+    outputFormat = text/javascript
+    resultType = results
+    formatOptions = {CALLBACK=loadFeatures}
+2018-02-15 23:39:06,630 INFO [wfs.json] - about to encode JSON
+2018-02-15 23:39:06,958 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=RLS:SiteListQ&outputFormat=text%2Fjavascript&format_options=callback:loadFeatures&srsname=EPSG:3857&_=1518698345320" took 353ms
+2018-02-15 23:40:44,026 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:40:44,029 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:40:44,046 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:40:44,046 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:40:44,064 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:40:44,064 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:40:44,177 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 150ms
+2018-02-15 23:40:44,177 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 148ms
+2018-02-15 23:45:40,335 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:45:40,347 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:45:40,365 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:45:40,464 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 128ms
+2018-02-15 23:46:37,996 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:46:38,018 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:46:38,044 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:46:38,107 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 109ms
+2018-02-15 23:48:41,430 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:48:41,448 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:48:41,459 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:48:41,547 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 115ms
+2018-02-15 23:50:13,230 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:50:13,257 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:50:13,276 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:50:13,340 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 109ms
+2018-02-15 23:54:26,877 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:54:26,888 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:54:26,898 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:54:26,991 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 113ms
+2018-02-15 23:54:33,834 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:54:33,838 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:54:33,843 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:54:33,869 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 35ms
+2018-02-15 23:55:15,831 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:55:15,843 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:55:15,853 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:55:15,894 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 62ms
+2018-02-15 23:55:18,792 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:55:18,795 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:55:18,799 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:55:18,821 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 29ms
+2018-02-15 23:57:09,699 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:57:09,709 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:57:09,719 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:57:09,807 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 107ms
+2018-02-15 23:57:15,071 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:57:15,076 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:57:15,081 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:57:15,109 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 37ms
+2018-02-15 23:59:03,272 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:59:03,285 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:59:03,296 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:59:03,381 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 107ms
+2018-02-15 23:59:03,737 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:59:03,740 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:59:03,743 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:59:03,767 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 29ms
+2018-02-15 23:59:30,273 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-02-15 23:59:30,286 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-02-15 23:59:30,295 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-02-15 23:59:30,337 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 63ms
