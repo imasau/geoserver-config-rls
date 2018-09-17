@@ -30270,3 +30270,450 @@ Request: getFeature
     outputFormat = gml2
     resultType = results
 2018-09-17 16:29:14,131 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 16ms
+2018-09-17 16:30:53,534 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:30:53,536 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:30:53,538 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:30:53,592 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 58ms
+2018-09-17 16:31:58,040 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-17 16:31:58,041 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-17 16:31:58,043 INFO [geoserver.wms] - 
+Request: getCapabilities
+	UpdateSequence = null
+	Namespace = null
+	Get = false
+	RawKvp = {REQUEST=GetCapabilities, VERSION=1.3.0, SERVICE=wms}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = null
+	Version = 1.3.0
+	Request = GetCapabilities
+2018-09-17 16:31:58,127 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities" took 87ms
+2018-09-17 16:33:09,671 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?SERVICE=WMS&" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-17 16:33:09,673 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-17 16:33:09,673 ERROR [geoserver.ows] - 
+org.geoserver.platform.ServiceException: Could not determine geoserver request from http request org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@67bd83bd
+	at org.geoserver.ows.Dispatcher.dispatch(Dispatcher.java:629)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:265)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-17 16:33:09,677 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?SERVICE=WMS&" took 6ms
+2018-09-17 16:33:21,742 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:33:21,744 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:33:21,747 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:33:21,778 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 36ms
+2018-09-17 16:34:36,828 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:34:36,831 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:34:36,833 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:34:36,864 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 35ms
+2018-09-17 16:34:37,546 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:34:37,546 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:34:37,547 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:34:37,564 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 18ms
+2018-09-17 16:37:16,256 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:37:16,259 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:37:16,262 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:37:16,320 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 64ms
+2018-09-17 16:37:19,330 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:37:19,331 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:37:19,332 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:37:19,346 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 16ms
+2018-09-17 16:37:48,598 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:37:48,599 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:37:48,600 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:37:48,618 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 20ms
+2018-09-17 16:39:14,628 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:39:14,631 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:39:14,634 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:39:14,667 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 39ms
+2018-09-17 16:39:59,072 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:39:59,073 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:39:59,074 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:39:59,088 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 16ms
+2018-09-17 16:44:51,983 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:44:51,987 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:44:51,992 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:44:52,053 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 70ms
+2018-09-17 16:46:06,690 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:46:06,693 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:46:06,696 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:46:06,733 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 43ms
+2018-09-17 16:49:17,495 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:49:17,503 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:49:17,511 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:49:17,586 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 90ms
+2018-09-17 16:49:47,399 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:49:47,400 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:49:47,402 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:49:47,419 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 20ms
+2018-09-17 16:51:46,836 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-17 16:51:46,914 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" took 68ms
+2018-09-17 16:51:47,910 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-17 16:51:48,087 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" took 177ms
+2018-09-17 16:52:06,059 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:06,063 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" took 4ms
+2018-09-17 16:52:06,354 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/clike.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:06,436 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/clike.js" took 82ms
+2018-09-17 16:52:07,319 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/codemirror.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:07,329 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/codemirror.js" took 10ms
+2018-09-17 16:52:08,254 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/xml.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:08,258 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/xml.js" took 4ms
+2018-09-17 16:52:09,815 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/groovy.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:09,819 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/groovy.js" took 4ms
+2018-09-17 16:52:10,060 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/css/codemirror.css" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:10,077 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/css/codemirror.css" took 17ms
+2018-09-17 16:52:10,793 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/css.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:10,797 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/css.js" took 4ms
+2018-09-17 16:52:12,261 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/javascript.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:12,267 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/javascript.js" took 6ms
+2018-09-17 16:52:12,548 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:12,550 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js" took 2ms
+2018-09-17 16:52:13,560 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:13,563 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js" took 3ms
+2018-09-17 16:52:14,561 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:14,564 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.js" took 3ms
+2018-09-17 16:52:15,554 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/python.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:15,558 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/python.js" took 4ms
+2018-09-17 16:52:16,535 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/ruby.js" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:bookmarkablePage=:org.geoserver.web.demo.DemoRequestsPage" " "" 
+2018-09-17 16:52:16,538 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.wicket.CodeMirrorEditor/js/codemirror/js/ruby.js" took 3ms
+2018-09-17 16:52:36,630 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:52:36,632 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:52:36,633 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:52:36,665 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 35ms
+2018-09-17 16:53:50,606 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:53:50,609 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:53:50,612 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:53:50,635 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 28ms
+2018-09-17 16:53:52,548 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:53:52,549 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:53:52,550 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:53:52,564 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 16ms
+2018-09-17 16:56:25,830 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:56:25,833 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:56:25,836 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:56:25,895 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 65ms
+2018-09-17 16:56:37,426 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:56:37,428 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:56:37,429 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:56:37,444 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 17ms
+2018-09-17 16:57:08,089 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:57:08,091 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:57:08,093 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:57:08,115 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 25ms
+2018-09-17 16:58:26,562 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:58:26,564 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:58:26,567 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:58:26,584 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 22ms
+2018-09-17 16:58:50,558 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-17 16:58:50,559 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:58:50,561 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:58:50,578 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 20ms
+2018-09-17 16:59:12,480 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-17 16:59:12,482 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-17 16:59:12,483 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-17 16:59:12,497 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 16ms
