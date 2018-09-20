@@ -1,161 +1,3848 @@
-2018-09-20 12:07:13,814 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:07:13,816 INFO [geoserver.wfs] - 
+2018-09-20 12:53:30,764 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,170.15625,-28.125,170.859375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,744 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,169.453125,-30.9375,170.15625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,737 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,168.75,-30.9375,169.453125&WIDTH=256&HEIGHT=256" took 56ms
+2018-09-20 12:53:30,736 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,166.640625,-30.9375,167.34375&WIDTH=256&HEIGHT=256" took 40ms
+2018-09-20 12:53:30,765 INFO [geoserver.wms] - 
 Request: getServiceInfo
-2018-09-20 12:07:13,819 INFO [geoserver.wfs] - 
+2018-09-20 12:53:30,766 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,768 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.234375,170.15625,-29.53125,170.859375&WIDTH=256&HEIGHT=256" took 68ms
+2018-09-20 12:53:30,773 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.9375,170.15625,-30.234375,170.859375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,773 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,800 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.828125 : -28.125, 170.15625 : 170.859375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.828125,170.15625,-28.125,170.859375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,802 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,170.15625,-28.125,170.859375&WIDTH=256&HEIGHT=256" took 38ms
+2018-09-20 12:53:30,807 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-31.640625 : -30.9375, 169.453125 : 170.15625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-31.640625,169.453125,-30.9375,170.15625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,810 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,169.453125,-30.9375,170.15625&WIDTH=256&HEIGHT=256" took 45ms
+2018-09-20 12:53:30,816 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.9375 : -30.234375, 170.15625 : 170.859375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.9375,170.15625,-30.234375,170.859375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,818 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.125,170.15625,-27.421875,170.859375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,818 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,165.9375,-30.9375,166.640625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,819 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,819 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,819 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,170.15625,-30.9375,170.859375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,819 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.9375,170.15625,-30.234375,170.859375&WIDTH=256&HEIGHT=256" took 46ms
+2018-09-20 12:53:30,819 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,844 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,165.234375,-30.9375,165.9375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:30,845 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:30,876 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-31.640625 : -30.9375, 165.9375 : 166.640625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-31.640625,165.9375,-30.9375,166.640625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,876 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-31.640625 : -30.9375, 170.15625 : 170.859375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-31.640625,170.15625,-30.9375,170.859375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,878 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.125 : -27.421875, 170.15625 : 170.859375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.125,170.15625,-27.421875,170.859375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,878 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-31.640625 : -30.9375, 165.234375 : 165.9375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-31.640625,165.234375,-30.9375,165.9375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:30,879 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,165.9375,-30.9375,166.640625&WIDTH=256&HEIGHT=256" took 61ms
+2018-09-20 12:53:30,879 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,170.15625,-30.9375,170.859375&WIDTH=256&HEIGHT=256" took 60ms
+2018-09-20 12:53:30,880 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.125,170.15625,-27.421875,170.859375&WIDTH=256&HEIGHT=256" took 62ms
+2018-09-20 12:53:30,882 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-31.640625,165.234375,-30.9375,165.9375&WIDTH=256&HEIGHT=256" took 38ms
+2018-09-20 12:53:31,313 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.046875,-30.234375,168.3984375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,314 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,340 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.3984375,-30.234375,168.75&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,340 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,344 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.046875 : 168.3984375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.046875,-30.234375,168.3984375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,347 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.046875,-30.234375,168.3984375&WIDTH=256&HEIGHT=256" took 34ms
+2018-09-20 12:53:31,370 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.3984375 : 168.75]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.3984375,-30.234375,168.75, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,372 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.3984375,-30.234375,168.75&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,396 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,167.6953125,-30.234375,168.046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,396 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,397 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.75,-30.234375,169.1015625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,397 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,410 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,167.34375,-30.234375,167.6953125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,410 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,426 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 167.6953125 : 168.046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,167.6953125,-30.234375,168.046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,427 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.53125,169.453125,-29.1796875,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,427 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,428 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,167.6953125,-30.234375,168.046875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,432 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.75 : 169.1015625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.75,-30.234375,169.1015625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,434 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,168.75,-30.234375,169.1015625&WIDTH=256&HEIGHT=256" took 37ms
+2018-09-20 12:53:31,443 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 167.34375 : 167.6953125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,167.34375,-30.234375,167.6953125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,444 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,167.34375,-30.234375,167.6953125&WIDTH=256&HEIGHT=256" took 34ms
+2018-09-20 12:53:31,450 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.8828125,169.453125,-29.53125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,451 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,456 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.53125 : -29.1796875, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.53125,169.453125,-29.1796875,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,459 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.53125,169.453125,-29.1796875,169.8046875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,470 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,169.1015625,-30.234375,169.453125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,470 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,477 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.1796875,169.453125,-28.828125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,477 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,166.9921875,-30.234375,167.34375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,477 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,478 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,479 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.8828125 : -29.53125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.8828125,169.453125,-29.53125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,481 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.8828125,169.453125,-29.53125,169.8046875&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:31,490 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.234375,169.453125,-29.8828125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,490 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,498 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 169.1015625 : 169.453125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,169.1015625,-30.234375,169.453125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,501 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.828125,169.453125,-28.4765625,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,501 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,501 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,169.1015625,-30.234375,169.453125&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:31,507 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.1796875 : -28.828125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.1796875,169.453125,-28.828125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,507 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 166.9921875 : 167.34375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,166.9921875,-30.234375,167.34375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,509 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.1796875,169.453125,-28.828125,169.8046875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,510 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,166.9921875,-30.234375,167.34375&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:31,522 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.234375 : -29.8828125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.234375,169.453125,-29.8828125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,522 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,169.453125,-30.234375,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,523 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,524 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.234375,169.453125,-29.8828125,169.8046875&WIDTH=256&HEIGHT=256" took 34ms
+2018-09-20 12:53:31,529 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.828125 : -28.4765625, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.828125,169.453125,-28.4765625,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,532 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.828125,169.453125,-28.4765625,169.8046875&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:31,543 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.046875,-30.234375,168.3984375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,544 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,552 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,169.453125,-30.234375,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,554 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.5859375,169.453125,-30.234375,169.8046875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,560 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.3984375,-30.234375,168.75&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,561 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,561 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,167.6953125,-30.234375,168.046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,562 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,566 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.75,-30.234375,169.1015625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,567 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,572 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,167.34375,-30.234375,167.6953125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,573 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,573 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.046875 : 168.3984375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.046875,-30.234375,168.3984375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,575 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.046875,-30.234375,168.3984375&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:31,596 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.53125,169.453125,-29.1796875,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,597 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,602 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.3984375 : 168.75]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.3984375,-30.234375,168.75, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,604 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 167.6953125 : 168.046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,167.6953125,-30.234375,168.046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,604 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 167.34375 : 167.6953125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,167.34375,-30.234375,167.6953125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,605 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.3984375,-30.234375,168.75&WIDTH=256&HEIGHT=256" took 45ms
+2018-09-20 12:53:31,606 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 168.75 : 169.1015625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,168.75,-30.234375,169.1015625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,606 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,167.6953125,-30.234375,168.046875&WIDTH=256&HEIGHT=256" took 45ms
+2018-09-20 12:53:31,608 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,167.34375,-30.234375,167.6953125&WIDTH=256&HEIGHT=256" took 36ms
+2018-09-20 12:53:31,608 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,168.75,-30.234375,169.1015625&WIDTH=256&HEIGHT=256" took 42ms
+2018-09-20 12:53:31,614 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.8828125,169.453125,-29.53125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,615 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,626 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.53125 : -29.1796875, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.53125,169.453125,-29.1796875,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,628 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.53125,169.453125,-29.1796875,169.8046875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:31,646 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.8828125 : -29.53125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.8828125,169.453125,-29.53125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,655 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.8828125,169.453125,-29.53125,169.8046875&WIDTH=256&HEIGHT=256" took 41ms
+2018-09-20 12:53:31,657 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,169.1015625,-30.234375,169.453125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,658 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,662 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.1796875,169.453125,-28.828125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,662 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,166.9921875,-30.234375,167.34375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,662 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.234375,169.453125,-29.8828125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,662 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,663 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,663 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,676 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,169.453125,-28.4765625,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,676 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,700 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,169.453125,-30.234375,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:31,701 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:31,710 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 169.1015625 : 169.453125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,169.1015625,-30.234375,169.453125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,710 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.828125 : -28.4765625, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.828125,169.453125,-28.4765625,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,711 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.234375 : -29.8828125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.234375,169.453125,-29.8828125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,712 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,169.1015625,-30.234375,169.453125&WIDTH=256&HEIGHT=256" took 55ms
+2018-09-20 12:53:31,714 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,169.453125,-28.4765625,169.8046875&WIDTH=256&HEIGHT=256" took 38ms
+2018-09-20 12:53:31,714 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.234375,169.453125,-29.8828125,169.8046875&WIDTH=256&HEIGHT=256" took 52ms
+2018-09-20 12:53:31,715 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 166.9921875 : 167.34375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,166.9921875,-30.234375,167.34375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,717 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.1796875 : -28.828125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.1796875,169.453125,-28.828125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,718 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,166.9921875,-30.234375,167.34375&WIDTH=256&HEIGHT=256" took 56ms
+2018-09-20 12:53:31,720 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.1796875,169.453125,-28.828125,169.8046875&WIDTH=256&HEIGHT=256" took 58ms
+2018-09-20 12:53:31,735 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.5859375 : -30.234375, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.5859375,169.453125,-30.234375,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:31,737 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.5859375,169.453125,-30.234375,169.8046875&WIDTH=256&HEIGHT=256" took 37ms
+2018-09-20 12:53:32,549 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-37.662109%2C144.261475%2C-28.807129%2C162.872314&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=847&HEIGHT=403&X=734&Y=125&I=734&J=125&BUFFER=10" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:32,550 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:32,583 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	FeatureCount = 100
+	GetMapRequest = 
+GetMap Request
+ version: 1.3.0
+ output format: text/html
+ width height: 847,403
+ bbox: SRSEnvelope[-37.662109 : -28.807129, 144.261475 : 162.872314]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	Exceptions = application/vnd.ogc.se_xml
+	XPixel = 734
+	YPixel = 125
+	Get = false
+	RawKvp = {FORMAT=text/html, CRS=EPSG:4326, INFO_FORMAT=text/html, STYLES=, QUERYABLE=true, I=734, WIDTH=847, J=125, HEIGHT=403, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-37.662109,144.261475,-28.807129,162.872314, VERSION=1.3.0, X=734, Y=125, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = null
+	Version = 1.3.0
+	Request = GetFeatureInfo
+2018-09-20 12:53:32,586 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-37.662109%2C144.261475%2C-28.807129%2C162.872314&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=847&HEIGHT=403&X=734&Y=125&I=734&J=125&BUFFER=10" took 37ms
+2018-09-20 12:53:33,050 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,166.9921875,-28.125,167.34375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,051 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,059 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,167.34375,-28.125,167.6953125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,059 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,167.6953125,-28.125,168.046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,060 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,060 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,099 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 167.34375 : 167.6953125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,167.34375,-28.125,167.6953125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,099 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 167.6953125 : 168.046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,167.6953125,-28.125,168.046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,101 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,167.6953125,-28.125,168.046875&WIDTH=256&HEIGHT=256" took 42ms
+2018-09-20 12:53:33,102 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 166.9921875 : 167.34375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,166.9921875,-28.125,167.34375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,103 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,167.34375,-28.125,167.6953125&WIDTH=256&HEIGHT=256" took 44ms
+2018-09-20 12:53:33,105 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,166.9921875,-28.125,167.34375&WIDTH=256&HEIGHT=256" took 55ms
+2018-09-20 12:53:33,146 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.1796875,166.640625,-28.828125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,147 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,177 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.1796875 : -28.828125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.1796875,166.640625,-28.828125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,179 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.1796875,166.640625,-28.828125,166.9921875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:33,217 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.53125,166.640625,-29.1796875,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,218 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,247 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.53125 : -29.1796875, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.53125,166.640625,-29.1796875,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,249 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.53125,166.640625,-29.1796875,166.9921875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:33,307 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,166.640625,-28.4765625,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,308 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,334 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.8828125,166.640625,-29.53125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,335 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,340 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.1796875,166.640625,-28.828125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,340 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,343 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.828125 : -28.4765625, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.828125,166.640625,-28.4765625,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,345 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.828125,166.640625,-28.4765625,166.9921875&WIDTH=256&HEIGHT=256" took 38ms
+2018-09-20 12:53:33,370 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.8828125 : -29.53125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.8828125,166.640625,-29.53125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,370 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.1796875 : -28.828125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.1796875,166.640625,-28.828125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,372 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.53125,166.640625,-29.1796875,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,373 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,373 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.8828125,166.640625,-29.53125,166.9921875&WIDTH=256&HEIGHT=256" took 39ms
+2018-09-20 12:53:33,373 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.1796875,166.640625,-28.828125,166.9921875&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,381 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.8828125,166.640625,-29.53125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,381 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,403 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.53125 : -29.1796875, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.53125,166.640625,-29.1796875,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,405 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.53125,166.640625,-29.1796875,166.9921875&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,408 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-29.8828125 : -29.53125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-29.8828125,166.640625,-29.53125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,410 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.8828125,166.640625,-29.53125,166.9921875&WIDTH=256&HEIGHT=256" took 29ms
+2018-09-20 12:53:33,420 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.828125,166.640625,-28.4765625,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,420 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,422 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.234375,166.640625,-29.8828125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,422 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,445 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.234375,166.640625,-29.8828125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,446 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,451 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.234375 : -29.8828125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.234375,166.640625,-29.8828125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,454 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.828125 : -28.4765625, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.828125,166.640625,-28.4765625,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,454 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-30.234375,166.640625,-29.8828125,166.9921875&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:33,456 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.828125,166.640625,-28.4765625,166.9921875&WIDTH=256&HEIGHT=256" took 36ms
+2018-09-20 12:53:33,460 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.046875,-28.125,168.3984375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,460 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,461 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.3984375,-28.125,168.75&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,462 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,474 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-30.234375 : -29.8828125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-30.234375,166.640625,-29.8828125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,476 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-30.234375,166.640625,-29.8828125,166.9921875&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:33,485 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.75,-28.125,169.1015625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,486 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,490 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.046875 : 168.3984375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.046875,-28.125,168.3984375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,491 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.3984375 : 168.75]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.3984375,-28.125,168.75, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,493 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.046875,-28.125,168.3984375&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,494 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.3984375,-28.125,168.75&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,497 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,169.1015625,-28.125,169.453125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,497 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,498 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,169.453125,-28.125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,498 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,514 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,166.9921875,-28.125,167.34375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,515 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,534 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.75 : 169.1015625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.75,-28.125,169.1015625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,536 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,168.75,-28.125,169.1015625&WIDTH=256&HEIGHT=256" took 51ms
+2018-09-20 12:53:33,538 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,167.6953125,-28.125,168.046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,538 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,167.34375,-28.125,167.6953125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,538 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,541 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,545 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,169.453125,-28.125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,546 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 169.1015625 : 169.453125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,169.1015625,-28.125,169.453125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,546 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 166.9921875 : 167.34375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,166.9921875,-28.125,167.34375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,547 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,169.453125,-28.125,169.8046875&WIDTH=256&HEIGHT=256" took 49ms
+2018-09-20 12:53:33,548 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,166.9921875,-28.125,167.34375&WIDTH=256&HEIGHT=256" took 34ms
+2018-09-20 12:53:33,548 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,169.1015625,-28.125,169.453125&WIDTH=256&HEIGHT=256" took 51ms
+2018-09-20 12:53:33,574 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.046875,-28.125,168.3984375&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,575 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,576 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 167.34375 : 167.6953125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,167.34375,-28.125,167.6953125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,578 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,167.34375,-28.125,167.6953125&WIDTH=256&HEIGHT=256" took 40ms
+2018-09-20 12:53:33,583 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 167.6953125 : 168.046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,167.6953125,-28.125,168.046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,167.6953125,-28.125,168.046875&WIDTH=256&HEIGHT=256" took 47ms
+2018-09-20 12:53:33,596 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.75,-28.125,169.1015625&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,596 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.3984375,-28.125,168.75&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,597 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,597 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,597 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,169.1015625,-28.125,169.453125&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,598 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,602 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.046875 : 168.3984375]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.046875,-28.125,168.3984375, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,605 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.046875,-28.125,168.3984375&WIDTH=256&HEIGHT=256" took 31ms
+2018-09-20 12:53:33,618 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,169.453125,-28.125,169.8046875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,618 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,627 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 169.1015625 : 169.453125]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,169.1015625,-28.125,169.453125, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,627 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.3984375 : 168.75]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.3984375,-28.125,168.75, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,629 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.3984375,-28.125,168.75&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,629 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,169.1015625,-28.125,169.453125&WIDTH=256&HEIGHT=256" took 32ms
+2018-09-20 12:53:33,629 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 168.75 : 169.1015625]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,168.75,-28.125,169.1015625, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,632 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,168.75,-28.125,169.1015625&WIDTH=256&HEIGHT=256" took 36ms
+2018-09-20 12:53:33,644 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,166.640625,-28.125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,645 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,648 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 169.453125 : 169.8046875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,169.453125,-28.125,169.8046875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,651 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,169.453125,-28.125,169.8046875&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,674 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_blue_triangle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Time = []
+	Filters = [[[ Class is like Asteroidea ] AND [ Taxon is like Acanthaster planci ]]]
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,166.640625,-28.125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci'}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,677 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-28.4765625,166.640625,-28.125,166.9921875&WIDTH=256&HEIGHT=256" took 33ms
+2018-09-20 12:53:33,679 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,166.640625,-28.125,166.9921875&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:33,679 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-20 12:53:33,707 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 256
+	Height = 256
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	Styles = [StyleImpl[ name=point_green_circle]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-28.4765625 : -28.125, 166.640625 : 166.9921875]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = application/vnd.ogc.se_xml
+	Format = image/png
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=-28.4765625,166.640625,-28.125,166.9921875, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.3.0
+	Request = GetMap
+2018-09-20 12:53:33,709 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-28.4765625,166.640625,-28.125,166.9921875&WIDTH=256&HEIGHT=256" took 30ms
+2018-09-20 12:53:41,242 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.61840820314%20-29.46630859375%2C167.61840820314%20-28.63134765625%2C168.32153320314%20-28.63134765625%2C168.32153320314%20-29.46630859375%2C167.61840820314%20-29.46630859375)))&downloadToken=1537412021122" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:41,244 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-20 12:53:41,245 INFO [geoserver.wfs] - 
 Request: getFeature
     service = WFS
     version = 1.0.0
     baseUrl = http://localhost:8082/geoserver/
     query[0]:
-        typeName[0] = {RLS}M2_INVERT_DATA
-    maxFeatures = 1
-    outputFormat = gml2
+        filter = [ geom intersects POLYGON ((167.61840820314 -29.46630859375, 167.61840820314 -28.63134765625, 168.32153320314 -28.63134765625, 168.32153320314 -29.46630859375, 167.61840820314 -29.46630859375)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv-with-metadata-header
     resultType = results
-2018-09-20 12:07:13,839 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 25ms
-2018-09-20 12:07:32,874 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:07:32,877 INFO [geoserver.wfs] - 
+2018-09-20 12:53:41,253 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2018-09-20 12:53:41,955 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.61840820314%20-29.46630859375%2C167.61840820314%20-28.63134765625%2C168.32153320314%20-28.63134765625%2C168.32153320314%20-29.46630859375%2C167.61840820314%20-29.46630859375)))&downloadToken=1537412021122" took 713ms
+2018-09-20 12:53:50,944 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.59643554688%20-29.477294921875%2C167.59643554688%20-28.598388671875%2C168.21166992188%20-28.598388671875%2C168.21166992188%20-29.477294921875%2C167.59643554688%20-29.477294921875)))&downloadToken=1537412030893" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:50,946 INFO [geoserver.wfs] - 
 Request: getServiceInfo
-2018-09-20 12:07:32,880 INFO [geoserver.wfs] - 
+2018-09-20 12:53:50,950 INFO [geoserver.wfs] - 
 Request: getFeature
     service = WFS
     version = 1.0.0
     baseUrl = http://localhost:8082/geoserver/
     query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
+        filter = [ geom intersects POLYGON ((167.59643554688 -29.477294921875, 167.59643554688 -28.598388671875, 168.21166992188 -28.598388671875, 168.21166992188 -29.477294921875, 167.59643554688 -29.477294921875)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv-with-metadata-header
     resultType = results
-2018-09-20 12:07:32,901 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 26ms
-2018-09-20 12:07:57,512 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:07:57,514 INFO [geoserver.wfs] - 
+2018-09-20 12:53:50,955 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2018-09-20 12:53:51,210 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.59643554688%20-29.477294921875%2C167.59643554688%20-28.598388671875%2C168.21166992188%20-28.598388671875%2C168.21166992188%20-29.477294921875%2C167.59643554688%20-29.477294921875)))&downloadToken=1537412030893" took 266ms
+2018-09-20 12:53:52,399 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.5254817307%20-29.604095011949%2C167.5254817307%20-28.609832316637004%2C168.32748368383%20-28.609832316636997%2C168.32748368383%20-29.604095011949%2C167.5254817307%20-29.604095011949)))&downloadToken=1537412032341" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:53:52,402 INFO [geoserver.wfs] - 
 Request: getServiceInfo
-2018-09-20 12:07:57,516 INFO [geoserver.wfs] - 
+2018-09-20 12:53:52,403 INFO [geoserver.wfs] - 
 Request: getFeature
     service = WFS
     version = 1.0.0
     baseUrl = http://localhost:8082/geoserver/
     query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
+        filter = [ geom intersects POLYGON ((167.5254817307 -29.604095011949, 167.5254817307 -28.609832316637004, 168.32748368383 -28.609832316636997, 168.32748368383 -29.604095011949, 167.5254817307 -29.604095011949)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv-with-metadata-header
     resultType = results
-2018-09-20 12:07:57,531 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 18ms
-2018-09-20 12:08:02,262 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:08:02,263 INFO [geoserver.wfs] - 
+2018-09-20 12:53:52,408 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2018-09-20 12:53:52,661 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((167.5254817307%20-29.604095011949%2C167.5254817307%20-28.609832316637004%2C168.32748368383%20-28.609832316636997%2C168.32748368383%20-29.604095011949%2C167.5254817307%20-29.604095011949)))&downloadToken=1537412032341" took 262ms
+2018-09-20 12:56:13,935 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.668583%2C167.289219%2C-28.764957%2C168.956394&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM2_INVERT_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=1214&HEIGHT=658&X=244&Y=184&I=244&J=184&BUFFER=10" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:56:13,940 INFO [geoserver.wms] - 
 Request: getServiceInfo
-2018-09-20 12:08:02,264 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_INVERT_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:08:02,279 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 17ms
-2018-09-20 12:09:16,747 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:09:16,752 INFO [geoserver.wfs] - 
+2018-09-20 12:56:14,001 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@1d3d55]
+	FeatureCount = 100
+	GetMapRequest = 
+GetMap Request
+ version: 1.3.0
+ output format: text/html
+ width height: 1214,658
+ bbox: SRSEnvelope[-29.668583 : -28.764957, 167.289219 : 168.956394]
+ layers: RLS:M2_INVERT_MAP
+ styles: point_blue_triangle
+	InfoFormat = text/html
+	Exceptions = application/vnd.ogc.se_xml
+	XPixel = 244
+	YPixel = 184
+	Get = false
+	RawKvp = {FORMAT=text/html, CRS=EPSG:4326, INFO_FORMAT=text/html, STYLES=, QUERYABLE=true, I=244, WIDTH=1214, J=184, HEIGHT=658, BUFFER=10, LAYERS=RLS:M2_INVERT_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-29.668583,167.289219,-28.764957,168.956394, VERSION=1.3.0, X=244, Y=184, SERVICE=WMS, QUERY_LAYERS=RLS:M2_INVERT_MAP, TRANSPARENT=TRUE, CQL_FILTER=Class LIKE 'Asteroidea' AND Taxon LIKE 'Acanthaster planci', FEATURE_COUNT=100}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = null
+	Version = 1.3.0
+	Request = GetFeatureInfo
+2018-09-20 12:56:14,011 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_INVERT_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=Class%20LIKE%20'Asteroidea'%20AND%20Taxon%20LIKE%20'Acanthaster%20planci'&BBOX=-29.668583%2C167.289219%2C-28.764957%2C168.956394&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM2_INVERT_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=1214&HEIGHT=658&X=244&Y=184&I=244&J=184&BUFFER=10" took 76ms
+2018-09-20 12:56:14,050 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.668583%2C167.289219%2C-28.764957%2C168.956394&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=1214&HEIGHT=658&X=244&Y=184&I=244&J=184&BUFFER=10" "AODN-Portal/V4.38.20" "" " "" 
+2018-09-20 12:56:14,051 INFO [geoserver.wms] - 
 Request: getServiceInfo
-2018-09-20 12:09:16,756 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:09:16,794 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 47ms
-2018-09-20 12:10:03,093 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:10:03,099 INFO [geoserver.wfs] - 
+2018-09-20 12:56:14,082 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	FeatureCount = 100
+	GetMapRequest = 
+GetMap Request
+ version: 1.3.0
+ output format: text/html
+ width height: 1214,658
+ bbox: SRSEnvelope[-29.668583 : -28.764957, 167.289219 : 168.956394]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	Exceptions = application/vnd.ogc.se_xml
+	XPixel = 244
+	YPixel = 184
+	Get = false
+	RawKvp = {FORMAT=text/html, CRS=EPSG:4326, INFO_FORMAT=text/html, STYLES=, QUERYABLE=true, I=244, WIDTH=1214, J=184, HEIGHT=658, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-29.668583,167.289219,-28.764957,168.956394, VERSION=1.3.0, X=244, Y=184, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = null
+	Version = 1.3.0
+	Request = GetFeatureInfo
+2018-09-20 12:56:14,085 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-29.668583%2C167.289219%2C-28.764957%2C168.956394&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&SRS=EPSG%3A4326&WIDTH=1214&HEIGHT=658&X=244&Y=184&I=244&J=184&BUFFER=10" took 35ms
+2018-09-20 12:57:01,306 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/kml?layers=RLS%3AM1_DATA" "Mozilla/5.0 (compatible; SemrushBot/2~bl; +http://www.semrush.com/bot.html)" "" " "" 
+2018-09-20 12:57:01,314 INFO [geoserver.wms] - 
 Request: getServiceInfo
-2018-09-20 12:10:03,103 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:10:03,127 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 34ms
-2018-09-20 12:10:52,171 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:10:52,173 INFO [geoserver.wfs] - 
+2018-09-20 12:57:01,383 INFO [geoserver.wms] - 
+Request: kml
+	Width = 0
+	Height = 0
+	SRS = null
+	Styles = [StyleImpl[ name=point]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = null
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = null
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = null
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {LAYERS=RLS:M1_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = null
+	Request = GetMap
+2018-09-20 12:57:01,447 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/kml?layers=RLS%3AM1_DATA" took 141ms
+2018-09-20 12:58:59,677 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-20 12:58:59,684 INFO [geoserver.wfs] - 
 Request: getServiceInfo
-2018-09-20 12:10:52,175 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:10:52,194 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 23ms
-2018-09-20 12:11:22,558 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:11:22,562 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:11:22,565 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_INVERT_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:11:22,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 27ms
-2018-09-20 12:12:34,695 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:12:34,700 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:12:34,706 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:12:34,745 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 49ms
-2018-09-20 12:13:14,392 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:13:14,393 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:13:14,395 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:13:14,476 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 84ms
-2018-09-20 12:18:50,460 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:18:50,467 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:18:50,474 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:18:50,532 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 71ms
-2018-09-20 12:23:09,788 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:23:09,793 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:23:09,797 INFO [geoserver.wfs] - 
+2018-09-20 12:58:59,690 INFO [geoserver.wfs] - 
 Request: getFeature
     service = WFS
     version = 1.0.0
@@ -165,130 +3852,4 @@ Request: getFeature
     maxFeatures = 1
     outputFormat = gml2
     resultType = results
-2018-09-20 12:23:09,851 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 62ms
-2018-09-20 12:24:01,623 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:24:01,626 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:24:01,630 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M1_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:24:01,652 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 29ms
-2018-09-20 12:24:22,722 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:24:22,723 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:24:22,724 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:24:22,736 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 14ms
-2018-09-20 12:26:40,216 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:26:40,221 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:26:40,225 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_INVERT_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:26:40,279 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 63ms
-2018-09-20 12:26:43,658 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:26:43,660 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:26:43,662 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M1_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:26:43,679 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 21ms
-2018-09-20 12:26:56,599 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:26:56,600 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:26:56,602 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:26:56,617 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 18ms
-2018-09-20 12:27:26,601 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:27:26,602 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:27:26,603 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_INVERT_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:27:26,619 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 18ms
-2018-09-20 12:27:49,238 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
-2018-09-20 12:27:49,240 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:27:49,241 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:27:49,257 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 19ms
-2018-09-20 12:28:47,899 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:28:47,903 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:28:47,907 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M2_FISH_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:28:47,927 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 28ms
-2018-09-20 12:29:38,640 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
-2018-09-20 12:29:38,644 INFO [geoserver.wfs] - 
-Request: getServiceInfo
-2018-09-20 12:29:38,648 INFO [geoserver.wfs] - 
-Request: getFeature
-    service = WFS
-    version = 1.0.0
-    baseUrl = http://localhost:8082/geoserver/
-    query[0]:
-        typeName[0] = {RLS}M3_DATA
-    maxFeatures = 1
-    outputFormat = gml2
-    resultType = results
-2018-09-20 12:29:38,670 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 30ms
+2018-09-20 12:58:59,745 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 67ms
