@@ -29390,3 +29390,1427 @@ Request: getMap
 	Version = 1.1.0
 	Request = GetMap
 2018-09-21 23:29:52,843 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:M2_FISH_DATA&styles=&bbox=-179.125931,-55.046786,177.182721,78.449001&width=768&height=330&srs=EPSG:4326&format=image%2Fgeotiff" took 1879ms
+2018-09-21 23:31:40,484 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:31:40,488 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:31:40,492 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:31:40,543 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 58ms
+2018-09-21 23:32:21,221 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:32:21,223 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:32:21,224 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:32:21,238 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 16ms
+2018-09-21 23:32:51,444 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:M2_INVERT_DATA&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:32:51,449 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:32:51,456 ERROR [geoserver.ows] - 
+org.geoserver.platform.ServiceException: GetMap requests must include a BBOX parameter.
+	at org.geoserver.wms.GetMap.assertMandatory(GetMap.java:625)
+	at org.geoserver.wms.GetMap.run(GetMap.java:179)
+	at org.geoserver.wms.GetMap.run(GetMap.java:119)
+	at org.geoserver.wms.DefaultWebMapService.getMap(DefaultWebMapService.java:320)
+	at sun.reflect.GeneratedMethodAccessor216.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.geoserver.kml.WebMapServiceKmlInterceptor.invoke(WebMapServiceKmlInterceptor.java:34)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.geoserver.ows.util.RequestObjectLogger.invoke(RequestObjectLogger.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy58.getMap(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor170.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:845)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:135)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:83)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 23:32:51,464 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:M2_INVERT_DATA&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false" took 20ms
+2018-09-21 23:32:54,286 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:32:54,287 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:32:54,289 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:32:54,306 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 20ms
+2018-09-21 23:32:56,264 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:32:56,264 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:32:56,265 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:32:56,277 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 13ms
+2018-09-21 23:33:03,321 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&maxFeatures=10&outputFormat=application%2Fvnd.google-earth.kml%2Bxml" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:33:03,322 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:33:03,323 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 10
+    outputFormat = application/vnd.google-earth.kml+xml
+    resultType = results
+2018-09-21 23:33:03,342 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&maxFeatures=10&outputFormat=application%2Fvnd.google-earth.kml%2Bxml" took 21ms
+2018-09-21 23:35:36,179 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/kml?layers=RLS:SiteList" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:35:36,186 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:35:36,199 INFO [geoserver.wms] - 
+Request: kml
+	Width = 0
+	Height = 0
+	SRS = null
+	Styles = [StyleImpl[ name=point]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = null
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = null
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = null
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {LAYERS=RLS:SiteList}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = null
+	Request = GetMap
+2018-09-21 23:35:36,205 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/kml?layers=RLS:SiteList" took 26ms
+2018-09-21 23:35:36,745 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:35:36,746 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:35:36,748 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:35:36,799 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 54ms
+2018-09-21 23:35:44,822 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:35:44,823 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:35:44,825 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:35:44,838 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 16ms
+2018-09-21 23:36:02,623 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:36:02,624 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:36:02,626 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:36:02,640 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 17ms
+2018-09-21 23:36:13,130 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:36:13,131 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:36:13,132 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:36:13,144 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 13ms
+2018-09-21 23:37:15,573 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:37:15,577 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:37:15,581 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:37:15,600 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 27ms
+2018-09-21 23:37:39,647 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:37:39,648 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:37:39,649 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:37:39,662 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 15ms
+2018-09-21 23:38:27,258 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:38:27,260 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:38:27,263 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:38:27,281 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 23ms
+2018-09-21 23:38:35,594 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SiteList&styles=&bbox=-179.135831,-55.046786,177.182721,78.449001&width=768&height=330&srs=EPSG:4326&format=image%2Fpng%3B+mode%3D8bit" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:38:35,597 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:38:35,757 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 768
+	Height = 330
+	SRS = EPSG:4326
+	Styles = [StyleImpl[ name=point]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.135831 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = image/png; mode=8bit
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:4326, FORMAT=image/png; mode=8bit, BBOX=-179.135831,-55.046786,177.182721,78.449001, VERSION=1.1.0, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, LAYERS=RLS:SiteList}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.1.0
+	Request = GetMap
+2018-09-21 23:38:35,775 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SiteList&styles=&bbox=-179.135831,-55.046786,177.182721,78.449001&width=768&height=330&srs=EPSG:4326&format=image%2Fpng%3B+mode%3D8bit" took 180ms
+2018-09-21 23:40:15,143 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:40:15,144 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:40:15,146 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:40:15,194 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 51ms
+2018-09-21 23:40:44,201 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:40:44,206 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:40:44,212 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:40:44,233 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 32ms
+2018-09-21 23:43:04,867 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:43:04,870 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:43:04,875 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:43:04,929 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 61ms
+2018-09-21 23:43:10,914 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&maxFeatures=10&outputFormat=gml3" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:43:10,915 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:43:10,916 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SurveyList
+    maxFeatures = 10
+    outputFormat = gml3
+    resultType = results
+2018-09-21 23:43:10,957 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&maxFeatures=10&outputFormat=gml3" took 42ms
+2018-09-21 23:44:13,766 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SurveyList&styles=&bbox=-179.135831,-55.046786,177.182721,78.449001&width=768&height=330&srs=EPSG:4326&format=application%2Frss%2Bxml" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:44:13,770 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:44:13,777 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 768
+	Height = 330
+	SRS = EPSG:4326
+	Styles = [StyleImpl[ name=point_purple_cross]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@6e8576e8]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.135831 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = application/rss+xml
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:4326, FORMAT=application/rss+xml, BBOX=-179.135831,-55.046786,177.182721,78.449001, VERSION=1.1.0, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, LAYERS=RLS:SurveyList}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.1.0
+	Request = GetMap
+2018-09-21 23:44:14,293 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket%3AbookmarkablePage=%3Aorg.geoserver.web.demo.DemoRequestsPage" "Mozilla/5.0 (compatible; SemrushBot/2~bl; +http://www.semrush.com/bot.html)" "" " "" 
+2018-09-21 23:44:14,306 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/?wicket%3AbookmarkablePage=%3Aorg.geoserver.web.demo.DemoRequestsPage" took 13ms
+2018-09-21 23:44:16,843 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344710
+2018-09-21 23:44:16,843 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341117
+2018-09-21 23:44:16,844 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341215
+2018-09-21 23:44:16,844 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341956
+2018-09-21 23:44:16,844 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342546
+2018-09-21 23:44:16,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346387
+2018-09-21 23:44:16,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346719
+2018-09-21 23:44:16,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347051
+2018-09-21 23:44:16,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347715
+2018-09-21 23:44:16,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349682
+2018-09-21 23:44:16,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344063
+2018-09-21 23:44:16,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344395
+2018-09-21 23:44:16,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344727
+2018-09-21 23:44:16,991 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345059
+2018-09-21 23:44:17,118 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349404
+2018-09-21 23:44:17,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346997
+2018-09-21 23:44:17,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347744
+2018-09-21 23:44:17,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349653
+2018-09-21 23:44:17,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349985
+2018-09-21 23:44:17,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349997
+2018-09-21 23:44:17,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350246
+2018-09-21 23:44:17,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346001
+2018-09-21 23:44:17,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346072
+2018-09-21 23:44:17,234 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351179
+2018-09-21 23:44:17,235 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349845
+2018-09-21 23:44:17,235 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349851
+2018-09-21 23:44:17,235 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350386
+2018-09-21 23:44:17,235 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350392
+2018-09-21 23:44:17,235 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350878
+2018-09-21 23:44:17,236 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351173
+2018-09-21 23:44:17,236 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346015
+2018-09-21 23:44:17,236 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346550
+2018-09-21 23:44:17,349 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.34003020
+2018-09-21 23:44:17,349 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349364
+2018-09-21 23:44:17,349 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340373
+2018-09-21 23:44:17,349 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001047
+2018-09-21 23:44:17,350 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001210
+2018-09-21 23:44:17,350 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001637
+2018-09-21 23:44:17,350 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351119
+2018-09-21 23:44:17,350 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345119
+2018-09-21 23:44:17,351 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349954
+2018-09-21 23:44:17,463 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343296
+2018-09-21 23:44:17,463 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343788
+2018-09-21 23:44:17,463 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.676003246
+2018-09-21 23:44:17,463 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.689003059
+2018-09-21 23:44:17,464 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340465
+2018-09-21 23:44:17,464 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340542
+2018-09-21 23:44:17,464 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341132
+2018-09-21 23:44:17,464 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341206
+2018-09-21 23:44:17,465 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3002530
+2018-09-21 23:44:17,577 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350223
+2018-09-21 23:44:17,577 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350260
+2018-09-21 23:44:17,577 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350801
+2018-09-21 23:44:17,577 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346522
+2018-09-21 23:44:17,578 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346928
+2018-09-21 23:44:17,578 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347469
+2018-09-21 23:44:17,578 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347506
+2018-09-21 23:44:17,578 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347518
+2018-09-21 23:44:17,579 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347555
+2018-09-21 23:44:17,693 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346837
+2018-09-21 23:44:17,693 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343256
+2018-09-21 23:44:17,694 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343517
+2018-09-21 23:44:17,694 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343849
+2018-09-21 23:44:17,694 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344181
+2018-09-21 23:44:17,694 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344513
+2018-09-21 23:44:17,694 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344845
+2018-09-21 23:44:17,695 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341928
+2018-09-21 23:44:17,695 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342521
+2018-09-21 23:44:17,807 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001932
+2018-09-21 23:44:17,807 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3002597
+2018-09-21 23:44:17,807 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000334
+2018-09-21 23:44:17,808 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001989
+2018-09-21 23:44:17,808 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002315
+2018-09-21 23:44:17,808 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002908
+2018-09-21 23:44:17,808 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345037
+2018-09-21 23:44:17,808 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000965
+2018-09-21 23:44:17,809 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001291
+2018-09-21 23:44:17,921 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003214
+2018-09-21 23:44:17,921 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003546
+2018-09-21 23:44:17,921 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340168
+2018-09-21 23:44:17,921 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340500
+2018-09-21 23:44:17,922 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341828
+2018-09-21 23:44:17,922 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342277
+2018-09-21 23:44:17,922 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000851
+2018-09-21 23:44:17,922 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000265
+2018-09-21 23:44:17,923 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002052
+2018-09-21 23:44:18,035 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000058
+2018-09-21 23:44:18,035 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000705
+2018-09-21 23:44:18,035 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000803
+2018-09-21 23:44:18,036 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000374
+2018-09-21 23:44:18,036 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002106
+2018-09-21 23:44:18,036 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000441
+2018-09-21 23:44:18,036 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351274
+2018-09-21 23:44:18,036 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003801
+2018-09-21 23:44:18,037 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000882
+2018-09-21 23:44:18,149 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342034
+2018-09-21 23:44:18,149 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000161
+2018-09-21 23:44:18,150 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000774
+2018-09-21 23:44:18,150 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000823
+2018-09-21 23:44:18,150 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000391
+2018-09-21 23:44:18,150 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002000
+2018-09-21 23:44:18,151 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002209
+2018-09-21 23:44:18,151 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349342
+2018-09-21 23:44:18,151 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.44003084
+2018-09-21 23:44:18,262 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343179
+2018-09-21 23:44:18,262 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343428
+2018-09-21 23:44:18,262 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344175
+2018-09-21 23:44:18,262 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344424
+2018-09-21 23:44:18,263 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344851
+2018-09-21 23:44:18,263 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.62003097
+2018-09-21 23:44:18,263 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.506003823
+2018-09-21 23:44:18,263 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003569
+2018-09-21 23:44:18,263 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.593003503
+2018-09-21 23:44:18,376 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346531
+2018-09-21 23:44:18,376 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346574
+2018-09-21 23:44:18,376 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347023
+2018-09-21 23:44:18,376 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344361
+2018-09-21 23:44:18,376 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344367
+2018-09-21 23:44:18,377 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344410
+2018-09-21 23:44:18,377 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344859
+2018-09-21 23:44:18,377 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344902
+2018-09-21 23:44:18,377 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344908
+2018-09-21 23:44:18,490 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350135
+2018-09-21 23:44:18,490 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344725
+2018-09-21 23:44:18,490 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345057
+2018-09-21 23:44:18,490 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345389
+2018-09-21 23:44:18,491 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345721
+2018-09-21 23:44:18,491 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346053
+2018-09-21 23:44:18,491 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346385
+2018-09-21 23:44:18,491 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000438
+2018-09-21 23:44:18,491 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000607
+2018-09-21 23:44:18,634 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.682002938
+2018-09-21 23:44:18,634 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340196
+2018-09-21 23:44:18,635 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340294
+2018-09-21 23:44:18,635 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342163
+2018-09-21 23:44:18,635 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002837
+2018-09-21 23:44:18,635 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000241
+2018-09-21 23:44:18,635 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000768
+2018-09-21 23:44:18,636 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000262
+2018-09-21 23:44:18,636 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5002352
+2018-09-21 23:44:18,760 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341925
+2018-09-21 23:44:18,760 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002149
+2018-09-21 23:44:18,760 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002155
+2018-09-21 23:44:18,760 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002896
+2018-09-21 23:44:18,761 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000638
+2018-09-21 23:44:18,761 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.10000030
+2018-09-21 23:44:18,761 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.62003088
+2018-09-21 23:44:18,761 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001517
+2018-09-21 23:44:18,762 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001766
+2018-09-21 23:44:18,875 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347773
+2018-09-21 23:44:18,875 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347822
+2018-09-21 23:44:18,876 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344785
+2018-09-21 23:44:18,876 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345615
+2018-09-21 23:44:18,876 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345781
+2018-09-21 23:44:18,876 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345830
+2018-09-21 23:44:18,876 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346279
+2018-09-21 23:44:18,877 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346328
+2018-09-21 23:44:18,877 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340279
+2018-09-21 23:44:18,988 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342063
+2018-09-21 23:44:18,988 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347132
+2018-09-21 23:44:18,988 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347722
+2018-09-21 23:44:18,988 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347796
+2018-09-21 23:44:18,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349886
+2018-09-21 23:44:18,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349960
+2018-09-21 23:44:18,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350378
+2018-09-21 23:44:18,989 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344719
+2018-09-21 23:44:18,990 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345383
+2018-09-21 23:44:19,100 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.1003263
+2018-09-21 23:44:19,101 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001159
+2018-09-21 23:44:19,101 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001208
+2018-09-21 23:44:19,101 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001749
+2018-09-21 23:44:19,101 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350899
+2018-09-21 23:44:19,101 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350948
+2018-09-21 23:44:19,102 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349190
+2018-09-21 23:44:19,102 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349276
+2018-09-21 23:44:19,102 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347616
+2018-09-21 23:44:19,214 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350608
+2018-09-21 23:44:19,214 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350940
+2018-09-21 23:44:19,214 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351272
+2018-09-21 23:44:19,214 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345106
+2018-09-21 23:44:19,215 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347691
+2018-09-21 23:44:19,215 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349612
+2018-09-21 23:44:19,215 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349683
+2018-09-21 23:44:19,215 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349944
+2018-09-21 23:44:19,215 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350015
+2018-09-21 23:44:19,326 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350422
+2018-09-21 23:44:19,326 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350748
+2018-09-21 23:44:19,327 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350871
+2018-09-21 23:44:19,327 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351086
+2018-09-21 23:44:19,327 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349420
+2018-09-21 23:44:19,328 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342043
+2018-09-21 23:44:19,328 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347551
+2018-09-21 23:44:19,328 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349543
+2018-09-21 23:44:19,328 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349758
+2018-09-21 23:44:19,439 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350971
+2018-09-21 23:44:19,440 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346904
+2018-09-21 23:44:19,440 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346987
+2018-09-21 23:44:19,440 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347482
+2018-09-21 23:44:19,440 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349560
+2018-09-21 23:44:19,440 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349643
+2018-09-21 23:44:19,441 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349806
+2018-09-21 23:44:19,441 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345822
+2018-09-21 23:44:19,441 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345908
+2018-09-21 23:44:19,553 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003212
+2018-09-21 23:44:19,553 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341880
+2018-09-21 23:44:19,553 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003899
+2018-09-21 23:44:19,553 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000980
+2018-09-21 23:44:19,554 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001226
+2018-09-21 23:44:19,554 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001472
+2018-09-21 23:44:19,554 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001521
+2018-09-21 23:44:19,554 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349503
+2018-09-21 23:44:19,555 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347831
+2018-09-21 23:44:19,665 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340017
+2018-09-21 23:44:19,665 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340349
+2018-09-21 23:44:19,665 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340472
+2018-09-21 23:44:19,665 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342132
+2018-09-21 23:44:19,665 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342464
+2018-09-21 23:44:19,666 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342673
+2018-09-21 23:44:19,666 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000317
+2018-09-21 23:44:19,666 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000366
+2018-09-21 23:44:19,666 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002233
+2018-09-21 23:44:19,779 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343369
+2018-09-21 23:44:19,779 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340025
+2018-09-21 23:44:19,779 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340037
+2018-09-21 23:44:19,779 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340274
+2018-09-21 23:44:19,780 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340286
+2018-09-21 23:44:19,780 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340535
+2018-09-21 23:44:19,780 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341946
+2018-09-21 23:44:19,780 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002170
+2018-09-21 23:44:19,780 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000576
+2018-09-21 23:44:19,895 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343426
+2018-09-21 23:44:19,896 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5002367
+2018-09-21 23:44:19,896 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001978
+2018-09-21 23:44:19,896 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001984
+2018-09-21 23:44:19,896 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000513
+2018-09-21 23:44:19,897 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000519
+2018-09-21 23:44:19,897 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000562
+2018-09-21 23:44:19,897 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001844
+2018-09-21 23:44:19,897 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002477
+2018-09-21 23:44:20,006 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345487
+2018-09-21 23:44:20,006 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345650
+2018-09-21 23:44:20,006 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345819
+2018-09-21 23:44:20,007 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345982
+2018-09-21 23:44:20,007 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346151
+2018-09-21 23:44:20,007 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343827
+2018-09-21 23:44:20,007 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343990
+2018-09-21 23:44:20,007 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344322
+2018-09-21 23:44:20,008 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344491
+2018-09-21 23:44:20,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001509
+2018-09-21 23:44:20,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002812
+2018-09-21 23:44:20,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350745
+2018-09-21 23:44:20,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350868
+2018-09-21 23:44:20,119 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349417
+2018-09-21 23:44:20,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347548
+2018-09-21 23:44:20,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347671
+2018-09-21 23:44:20,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349663
+2018-09-21 23:44:20,120 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350081
+2018-09-21 23:44:20,232 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346111
+2018-09-21 23:44:20,233 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346354
+2018-09-21 23:44:20,233 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346360
+2018-09-21 23:44:20,233 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346698
+2018-09-21 23:44:20,233 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347433
+2018-09-21 23:44:20,233 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347439
+2018-09-21 23:44:20,234 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344439
+2018-09-21 23:44:20,234 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344777
+2018-09-21 23:44:20,234 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344783
+2018-09-21 23:44:20,345 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350619
+2018-09-21 23:44:20,345 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350668
+2018-09-21 23:44:20,345 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344834
+2018-09-21 23:44:20,345 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345664
+2018-09-21 23:44:20,346 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346303
+2018-09-21 23:44:20,346 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346469
+2018-09-21 23:44:20,346 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346967
+2018-09-21 23:44:20,347 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347465
+2018-09-21 23:44:20,347 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342676
+2018-09-21 23:44:20,457 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349809
+2018-09-21 23:44:20,457 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349984
+2018-09-21 23:44:20,458 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350476
+2018-09-21 23:44:20,458 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350648
+2018-09-21 23:44:20,458 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351066
+2018-09-21 23:44:20,458 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345407
+2018-09-21 23:44:20,458 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345730
+2018-09-21 23:44:20,459 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345899
+2018-09-21 23:44:20,459 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346071
+2018-09-21 23:44:20,569 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001492
+2018-09-21 23:44:20,569 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001833
+2018-09-21 23:44:20,569 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002488
+2018-09-21 23:44:20,570 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002829
+2018-09-21 23:44:20,570 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000076
+2018-09-21 23:44:20,570 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001847
+2018-09-21 23:44:20,570 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001884
+2018-09-21 23:44:20,570 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001896
+2018-09-21 23:44:20,571 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002425
+2018-09-21 23:44:20,682 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001841
+2018-09-21 23:44:20,682 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001890
+2018-09-21 23:44:20,682 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001939
+2018-09-21 23:44:20,682 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002382
+2018-09-21 23:44:20,693 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SurveyList&styles=&bbox=-179.135831,-55.046786,177.182721,78.449001&width=768&height=330&srs=EPSG:4326&format=application%2Frss%2Bxml" took 6927ms
+2018-09-21 23:47:06,170 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Frss%2Bxml&layers=RLS%3ASurveyList&styles=point_purple_cross&height=330&width=768&transparent=false&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:47:06,174 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:47:06,183 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 768
+	Height = 330
+	SRS = EPSG:4326
+	Styles = [StyleImpl[ name=point_purple_cross]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@6e8576e8]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.135831 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = application/rss+xml
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {REQUEST=GetMap, FORMAT=application/rss+xml, SRS=EPSG:4326, BBOX=-179.135831,-55.046786,177.182721,78.449001, VERSION=1.1.1, STYLES=RLS:point_purple_cross, SERVICE=wms, WIDTH=768, HEIGHT=330, TRANSPARENT=false, LAYERS=RLS:SurveyList}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.1.1
+	Request = GetMap
+2018-09-21 23:47:09,273 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344710
+2018-09-21 23:47:09,273 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341117
+2018-09-21 23:47:09,273 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341215
+2018-09-21 23:47:09,273 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341956
+2018-09-21 23:47:09,274 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342546
+2018-09-21 23:47:09,421 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346387
+2018-09-21 23:47:09,422 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346719
+2018-09-21 23:47:09,422 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347051
+2018-09-21 23:47:09,422 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347715
+2018-09-21 23:47:09,422 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349682
+2018-09-21 23:47:09,423 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344063
+2018-09-21 23:47:09,423 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344395
+2018-09-21 23:47:09,423 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344727
+2018-09-21 23:47:09,423 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345059
+2018-09-21 23:47:09,551 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349404
+2018-09-21 23:47:09,551 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346997
+2018-09-21 23:47:09,551 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347744
+2018-09-21 23:47:09,552 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349653
+2018-09-21 23:47:09,552 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349985
+2018-09-21 23:47:09,552 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349997
+2018-09-21 23:47:09,552 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350246
+2018-09-21 23:47:09,552 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346001
+2018-09-21 23:47:09,553 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346072
+2018-09-21 23:47:09,673 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351179
+2018-09-21 23:47:09,673 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349845
+2018-09-21 23:47:09,673 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349851
+2018-09-21 23:47:09,673 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350386
+2018-09-21 23:47:09,674 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350392
+2018-09-21 23:47:09,674 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350878
+2018-09-21 23:47:09,674 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351173
+2018-09-21 23:47:09,674 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346015
+2018-09-21 23:47:09,674 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346550
+2018-09-21 23:47:09,803 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.34003020
+2018-09-21 23:47:09,803 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349364
+2018-09-21 23:47:09,803 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340373
+2018-09-21 23:47:09,803 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001047
+2018-09-21 23:47:09,803 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001210
+2018-09-21 23:47:09,804 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001637
+2018-09-21 23:47:09,804 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351119
+2018-09-21 23:47:09,804 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345119
+2018-09-21 23:47:09,804 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349954
+2018-09-21 23:47:09,917 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343296
+2018-09-21 23:47:09,917 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343788
+2018-09-21 23:47:09,917 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.676003246
+2018-09-21 23:47:09,917 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.689003059
+2018-09-21 23:47:09,917 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340465
+2018-09-21 23:47:09,918 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340542
+2018-09-21 23:47:09,918 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341132
+2018-09-21 23:47:09,918 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341206
+2018-09-21 23:47:09,918 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3002530
+2018-09-21 23:47:10,030 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350223
+2018-09-21 23:47:10,031 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350260
+2018-09-21 23:47:10,031 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350801
+2018-09-21 23:47:10,031 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346522
+2018-09-21 23:47:10,031 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346928
+2018-09-21 23:47:10,031 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347469
+2018-09-21 23:47:10,032 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347506
+2018-09-21 23:47:10,032 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347518
+2018-09-21 23:47:10,032 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347555
+2018-09-21 23:47:10,152 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346837
+2018-09-21 23:47:10,152 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343256
+2018-09-21 23:47:10,152 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343517
+2018-09-21 23:47:10,152 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343849
+2018-09-21 23:47:10,153 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344181
+2018-09-21 23:47:10,153 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344513
+2018-09-21 23:47:10,153 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344845
+2018-09-21 23:47:10,153 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341928
+2018-09-21 23:47:10,154 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342521
+2018-09-21 23:47:10,265 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001932
+2018-09-21 23:47:10,265 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3002597
+2018-09-21 23:47:10,265 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000334
+2018-09-21 23:47:10,266 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001989
+2018-09-21 23:47:10,266 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002315
+2018-09-21 23:47:10,266 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002908
+2018-09-21 23:47:10,266 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345037
+2018-09-21 23:47:10,267 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000965
+2018-09-21 23:47:10,267 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001291
+2018-09-21 23:47:10,384 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003214
+2018-09-21 23:47:10,384 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003546
+2018-09-21 23:47:10,384 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340168
+2018-09-21 23:47:10,384 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340500
+2018-09-21 23:47:10,385 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341828
+2018-09-21 23:47:10,385 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342277
+2018-09-21 23:47:10,385 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000851
+2018-09-21 23:47:10,385 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000265
+2018-09-21 23:47:10,386 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002052
+2018-09-21 23:47:10,498 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000058
+2018-09-21 23:47:10,498 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000705
+2018-09-21 23:47:10,498 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000803
+2018-09-21 23:47:10,498 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000374
+2018-09-21 23:47:10,499 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002106
+2018-09-21 23:47:10,499 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000441
+2018-09-21 23:47:10,499 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351274
+2018-09-21 23:47:10,499 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003801
+2018-09-21 23:47:10,500 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000882
+2018-09-21 23:47:10,616 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342034
+2018-09-21 23:47:10,616 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000161
+2018-09-21 23:47:10,616 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000774
+2018-09-21 23:47:10,617 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000823
+2018-09-21 23:47:10,617 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000391
+2018-09-21 23:47:10,617 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002000
+2018-09-21 23:47:10,617 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002209
+2018-09-21 23:47:10,617 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349342
+2018-09-21 23:47:10,618 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.44003084
+2018-09-21 23:47:10,732 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343179
+2018-09-21 23:47:10,732 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343428
+2018-09-21 23:47:10,732 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344175
+2018-09-21 23:47:10,733 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344424
+2018-09-21 23:47:10,733 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344851
+2018-09-21 23:47:10,733 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.62003097
+2018-09-21 23:47:10,733 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.506003823
+2018-09-21 23:47:10,733 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003569
+2018-09-21 23:47:10,734 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.593003503
+2018-09-21 23:47:10,847 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346531
+2018-09-21 23:47:10,847 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346574
+2018-09-21 23:47:10,847 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347023
+2018-09-21 23:47:10,847 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344361
+2018-09-21 23:47:10,847 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344367
+2018-09-21 23:47:10,848 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344410
+2018-09-21 23:47:10,848 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344859
+2018-09-21 23:47:10,848 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344902
+2018-09-21 23:47:10,848 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344908
+2018-09-21 23:47:10,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350135
+2018-09-21 23:47:10,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344725
+2018-09-21 23:47:10,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345057
+2018-09-21 23:47:10,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345389
+2018-09-21 23:47:10,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345721
+2018-09-21 23:47:10,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346053
+2018-09-21 23:47:10,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346385
+2018-09-21 23:47:10,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000438
+2018-09-21 23:47:10,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000607
+2018-09-21 23:47:11,080 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.682002938
+2018-09-21 23:47:11,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340196
+2018-09-21 23:47:11,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340294
+2018-09-21 23:47:11,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342163
+2018-09-21 23:47:11,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002837
+2018-09-21 23:47:11,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000241
+2018-09-21 23:47:11,082 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.4000768
+2018-09-21 23:47:11,082 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000262
+2018-09-21 23:47:11,082 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5002352
+2018-09-21 23:47:11,201 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341925
+2018-09-21 23:47:11,201 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002149
+2018-09-21 23:47:11,201 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002155
+2018-09-21 23:47:11,201 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002896
+2018-09-21 23:47:11,202 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000638
+2018-09-21 23:47:11,202 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.10000030
+2018-09-21 23:47:11,202 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.62003088
+2018-09-21 23:47:11,202 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001517
+2018-09-21 23:47:11,203 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001766
+2018-09-21 23:47:11,314 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347773
+2018-09-21 23:47:11,315 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347822
+2018-09-21 23:47:11,315 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344785
+2018-09-21 23:47:11,315 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345615
+2018-09-21 23:47:11,315 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345781
+2018-09-21 23:47:11,315 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345830
+2018-09-21 23:47:11,316 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346279
+2018-09-21 23:47:11,316 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346328
+2018-09-21 23:47:11,316 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340279
+2018-09-21 23:47:11,434 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342063
+2018-09-21 23:47:11,435 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347132
+2018-09-21 23:47:11,435 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347722
+2018-09-21 23:47:11,435 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347796
+2018-09-21 23:47:11,435 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349886
+2018-09-21 23:47:11,435 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349960
+2018-09-21 23:47:11,436 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350378
+2018-09-21 23:47:11,436 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344719
+2018-09-21 23:47:11,436 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345383
+2018-09-21 23:47:11,548 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.1003263
+2018-09-21 23:47:11,548 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001159
+2018-09-21 23:47:11,548 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001208
+2018-09-21 23:47:11,548 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001749
+2018-09-21 23:47:11,548 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350899
+2018-09-21 23:47:11,549 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350948
+2018-09-21 23:47:11,549 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349190
+2018-09-21 23:47:11,549 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349276
+2018-09-21 23:47:11,549 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347616
+2018-09-21 23:47:11,669 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350608
+2018-09-21 23:47:11,669 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350940
+2018-09-21 23:47:11,669 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351272
+2018-09-21 23:47:11,669 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345106
+2018-09-21 23:47:11,669 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347691
+2018-09-21 23:47:11,670 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349612
+2018-09-21 23:47:11,670 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349683
+2018-09-21 23:47:11,670 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349944
+2018-09-21 23:47:11,670 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350015
+2018-09-21 23:47:11,785 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350422
+2018-09-21 23:47:11,785 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350748
+2018-09-21 23:47:11,786 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350871
+2018-09-21 23:47:11,786 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351086
+2018-09-21 23:47:11,786 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349420
+2018-09-21 23:47:11,786 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342043
+2018-09-21 23:47:11,786 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347551
+2018-09-21 23:47:11,787 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349543
+2018-09-21 23:47:11,787 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349758
+2018-09-21 23:47:11,903 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350971
+2018-09-21 23:47:11,904 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346904
+2018-09-21 23:47:11,904 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346987
+2018-09-21 23:47:11,904 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347482
+2018-09-21 23:47:11,904 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349560
+2018-09-21 23:47:11,905 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349643
+2018-09-21 23:47:11,905 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349806
+2018-09-21 23:47:11,905 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345822
+2018-09-21 23:47:11,905 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345908
+2018-09-21 23:47:12,018 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003212
+2018-09-21 23:47:12,019 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341880
+2018-09-21 23:47:12,019 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.507003899
+2018-09-21 23:47:12,019 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2000980
+2018-09-21 23:47:12,019 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001226
+2018-09-21 23:47:12,019 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001472
+2018-09-21 23:47:12,020 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001521
+2018-09-21 23:47:12,020 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349503
+2018-09-21 23:47:12,020 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347831
+2018-09-21 23:47:12,136 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340017
+2018-09-21 23:47:12,136 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340349
+2018-09-21 23:47:12,137 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340472
+2018-09-21 23:47:12,137 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342132
+2018-09-21 23:47:12,137 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342464
+2018-09-21 23:47:12,137 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342673
+2018-09-21 23:47:12,137 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000317
+2018-09-21 23:47:12,138 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5000366
+2018-09-21 23:47:12,138 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002233
+2018-09-21 23:47:12,252 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343369
+2018-09-21 23:47:12,252 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340025
+2018-09-21 23:47:12,252 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340037
+2018-09-21 23:47:12,252 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340274
+2018-09-21 23:47:12,252 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340286
+2018-09-21 23:47:12,253 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912340535
+2018-09-21 23:47:12,253 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912341946
+2018-09-21 23:47:12,253 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6002170
+2018-09-21 23:47:12,253 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000576
+2018-09-21 23:47:12,390 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343426
+2018-09-21 23:47:12,391 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.5002367
+2018-09-21 23:47:12,391 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001978
+2018-09-21 23:47:12,391 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.6001984
+2018-09-21 23:47:12,391 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000513
+2018-09-21 23:47:12,391 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000519
+2018-09-21 23:47:12,392 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.7000562
+2018-09-21 23:47:12,392 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001844
+2018-09-21 23:47:12,392 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002477
+2018-09-21 23:47:12,503 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345487
+2018-09-21 23:47:12,503 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345650
+2018-09-21 23:47:12,503 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345819
+2018-09-21 23:47:12,504 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345982
+2018-09-21 23:47:12,504 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346151
+2018-09-21 23:47:12,504 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343827
+2018-09-21 23:47:12,504 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912343990
+2018-09-21 23:47:12,504 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344322
+2018-09-21 23:47:12,505 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344491
+2018-09-21 23:47:12,620 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001509
+2018-09-21 23:47:12,620 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002812
+2018-09-21 23:47:12,620 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350745
+2018-09-21 23:47:12,620 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350868
+2018-09-21 23:47:12,620 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349417
+2018-09-21 23:47:12,621 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347548
+2018-09-21 23:47:12,621 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347671
+2018-09-21 23:47:12,621 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349663
+2018-09-21 23:47:12,621 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350081
+2018-09-21 23:47:12,735 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346111
+2018-09-21 23:47:12,735 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346354
+2018-09-21 23:47:12,735 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346360
+2018-09-21 23:47:12,735 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346698
+2018-09-21 23:47:12,736 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347433
+2018-09-21 23:47:12,736 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347439
+2018-09-21 23:47:12,736 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344439
+2018-09-21 23:47:12,736 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344777
+2018-09-21 23:47:12,737 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344783
+2018-09-21 23:47:12,853 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350619
+2018-09-21 23:47:12,853 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350668
+2018-09-21 23:47:12,853 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912344834
+2018-09-21 23:47:12,853 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345664
+2018-09-21 23:47:12,854 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346303
+2018-09-21 23:47:12,854 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346469
+2018-09-21 23:47:12,854 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346967
+2018-09-21 23:47:12,854 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912347465
+2018-09-21 23:47:12,855 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912342676
+2018-09-21 23:47:12,966 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349809
+2018-09-21 23:47:12,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912349984
+2018-09-21 23:47:12,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350476
+2018-09-21 23:47:12,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912350648
+2018-09-21 23:47:12,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912351066
+2018-09-21 23:47:12,967 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345407
+2018-09-21 23:47:12,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345730
+2018-09-21 23:47:12,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912345899
+2018-09-21 23:47:12,968 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.912346071
+2018-09-21 23:47:13,080 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001492
+2018-09-21 23:47:13,080 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001833
+2018-09-21 23:47:13,080 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002488
+2018-09-21 23:47:13,080 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002829
+2018-09-21 23:47:13,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.3000076
+2018-09-21 23:47:13,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001847
+2018-09-21 23:47:13,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001884
+2018-09-21 23:47:13,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001896
+2018-09-21 23:47:13,081 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002425
+2018-09-21 23:47:13,193 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001841
+2018-09-21 23:47:13,194 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001890
+2018-09-21 23:47:13,194 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2001939
+2018-09-21 23:47:13,194 WARN [geoserver.georss] - Encoding failed for feature: SurveyList.2002382
+2018-09-21 23:47:13,200 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Frss%2Bxml&layers=RLS%3ASurveyList&styles=point_purple_cross&height=330&width=768&transparent=false&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" took 7029ms
+2018-09-21 23:49:58,169 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&maxFeatures=10&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:49:58,173 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:49:58,177 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    maxFeatures = 10
+    outputFormat = application/gml+xml; version=3.2
+    resultType = results
+2018-09-21 23:49:58,265 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&maxFeatures=10&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2" took 96ms
+2018-09-21 23:51:13,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:51:13,589 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:51:13,593 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:51:13,626 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 41ms
+2018-09-21 23:52:29,504 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:52:29,508 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:52:29,511 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:52:29,530 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 26ms
+2018-09-21 23:52:38,565 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:52:38,566 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:52:38,567 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:52:38,581 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 16ms
+2018-09-21 23:52:50,162 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&maxFeatures=10&outputFormat=gml3" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:52:50,163 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:52:50,165 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    maxFeatures = 10
+    outputFormat = gml3
+    resultType = results
+2018-09-21 23:52:50,193 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&maxFeatures=10&outputFormat=gml3" took 31ms
+2018-09-21 23:55:03,569 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:55:03,573 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:55:03,577 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:55:03,634 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 65ms
+2018-09-21 23:55:21,859 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:55:21,860 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:55:21,861 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:55:21,875 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 16ms
+2018-09-21 23:55:42,210 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&maxFeatures=10&outputFormat=csv" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:55:42,214 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:55:42,219 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 10
+    outputFormat = csv
+    resultType = results
+2018-09-21 23:55:42,237 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&maxFeatures=10&outputFormat=csv" took 26ms
+2018-09-21 23:55:49,891 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:55:49,891 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:55:49,892 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:55:49,908 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_INVERT_DATA" took 17ms
+2018-09-21 23:55:54,998 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:55:54,999 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:55:55,000 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:55:55,013 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M1_DATA" took 15ms
+2018-09-21 23:57:00,782 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:57:00,784 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:57:00,787 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:57:00,805 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 23ms
+2018-09-21 23:57:04,716 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:57:04,718 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:57:04,719 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:57:04,730 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M2_FISH_DATA" took 14ms
+2018-09-21 23:57:53,546 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-09-21 23:57:53,548 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:57:53,550 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:57:53,566 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 20ms
+2018-09-21 23:58:36,988 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SpeciesSurvey&styles=&bbox=-180.0,-80.0,180.0,80.0&width=768&height=341&srs=EPSG:4326&format=application%2Fvnd.google-earth.kml%2Bxml" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-09-21 23:58:36,996 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-09-21 23:58:37,003 INFO [geoserver.wms] - 
+Request: getMap
+	Width = 768
+	Height = 341
+	SRS = EPSG:4326
+	Styles = [StyleImpl[ name=point]]
+	Tiled = false
+	FeatureVersion = null
+	Palette = null
+	Layers = [org.geoserver.wms.MapLayerInfo@e8fc272c]
+	MaxFeatures = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-180.0 : 180.0, -80.0 : 80.0]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	TilesOrigin = null
+	Env = {}
+	Interpolations = []
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Exceptions = SE_XML
+	Format = application/vnd.google-earth.kml+xml
+	Buffer = 0
+	Filter = null
+	Time = []
+	Filters = null
+	Get = true
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:4326, FORMAT=application/vnd.google-earth.kml+xml, BBOX=-180.0,-80.0,180.0,80.0, VERSION=1.1.0, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=341, LAYERS=RLS:SpeciesSurvey}
+	BaseUrl = http://localhost:8082/geoserver/
+	RequestCharset = UTF-8
+	Version = 1.1.0
+	Request = GetMap
+2018-09-21 23:58:51,382 ERROR [geotools.map] - Call MapContent dispose() to prevent memory leaks
+2018-09-21 23:58:51,604 ERROR [geotools.map] - Call MapContent dispose() to prevent memory leaks
+2018-09-21 23:59:24,809 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS:SpeciesSurvey&styles=&bbox=-180.0,-80.0,180.0,80.0&width=768&height=341&srs=EPSG:4326&format=application%2Fvnd.google-earth.kml%2Bxml" took 47821ms
+2018-09-21 23:59:54,482 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" "Java/1.7.0_95" "" " "" 
+2018-09-21 23:59:54,487 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-09-21 23:59:54,493 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = gml2
+    resultType = results
+2018-09-21 23:59:54,535 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=gml2&typeName=RLS:M3_DATA" took 53ms
