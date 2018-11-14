@@ -16905,3 +16905,269 @@ Request: getMap
 	Version = 1.3.0
 	Request = GetMap
 2018-11-15 05:26:55,400 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,112.5,-67.5,135&WIDTH=256&HEIGHT=256" took 344ms
+2018-11-15 05:35:01,394 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-15 05:35:01,403 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:35:01,413 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:35:01,453 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 58ms
+2018-11-15 05:36:41,032 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-15 05:36:41,040 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:36:41,048 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:36:41,081 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 48ms
+2018-11-15 05:39:18,355 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,67.5,67.5,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.30" "" " "" 
+2018-11-15 05:39:18,363 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-15 05:39:18,462 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = application/vnd.ogc.se_xml
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 256
+	Height = 256
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point_green_circle]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[45.0 : 67.5, 67.5 : 90.0]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = null
+	Format = image/png
+	Filters = null
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=45,67.5,67.5,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.3.0
+	Request = GetMap
+2018-11-15 05:39:18,473 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,67.5,67.5,90&WIDTH=256&HEIGHT=256" took 118ms
+2018-11-15 05:41:37,080 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-15 05:41:37,092 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:41:37,099 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:41:37,140 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 59ms
+2018-11-15 05:45:04,523 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,135,67.5,157.5&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.30" "" " "" 
+2018-11-15 05:45:04,532 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-15 05:45:04,816 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = application/vnd.ogc.se_xml
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 256
+	Height = 256
+	Layers = [org.geoserver.wms.MapLayerInfo@6e8576e8]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point_purple_cross]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[45.0 : 67.5, 135.0 : 157.5]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = null
+	Format = image/png
+	Filters = null
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:SurveyList, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=45,135,67.5,157.5, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.3.0
+	Request = GetMap
+2018-11-15 05:45:04,825 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,135,67.5,157.5&WIDTH=256&HEIGHT=256" took 302ms
+2018-11-15 05:48:27,277 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-15 05:48:27,289 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" took 11ms
+2018-11-15 05:48:32,648 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery-1.2.6.min.js" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/" " "" 
+2018-11-15 05:48:32,726 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery-1.2.6.min.js" took 77ms
+2018-11-15 05:50:03,091 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" " "" 
+2018-11-15 05:50:03,101 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:50:03,114 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:50:14,126 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-15 05:50:14,128 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:50:14,130 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:50:14,151 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 25ms
+2018-11-15 05:50:33,550 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 30458ms
+2018-11-15 05:50:48,175 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" " "" 
+2018-11-15 05:50:48,178 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-15 05:50:48,181 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    outputFormat = csv
+    resultType = results
+2018-11-15 05:50:54,790 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 6614ms
+2018-11-15 05:56:31,452 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-180,67.5,-157.5&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.30" "" " "" 
+2018-11-15 05:56:31,462 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-15 05:56:34,113 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = application/vnd.ogc.se_xml
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 256
+	Height = 256
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point_green_circle]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[45.0 : 67.5, -180.0 : -157.5]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = null
+	Format = image/png
+	Filters = null
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=45,-180,67.5,-157.5, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.3.0
+	Request = GetMap
+2018-11-15 05:56:34,124 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-180,67.5,-157.5&WIDTH=256&HEIGHT=256" took 2671ms
