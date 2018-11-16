@@ -6189,3 +6189,25 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2018-11-17 01:54:08,356 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 43ms
+2018-11-17 03:07:09,835 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?service=wcs&version=1.1.0&request=GetCapabilities" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" " "" 
+2018-11-17 03:07:09,843 INFO [geoserver.wcs] - 
+Request: getServiceInfo
+2018-11-17 03:07:09,946 INFO [geoserver.wcs] - 
+Request: getCapabilities
+    baseUrl = http://localhost:8082/geoserver/
+    service = wcs
+2018-11-17 03:07:09,964 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/ows?service=wcs&version=1.1.0&request=GetCapabilities" took 129ms
+2018-11-17 03:16:55,029 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 03:16:55,036 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 03:16:55,042 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 03:16:55,075 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 45ms
