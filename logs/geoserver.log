@@ -5677,3 +5677,31 @@ Request: getFeature
 2018-11-16 19:24:10,280 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" took 4ms
 2018-11-16 19:24:11,207 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/index.html" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" "" " "" 
 2018-11-16 19:24:11,217 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/index.html" took 10ms
+2018-11-16 19:41:09,478 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-16 19:41:09,487 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-16 19:41:09,495 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-16 19:41:09,535 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 55ms
+2018-11-16 19:54:59,201 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-16 19:54:59,208 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-16 19:54:59,215 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-16 19:54:59,249 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 47ms
