@@ -6658,3 +6658,69 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2018-11-17 05:52:58,759 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 4741ms
+2018-11-17 07:04:51,786 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:04:51,793 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 07:04:51,801 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 07:04:51,842 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 54ms
+2018-11-17 07:18:20,792 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:18:20,800 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 07:18:20,808 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 07:18:20,843 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 50ms
+2018-11-17 07:25:46,359 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:46,366 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:46,411 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" took 51ms
+2018-11-17 07:25:46,858 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:46,859 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:47,070 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" took 212ms
+2018-11-17 07:25:47,334 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:47,335 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:47,399 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" took 65ms
+2018-11-17 07:25:47,882 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:47,883 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:48,008 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" took 126ms
+2018-11-17 07:25:48,451 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:48,452 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:48,538 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" took 87ms
+2018-11-17 07:25:49,045 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:49,046 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:49,112 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" took 67ms
+2018-11-17 07:25:49,634 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:49,634 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:49,720 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" took 86ms
+2018-11-17 07:25:50,248 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:25:50,248 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2018-11-17 07:25:50,386 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" took 138ms
+2018-11-17 07:28:09,688 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 07:28:09,695 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 07:28:09,701 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 07:28:09,732 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 43ms
