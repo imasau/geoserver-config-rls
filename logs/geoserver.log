@@ -27036,3 +27036,31 @@ org.geoserver.platform.ServiceException: GetMap requests must include a BBOX par
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2018-11-17 14:21:40,273 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?VERSION=1.1.1&REQUEST=GetMap&SERVICE=WMS&SRS=EPSG:4326&WIDTH=512&HEIGHT=512&LAYERS=RLS:M2_INVERT_MAP&TRANSPARENT=TRUE&STYLES=&FORMAT=image/png&" took 24ms
+2018-11-17 14:39:28,293 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 14:39:28,302 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 14:39:28,310 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 14:39:28,345 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 51ms
+2018-11-17 14:52:56,950 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-17 14:52:56,958 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-17 14:52:56,963 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-17 14:52:57,010 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 58ms
