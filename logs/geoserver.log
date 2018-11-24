@@ -83631,3 +83631,497 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2018-11-24 23:27:25,395 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 40ms
+2018-11-24 23:31:38,740 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.56893&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:31:38,746 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:31:38,753 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 768
+	Height = 287
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.56893]
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.125931 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.56893 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.56893 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {REQUEST=GetMap, FORMAT=application/atom+xml, SRS=EPSG:4326, FEATUREID=M2_FISH_DATA.56893, BBOX=-179.125931,-55.046786,177.182721,78.449001, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=768, HEIGHT=287, TRANSPARENT=false, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.1.1
+	Request = GetMap
+2018-11-24 23:31:38,833 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.56893&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" took 93ms
+2018-11-24 23:31:58,873 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:31:58,876 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:31:58,879 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:31:58,897 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 24ms
+2018-11-24 23:33:25,686 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_FISH_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=67.5,135,90,157.5&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.38.30" "" " "" 
+2018-11-24 23:33:25,689 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:33:25,749 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = application/vnd.ogc.se_xml
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 256
+	Height = 256
+	Layers = [org.geoserver.wms.MapLayerInfo@f9c19d3]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point_orange_star]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = urn:x-ogc:def:crs:EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = null
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[67.5 : 90.0, 135.0 : 157.5]
+	Transparent = true
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = null
+	Format = image/png
+	Filters = null
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M2_FISH_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetMap, BBOX=67.5,135,90,157.5, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.3.0
+	Request = GetMap
+2018-11-24 23:33:25,753 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM2_FISH_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=67.5,135,90,157.5&WIDTH=256&HEIGHT=256" took 67ms
+2018-11-24 23:36:02,175 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:36:02,181 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:36:02,187 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:36:02,223 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 47ms
+2018-11-24 23:36:26,391 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.9202&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:36:26,393 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:36:26,398 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 768
+	Height = 287
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.9202]
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.125931 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.9202 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.9202 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {REQUEST=GetMap, FORMAT=application/atom+xml, SRS=EPSG:4326, FEATUREID=M2_FISH_DATA.9202, BBOX=-179.125931,-55.046786,177.182721,78.449001, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=768, HEIGHT=287, TRANSPARENT=false, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.1.1
+	Request = GetMap
+2018-11-24 23:36:26,460 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.9202&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" took 69ms
+2018-11-24 23:39:14,302 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:39:14,307 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:39:14,312 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:39:14,353 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 51ms
+2018-11-24 23:41:18,650 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.55164" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:41:18,655 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:41:18,661 INFO [geoserver.wms] - 
+Request: reflect
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 0
+	Height = 0
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = null
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.55164]
+	ViewParams = null
+	Elevation = []
+	Bbox = null
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.55164 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.55164 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=application/atom+xml, FEATUREID=M2_FISH_DATA.55164, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = null
+	Request = GetMap
+2018-11-24 23:41:18,737 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.55164" took 86ms
+2018-11-24 23:41:50,410 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:41:50,413 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:41:50,417 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:41:50,432 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 22ms
+2018-11-24 23:45:26,441 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:45:26,446 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:45:26,451 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:45:26,488 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 46ms
+2018-11-24 23:46:02,476 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.29122" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:46:02,479 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:46:02,484 INFO [geoserver.wms] - 
+Request: reflect
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 0
+	Height = 0
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = null
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.29122]
+	ViewParams = null
+	Elevation = []
+	Bbox = null
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.29122 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.29122 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=application/atom+xml, FEATUREID=M2_FISH_DATA.29122, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = null
+	Request = GetMap
+2018-11-24 23:46:02,563 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.29122" took 86ms
+2018-11-24 23:49:32,449 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:49:32,454 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:49:32,459 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:49:32,493 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 44ms
+2018-11-24 23:49:45,767 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_181" "" " "" 
+2018-11-24 23:49:45,768 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-11-24 23:49:45,769 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-11-24 23:49:45,783 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 16ms
+2018-11-24 23:50:50,390 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.50109" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:50:50,393 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:50:50,398 INFO [geoserver.wms] - 
+Request: reflect
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 0
+	Height = 0
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = null
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.50109]
+	ViewParams = null
+	Elevation = []
+	Bbox = null
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.50109 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.50109 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {FORMAT=application/atom+xml, FEATUREID=M2_FISH_DATA.50109, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = null
+	Request = GetMap
+2018-11-24 23:50:50,476 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms/reflect?format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&featureid=M2_FISH_DATA.50109" took 86ms
+2018-11-24 23:55:38,398 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.50109&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" " "" 
+2018-11-24 23:55:38,403 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-11-24 23:55:38,410 INFO [geoserver.wms] - 
+Request: getMap
+	Exceptions = SE_XML
+	StyleBody = null
+	SldVersion = null
+	StyleVersion = null
+	ScaleMethod = null
+	Width = 768
+	Height = 287
+	Layers = [org.geoserver.wms.MapLayerInfo@e367f349]
+	MaxFeatures = null
+	Styles = [StyleImpl[ name=point]]
+	FeatureVersion = null
+	Palette = null
+	Tiled = false
+	SRS = EPSG:4326
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	FormatOptions = {}
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Angle = 0.0
+	FeatureId = [M2_FISH_DATA.50109]
+	ViewParams = null
+	Elevation = []
+	Bbox = SRSEnvelope[-179.125931 : 177.182721, -55.046786 : 78.449001]
+	Transparent = false
+	StartIndex = null
+	StyleFormat = sld
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	SldBody = null
+	ValidateSchema = false
+	Sld = null
+	StyleUrl = null
+	CQLFilter = null
+	Interpolations = []
+	TilesOrigin = null
+	Env = {}
+	Buffer = 0
+	Time = []
+	Filter = [[ M2_FISH_DATA.50109 ]]
+	Format = application/atom+xml
+	Filters = [[ M2_FISH_DATA.50109 ]]
+	RequestCharset = UTF-8
+	Get = true
+	RawKvp = {REQUEST=GetMap, FORMAT=application/atom+xml, SRS=EPSG:4326, FEATUREID=M2_FISH_DATA.50109, BBOX=-179.125931,-55.046786,177.182721,78.449001, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=768, HEIGHT=287, TRANSPARENT=false, LAYERS=RLS:M2_FISH_DATA}
+	BaseUrl = http://localhost:8082/geoserver/
+	Version = 1.1.1
+	Request = GetMap
+2018-11-24 23:55:38,501 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.50109&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" took 101ms
