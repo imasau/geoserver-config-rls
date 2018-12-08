@@ -51276,3 +51276,31 @@ Request: getMap
 2018-12-09 03:33:19,636 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=SurveyDate%20%3E%3D%20'2014-12-08T00%3A00%3A00.000Z'&BBOX=45,-180,90,-135&WIDTH=256&HEIGHT=256" took 2724ms
 2018-12-09 04:07:58,518 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/null/img/icons/geosilk/map.png;jsessionid=2BE9B43642DC8F2A738D97F71BAE9B26" "Googlebot-Image/1.0" "" " "" 
 2018-12-09 04:07:58,533 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/web/resources/org.geoserver.web.demo.MapPreviewPage/null/img/icons/geosilk/map.png;jsessionid=2BE9B43642DC8F2A738D97F71BAE9B26" took 14ms
+2018-12-09 05:40:05,042 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" " "" 
+2018-12-09 05:40:05,048 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-09 05:40:05,057 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2018-12-09 05:40:35,702 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 30659ms
+2018-12-09 05:40:49,380 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" " "" 
+2018-12-09 05:40:49,382 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-09 05:40:49,385 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    outputFormat = csv
+    resultType = results
+2018-12-09 05:40:57,019 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 7639ms
+2018-12-09 05:48:44,647 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50" "" " "" 
+2018-12-09 05:48:44,652 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver" took 4ms
