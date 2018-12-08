@@ -20158,3 +20158,42 @@ Request: getMap
 	Version = 1.1.1
 	Request = GetMap
 2018-12-08 14:09:09,931 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application%2Fatom%2Bxml&layers=RLS%3AM2_FISH_DATA&styles=point&featureid=M2_FISH_DATA.11526&height=287&width=768&transparent=false&bbox=-179.125931%2C-55.046786%2C177.182721%2C78.449001&srs=EPSG%3A4326" took 113ms
+2018-12-08 15:04:02,009 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" " "" 
+2018-12-08 15:04:02,014 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-08 15:04:02,019 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2018-12-08 15:04:02,329 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 320ms
+2018-12-08 15:04:16,670 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" " "" 
+2018-12-08 15:04:16,671 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-08 15:04:16,672 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2018-12-08 15:04:32,290 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 15620ms
+2018-12-08 15:10:07,241 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurveyObservation&outputFormat=csv" "" "" " "" 
+2018-12-08 15:10:07,247 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-08 15:10:07,253 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurveyObservation
+    outputFormat = csv
+    resultType = results
+2018-12-08 15:11:20,629 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurveyObservation&outputFormat=csv" took 73386ms
