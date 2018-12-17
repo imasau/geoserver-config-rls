@@ -2,6 +2,9 @@
   <id>WMSInfoImpl--21071077:14b33c29d5b:-7ff7</id>
   <enabled>true</enabled>
   <name>WMS</name>
+  <title>Reef Life Survey - Web Mapping Services (WFS)</title>
+  <maintainer>Institute for Marine and Antarctic Studies (IMAS), University of Tasmania (UTAS)</maintainer>
+  <abstrct>Reef Life Survey (RLS) is a non-profit citizen science program in which trained volunteer SCUBA divers undertake standardised surveys of reef biodiversity on rocky and coral reefs around the world. This Geoserver contains all currently available RLS data.</abstrct>
   <versions>
     <org.geotools.util.Version>
       <version>1.1.1</version>
@@ -11,9 +14,27 @@
     </org.geotools.util.Version>
   </versions>
   <citeCompliant>false</citeCompliant>
+  <onlineResource>https://reeflifesurvey.com</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>
-  <watermark class="org.geoserver.wms.WatermarkInfoImpl">
+  <metadata>
+    <entry key="kmlSuperoverlayMode">auto</entry>
+    <entry key="kmlReflectorMode">refresh</entry>
+    <entry key="loopContinuously">false</entry>
+    <entry key="kmlPlacemark">false</entry>
+    <entry key="svgAntiAlias">false</entry>
+    <entry key="kmlKmscore">40</entry>
+    <entry key="mapWrapping">true</entry>
+    <entry key="pngCompression">25</entry>
+    <entry key="jpegCompression">25</entry>
+    <entry key="advancedProjectionHandling">true</entry>
+    <entry key="maxAllowedFrames">2147483647</entry>
+    <entry key="kmlAttr">true</entry>
+    <entry key="disposalMethod">none</entry>
+    <entry key="scalehintMapunitsPixel">false</entry>
+    <entry key="framesDelay">1000</entry>
+  </metadata>
+  <watermark>
     <enabled>false</enabled>
     <position>BOT_RIGHT</position>
     <transparency>100</transparency>
@@ -21,6 +42,8 @@
   <interpolation>Nearest</interpolation>
   <getFeatureInfoMimeTypeCheckingEnabled>false</getFeatureInfoMimeTypeCheckingEnabled>
   <getMapMimeTypeCheckingEnabled>false</getMapMimeTypeCheckingEnabled>
+  <dynamicStylingDisabled>false</dynamicStylingDisabled>
+  <featuresReprojectionDisabled>false</featuresReprojectionDisabled>
   <maxBuffer>0</maxBuffer>
   <maxRequestMemory>0</maxRequestMemory>
   <maxRenderingTime>0</maxRenderingTime>
