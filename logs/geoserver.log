@@ -42678,3 +42678,281 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2018-12-20 03:57:12,584 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 27ms
+2018-12-20 04:02:50,486 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%2889.208984375+6.546875%2C89.208984375+13.9296875%2C93.251953125+13.9296875%2C93.251953125+6.546875%2C89.208984375+6.546875%29%29%29&count=1" "Java/1.8.0_191" "" "" 
+2018-12-20 04:02:50,507 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:02:50,514 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((89.208984375 6.546875, 89.208984375 13.9296875, 93.251953125 13.9296875, 93.251953125 6.546875, 89.208984375 6.546875)) ]
+        typeName[0] = {RLS}M1_MAP
+    outputFormat = json
+    resultType = results
+2018-12-20 04:02:50,517 INFO [wfs.json] - about to encode JSON
+2018-12-20 04:02:50,717 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%2889.208984375+6.546875%2C89.208984375+13.9296875%2C93.251953125+13.9296875%2C93.251953125+6.546875%2C89.208984375+6.546875%29%29%29&count=1" took 230ms
+2018-12-20 04:06:59,686 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:06:59,700 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:06:59,706 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:06:59,737 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 50ms
+2018-12-20 04:08:32,349 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=936&Y=246&I=936&J=246&BUFFER=10" "AODN-Portal/V4.38.324" "" "" 
+2018-12-20 04:08:32,363 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-12-20 04:08:32,461 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureCount = 100
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: text/html
+ width height: 1151,512
+ bbox: SRSEnvelope[-175.693359 : 26.630859, -21.050781 : 68.949219]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	RawKvp = {FORMAT=text/html, INFO_FORMAT=text/html, CRS=EPSG:4326, STYLES=, QUERYABLE=true, I=936, WIDTH=1151, J=246, HEIGHT=512, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-175.693359,-21.050781,26.630859,68.949219, VERSION=1.1.1, X=936, Y=246, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 936
+	YPixel = 246
+2018-12-20 04:08:32,476 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=936&Y=246&I=936&J=246&BUFFER=10" took 125ms
+2018-12-20 04:08:32,865 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=927&Y=246&I=927&J=246&BUFFER=10" "AODN-Portal/V4.38.324" "" "" 
+2018-12-20 04:08:32,874 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-12-20 04:08:32,980 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureCount = 100
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: text/html
+ width height: 1151,512
+ bbox: SRSEnvelope[-175.693359 : 26.630859, -21.050781 : 68.949219]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	RawKvp = {FORMAT=text/html, INFO_FORMAT=text/html, CRS=EPSG:4326, STYLES=, QUERYABLE=true, I=927, WIDTH=1151, J=246, HEIGHT=512, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-175.693359,-21.050781,26.630859,68.949219, VERSION=1.1.1, X=927, Y=246, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 927
+	YPixel = 246
+2018-12-20 04:08:33,001 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=927&Y=246&I=927&J=246&BUFFER=10" took 136ms
+2018-12-20 04:08:33,560 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=770&Y=163&I=770&J=163&BUFFER=10" "AODN-Portal/V4.38.324" "" "" 
+2018-12-20 04:08:33,568 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-12-20 04:08:33,620 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureCount = 100
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: text/html
+ width height: 1151,512
+ bbox: SRSEnvelope[-175.693359 : 26.630859, -21.050781 : 68.949219]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	RawKvp = {FORMAT=text/html, INFO_FORMAT=text/html, CRS=EPSG:4326, STYLES=, QUERYABLE=true, I=770, WIDTH=1151, J=163, HEIGHT=512, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-175.693359,-21.050781,26.630859,68.949219, VERSION=1.1.1, X=770, Y=163, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 770
+	YPixel = 163
+2018-12-20 04:08:33,625 INFO [geoserver.filters] - 13.236.182.138 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=770&Y=163&I=770&J=163&BUFFER=10" took 65ms
+2018-12-20 04:09:34,995 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:09:35,005 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:09:35,009 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:09:35,023 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 27ms
+2018-12-20 04:11:14,762 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:11:14,773 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:11:14,779 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:11:14,804 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 42ms
+2018-12-20 04:11:49,738 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:11:49,749 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:11:49,751 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:11:49,765 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 26ms
+2018-12-20 04:12:41,142 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:12:41,152 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:12:41,155 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:12:41,168 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 25ms
+2018-12-20 04:13:48,106 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:13:48,118 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:13:48,122 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:13:48,136 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 29ms
+2018-12-20 04:15:12,534 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=741&Y=147&I=741&J=147&BUFFER=10" "AODN-Portal/V4.38.324" "" "" 
+2018-12-20 04:15:12,547 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2018-12-20 04:15:12,612 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureCount = 100
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: text/html
+ width height: 1151,512
+ bbox: SRSEnvelope[-175.693359 : 26.630859, -21.050781 : 68.949219]
+ layers: RLS:M1_MAP
+ styles: point_green_circle
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	RawKvp = {FORMAT=text/html, INFO_FORMAT=text/html, CRS=EPSG:4326, STYLES=, QUERYABLE=true, I=741, WIDTH=1151, J=147, HEIGHT=512, BUFFER=10, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-175.693359,-21.050781,26.630859,68.949219, VERSION=1.1.1, X=741, Y=147, SERVICE=WMS, QUERY_LAYERS=RLS:M1_MAP, TRANSPARENT=TRUE, FEATURE_COUNT=100}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 741
+	YPixel = 147
+2018-12-20 04:15:12,627 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=text%2Fhtml&EXCEPTIONS=application%2Fvnd.ogc.se_xml&SERVICE=WMS&REQUEST=GetFeatureInfo&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-175.693359%2C-21.050781%2C26.630859%2C68.949219&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=RLS%3AM1_MAP&FEATURE_COUNT=100&CRS=EPSG%3A4326&WIDTH=1151&HEIGHT=512&X=741&Y=147&I=741&J=147&BUFFER=10" took 92ms
+2018-12-20 04:15:35,631 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-39.287109375+25.1796875%2C-39.287109375+38.1875%2C-10.283203125+38.1875%2C-10.283203125+25.1796875%2C-39.287109375+25.1796875%29%29%29&count=1" "Java/1.8.0_191" "" "" 
+2018-12-20 04:15:35,644 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:15:35,649 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((-39.287109375 25.1796875, -39.287109375 38.1875, -10.283203125 38.1875, -10.283203125 25.1796875, -39.287109375 25.1796875)) ]
+        typeName[0] = {RLS}M1_MAP
+    outputFormat = json
+    resultType = results
+2018-12-20 04:15:35,650 INFO [wfs.json] - about to encode JSON
+2018-12-20 04:15:36,434 INFO [geoserver.filters] - 13.236.10.238 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-39.287109375+25.1796875%2C-39.287109375+38.1875%2C-10.283203125+38.1875%2C-10.283203125+25.1796875%2C-39.287109375+25.1796875%29%29%29&count=1" took 802ms
+2018-12-20 04:16:05,366 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:16:05,374 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:16:05,377 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:16:05,389 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 23ms
+2018-12-20 04:16:49,491 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:16:49,501 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:16:49,504 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:16:49,517 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 25ms
+2018-12-20 04:27:01,978 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:27:01,993 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:27:02,003 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:27:02,035 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 57ms
+2018-12-20 04:29:53,368 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_191" "" "" 
+2018-12-20 04:29:53,381 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2018-12-20 04:29:53,388 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2018-12-20 04:29:53,416 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 47ms
