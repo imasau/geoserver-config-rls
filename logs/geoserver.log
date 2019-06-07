@@ -12172,3 +12172,20 @@ Request: getCapabilities
     baseUrl = http://localhost:8082/geoserver/
     service = wfs
 2019-06-08 00:05:59,538 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=wfs&version=1.0.0&request=GetCapabilities" took 122ms
+2019-06-08 01:04:29,078 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/gwc/service/tms/1.0.0" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-06-08 01:04:29,094 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 01:04:29,171 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/gwc/service/tms/1.0.0" took 93ms
+2019-06-08 01:23:30,739 INFO [geoserver.filters] - 178.154.244.174 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&outputFormat=csv" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-06-08 01:23:30,752 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 01:23:30,754 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 01:23:30,760 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SurveyList
+    outputFormat = csv
+    resultType = results
+2019-06-08 01:23:32,201 INFO [geoserver.filters] - 178.154.244.174 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&outputFormat=csv" took 1461ms
