@@ -12231,3 +12231,29 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2019-06-08 03:58:05,571 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 3802ms
+2019-06-08 04:01:35,785 INFO [geoserver.filters] - 46.229.168.138 "GET /geoserver" "Mozilla/5.0 (compatible; SemrushBot/3~bl; +http://www.semrush.com/bot.html)" "" "" 
+2019-06-08 04:01:35,796 INFO [geoserver.filters] - 46.229.168.138 "GET /geoserver" took 11ms
+2019-06-08 04:12:41,962 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=WCS&version=2.0.1&request=GetCapabilities" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-06-08 04:12:41,975 INFO [geoserver.wcs] - 
+Request: getServiceInfo
+2019-06-08 04:12:42,147 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 04:12:42,154 INFO [geoserver.wcs] - 
+Request: getCapabilities
+    baseUrl = http://localhost:8082/geoserver/
+    service = WCS
+2019-06-08 04:12:42,228 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=WCS&version=2.0.1&request=GetCapabilities" took 266ms
+2019-06-08 04:18:55,276 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&outputFormat=csv" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-06-08 04:18:55,287 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 04:18:55,289 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 04:18:55,295 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SurveyList
+    outputFormat = csv
+    resultType = results
+2019-06-08 04:18:56,326 INFO [geoserver.servlets] - OutputStream was successfully aborted.
+2019-06-08 04:18:56,328 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&outputFormat=csv" took 1052ms
