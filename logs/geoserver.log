@@ -12203,3 +12203,31 @@ Request: getFeature
 2019-06-08 01:47:59,168 INFO [geoserver.filters] - 66.249.66.139 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/js/jquery.inline-info.js" took 9ms
 2019-06-08 01:47:59,877 INFO [geoserver.filters] - 66.249.66.137 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/print.css" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/;jsessionid=52D96E45CE1ADF71FA985D2D3D7D0AA4?wicket:interface=:8:srsListPanel:table:filterForm:navigatorTop:navigator:first:143:ILinkListener::" "" 
 2019-06-08 01:47:59,887 INFO [geoserver.filters] - 66.249.66.137 "GET /geoserver/web/resources/org.geoserver.web.GeoServerBasePage/css/blueprint/print.css" took 10ms
+2019-06-08 03:57:28,026 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" "" 
+2019-06-08 03:57:28,038 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 03:57:28,041 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 03:57:28,046 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2019-06-08 03:57:46,477 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 18450ms
+2019-06-08 03:58:01,769 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" "" 
+2019-06-08 03:58:01,774 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 03:58:01,775 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 03:58:01,776 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    outputFormat = csv
+    resultType = results
+2019-06-08 03:58:05,571 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 3802ms
