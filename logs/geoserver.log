@@ -12268,3 +12268,18 @@ Request: getCapabilities
     baseUrl = http://localhost:8082/geoserver/
     service = wfs
 2019-06-08 06:17:31,591 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities" took 105ms
+2019-06-08 07:25:35,547 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350722" "python-requests/2.18.4" "" "" 
+2019-06-08 07:25:35,569 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 07:25:35,572 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 07:25:35,579 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350722 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-06-08 07:25:35,675 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350722" took 128ms
