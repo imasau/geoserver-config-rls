@@ -12287,3 +12287,18 @@ Request: getFeature
 2019-06-08 08:11:00,210 INFO [geoserver.filters] - 14.215.176.139 "GET /geoserver" took 12ms
 2019-06-08 08:11:00,592 INFO [geoserver.filters] - 14.215.176.139 "GET /geoserver/web/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0" "http://geoserver-rls.imas.utas.edu.au/geoserver/index.html" "" 
 2019-06-08 08:11:00,651 INFO [geoserver.filters] - 14.215.176.139 "GET /geoserver/web/" took 59ms
+2019-06-08 11:03:22,743 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350248" "python-requests/2.18.4" "" "" 
+2019-06-08 11:03:22,761 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 11:03:22,764 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 11:03:22,772 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350248 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-06-08 11:03:22,860 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350248" took 117ms
