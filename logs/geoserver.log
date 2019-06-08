@@ -12563,3 +12563,18 @@ org.geoserver.platform.ServiceException: Could not determine geoserver request f
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2019-06-08 19:18:05,627 INFO [geoserver.filters] - 66.249.66.157 "GET /geoserver/wms?SERVICE=WMS&" took 18ms
+2019-06-08 21:34:05,540 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=wms&version=1.1.1&request=GetCapabilities" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-06-08 21:34:05,553 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-08 21:34:05,558 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 21:34:05,566 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {REQUEST=GetCapabilities, VERSION=1.1.1, SERVICE=wms}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2019-06-08 21:34:05,706 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=wms&version=1.1.1&request=GetCapabilities" took 166ms
