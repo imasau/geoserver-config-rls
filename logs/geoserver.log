@@ -12578,3 +12578,17 @@ Request: getCapabilities
 	UpdateSequence = null
 	Version = 1.1.1
 2019-06-08 21:34:05,706 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/ows?service=wms&version=1.1.1&request=GetCapabilities" took 166ms
+2019-06-08 22:00:16,782 INFO [geoserver.filters] - 66.249.66.157 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M3_DATA&outputFormat=csv" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2019-06-08 22:00:16,798 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 22:00:16,800 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 22:00:16,805 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = csv
+    resultType = results
+2019-06-08 22:00:18,263 INFO [geoserver.filters] - 66.249.66.157 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M3_DATA&outputFormat=csv" took 1481ms
