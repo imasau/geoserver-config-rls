@@ -12310,3 +12310,31 @@ Request: getFeature
 2019-06-08 11:52:53,505 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver" took 11ms
 2019-06-08 11:52:54,040 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
 2019-06-08 11:52:54,046 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver" took 6ms
+2019-06-08 14:04:01,526 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" "" 
+2019-06-08 14:04:01,539 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 14:04:01,542 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 14:04:01,547 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2019-06-08 14:04:02,021 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 495ms
+2019-06-08 14:04:17,645 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" "" 
+2019-06-08 14:04:17,655 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-08 14:04:17,656 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-08 14:04:17,658 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2019-06-08 14:04:41,136 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 23490ms
