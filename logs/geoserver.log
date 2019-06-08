@@ -12703,3 +12703,18 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2019-06-09 03:59:13,162 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 3826ms
+2019-06-09 05:06:09,989 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912351014" "python-requests/2.18.4" "" "" 
+2019-06-09 05:06:10,005 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-09 05:06:10,007 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-09 05:06:10,014 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912351014 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-06-09 05:06:10,102 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912351014" took 112ms
