@@ -13245,3 +13245,18 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2019-06-09 14:04:29,650 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 11282ms
+2019-06-09 16:22:38,778 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350318" "python-requests/2.18.4" "" "" 
+2019-06-09 16:22:38,793 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-09 16:22:38,796 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-09 16:22:38,803 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350318 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-06-09 16:22:38,872 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350318" took 94ms
