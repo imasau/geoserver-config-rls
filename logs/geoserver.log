@@ -13217,3 +13217,31 @@ org.geoserver.platform.ServiceException: GetMap requests must include a BBOX par
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2019-06-09 13:17:31,499 INFO [geoserver.filters] - 66.249.79.207 "GET /geoserver/wms?VERSION=1.1.1&REQUEST=GetMap&SERVICE=WMS&SRS=EPSG:4326&WIDTH=512&HEIGHT=512&LAYERS=RLS:SurveyList&TRANSPARENT=TRUE&STYLES=&FORMAT=image/png&" took 26ms
+2019-06-09 14:04:01,862 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" "" 
+2019-06-09 14:04:01,876 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-09 14:04:01,878 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-09 14:04:01,884 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2019-06-09 14:04:02,176 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 314ms
+2019-06-09 14:04:18,367 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" "" 
+2019-06-09 14:04:18,379 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-09 14:04:18,381 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-09 14:04:18,383 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2019-06-09 14:04:29,650 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 11282ms
