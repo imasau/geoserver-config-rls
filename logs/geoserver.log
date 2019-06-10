@@ -30765,3 +30765,31 @@ Request: getFeature
 2019-06-10 12:49:05,327 INFO [geoserver.filters] - 150.101.108.7 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/page-bg.png" took 22ms
 2019-06-10 12:49:05,338 INFO [geoserver.filters] - 150.101.108.7 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "https://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
 2019-06-10 12:49:05,346 INFO [geoserver.filters] - 150.101.108.7 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" took 8ms
+2019-06-10 14:04:01,535 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" "" 
+2019-06-10 14:04:01,548 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 14:04:01,551 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 14:04:01,556 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2019-06-10 14:04:01,892 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 357ms
+2019-06-10 14:04:19,649 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" "" 
+2019-06-10 14:04:19,657 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 14:04:19,658 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 14:04:19,659 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2019-06-10 14:04:30,928 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 11279ms
