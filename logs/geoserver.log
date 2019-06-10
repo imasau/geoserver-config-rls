@@ -30793,3 +30793,18 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2019-06-10 14:04:30,928 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 11279ms
+2019-06-10 14:35:33,732 INFO [geoserver.filters] - 66.249.79.198 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&maxFeatures=10&outputFormat=gml3" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2019-06-10 14:35:33,748 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 14:35:33,751 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 14:35:33,756 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 10
+    outputFormat = gml3
+    resultType = results
+2019-06-10 14:35:33,916 INFO [geoserver.filters] - 66.249.79.198 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&maxFeatures=10&outputFormat=gml3" took 184ms
