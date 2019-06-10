@@ -24670,3 +24670,83 @@ Request: getMap
 	ViewParams = null
 	Width = 256
 2019-06-10 10:20:35,501 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3ASurveyList&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-90,-45,-45&WIDTH=256&HEIGHT=256" took 342ms
+2019-06-10 10:48:33,556 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28107.490234375+-26.587890625%2C107.490234375+-3.7363281250000018%2C161.982421875+-3.736328125%2C161.982421875+-26.587890625%2C107.490234375+-26.587890625%29%29%29&count=1" "Java/1.8.0_212" "" "" 
+2019-06-10 10:48:33,574 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 10:48:33,577 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 10:48:33,583 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((107.490234375 -26.587890625, 107.490234375 -3.7363281250000018, 161.982421875 -3.736328125, 161.982421875 -26.587890625, 107.490234375 -26.587890625)) ]
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = json
+    resultType = results
+2019-06-10 10:48:33,586 INFO [wfs.json] - about to encode JSON
+2019-06-10 10:48:34,580 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28107.490234375+-26.587890625%2C107.490234375+-3.7363281250000018%2C161.982421875+-3.736328125%2C161.982421875+-26.587890625%2C107.490234375+-26.587890625%29%29%29&count=1" took 1023ms
+2019-06-10 10:48:40,968 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-175.693359375+-35.025390625%2C-175.693359375+-8.130859374999998%2C-100.986328125+-8.130859374999996%2C-100.986328125+-35.025390625%2C-175.693359375+-35.025390625%29%29%29&count=1" "Java/1.8.0_212" "" "" 
+2019-06-10 10:48:40,976 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 10:48:40,977 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 10:48:40,980 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((-175.693359375 -35.025390625, -175.693359375 -8.130859374999998, -100.986328125 -8.130859374999996, -100.986328125 -35.025390625, -175.693359375 -35.025390625)) ]
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = json
+    resultType = results
+2019-06-10 10:48:40,981 INFO [wfs.json] - about to encode JSON
+2019-06-10 10:48:41,330 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-175.693359375+-35.025390625%2C-175.693359375+-8.130859374999998%2C-100.986328125+-8.130859374999996%2C-100.986328125+-35.025390625%2C-175.693359375+-35.025390625%29%29%29&count=1" took 362ms
+2019-06-10 10:48:49,035 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((-175.693359375%20-35.025390625%2C-175.693359375%20-8.130859374999998%2C-100.986328125%20-8.130859374999996%2C-100.986328125%20-35.025390625%2C-175.693359375%20-35.025390625)))&downloadToken=1560127728629" "AODN-Portal/V4.39.5" "" "" 
+2019-06-10 10:48:49,043 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 10:48:49,043 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 10:48:49,044 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((-175.693359375 -35.025390625, -175.693359375 -8.130859374999998, -100.986328125 -8.130859374999996, -100.986328125 -35.025390625, -175.693359375 -35.025390625)) ]
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = csv-with-metadata-header
+    resultType = results
+2019-06-10 10:48:49,050 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2019-06-10 10:48:49,246 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((-175.693359375%20-35.025390625%2C-175.693359375%20-8.130859374999998%2C-100.986328125%20-8.130859374999996%2C-100.986328125%20-35.025390625%2C-175.693359375%20-35.025390625)))&downloadToken=1560127728629" took 211ms
+2019-06-10 10:54:26,629 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-83.232421875+11.029296875%2C-83.232421875+26.673828125%2C-65.830078125+26.673828125%2C-65.830078125+11.029296875%2C-83.232421875+11.029296875%29%29%29&count=1" "Java/1.8.0_212" "" "" 
+2019-06-10 10:54:26,647 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 10:54:26,650 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 10:54:26,657 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((-83.232421875 11.029296875, -83.232421875 26.673828125, -65.830078125 26.673828125, -65.830078125 11.029296875, -83.232421875 11.029296875)) ]
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = json
+    resultType = results
+2019-06-10 10:54:26,660 INFO [wfs.json] - about to encode JSON
+2019-06-10 10:54:26,964 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M3_DATA&outputFormat=json&CQL_FILTER=INTERSECTS%28geom%2CPOLYGON%28%28-83.232421875+11.029296875%2C-83.232421875+26.673828125%2C-65.830078125+26.673828125%2C-65.830078125+11.029296875%2C-83.232421875+11.029296875%29%29%29&count=1" took 334ms
+2019-06-10 10:54:33,132 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((-83.232421875%2011.029296875%2C-83.232421875%2026.673828125%2C-65.830078125%2026.673828125%2C-65.830078125%2011.029296875%2C-83.232421875%2011.029296875)))&downloadToken=1560128072701" "AODN-Portal/V4.39.5" "" "" 
+2019-06-10 10:54:33,140 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-10 10:54:33,141 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-10 10:54:33,142 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom intersects POLYGON ((-83.232421875 11.029296875, -83.232421875 26.673828125, -65.830078125 26.673828125, -65.830078125 11.029296875, -83.232421875 11.029296875)) ]
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = csv-with-metadata-header
+    resultType = results
+2019-06-10 10:54:33,150 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2019-06-10 10:54:33,295 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=INTERSECTS(geom%2CPOLYGON((-83.232421875%2011.029296875%2C-83.232421875%2026.673828125%2C-65.830078125%2026.673828125%2C-65.830078125%2011.029296875%2C-83.232421875%2011.029296875)))&downloadToken=1560128072701" took 163ms
