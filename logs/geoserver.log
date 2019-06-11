@@ -36265,3 +36265,770 @@ Request: getFeature
     outputFormat = GML2
     resultType = results
 2019-06-11 10:27:47,940 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" took 100ms
+2019-06-11 10:30:35,198 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" "python-requests/2.18.4" "" "" 
+2019-06-11 10:30:35,216 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:30:35,220 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:30:35,227 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 2000862 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-06-11 10:30:35,303 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" took 105ms
+2019-06-11 10:34:20,057 INFO [geoserver.filters] - 66.102.7.38 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS%3ASurveyList&outputFormat=csv" "Mozilla/5.0 (compatible; GoogleDocs; apps-spreadsheets; +http://docs.google.com)" "" "" 
+2019-06-11 10:34:20,071 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:34:20,074 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:34:20,080 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SurveyList
+    outputFormat = csv
+    resultType = results
+2019-06-11 10:34:20,854 INFO [geoserver.filters] - 66.102.7.38 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS%3ASurveyList&outputFormat=csv" took 796ms
+2019-06-11 10:40:07,298 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_212" "" "" 
+2019-06-11 10:40:07,311 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:40:07,313 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:40:07,318 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-06-11 10:40:07,351 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 53ms
+2019-06-11 10:40:39,551 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-270.703125%2C-104.0625%2C269.296875%2C127.96875" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:40:39,559 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:40:39,564 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:40:40,055 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-270.703125 : 269.296875, -104.0625 : 127.96875]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-270.703125,-104.0625,269.296875,127.96875, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:40:40,067 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-270.703125%2C-104.0625%2C269.296875%2C127.96875" took 515ms
+2019-06-11 10:40:43,516 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" "" 
+2019-06-11 10:40:43,528 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" took 12ms
+2019-06-11 10:40:43,584 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" "" 
+2019-06-11 10:40:43,597 WARN [geoserver.web] - Unable to find property: 'format.wms.application/vnd.google-earth.kml' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wms.rss' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,598 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,599 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,610 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,610 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,611 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,611 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,612 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,613 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,614 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,614 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,615 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,615 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,616 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,616 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,618 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,618 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,619 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,619 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,621 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,621 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,623 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,623 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,624 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,624 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,625 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,625 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,626 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,626 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,627 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,627 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:40:43,661 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage" took 77ms
+2019-06-11 10:40:43,718 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" "" 
+2019-06-11 10:40:43,728 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?0" took 10ms
+2019-06-11 10:40:44,037 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/logo.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,049 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/logo.png" took 12ms
+2019-06-11 10:40:44,077 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/button-gradient.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,084 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/main-bg.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,086 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/button-gradient.png" took 9ms
+2019-06-11 10:40:44,090 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/main-wrap-bg.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,093 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/main-bg.png" took 8ms
+2019-06-11 10:40:44,097 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/page-bg.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,098 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/main-wrap-bg.png" took 8ms
+2019-06-11 10:40:44,104 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/page-header-bg.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,105 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/page-bg.png" took 8ms
+2019-06-11 10:40:44,113 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/page-header-bg.png" took 9ms
+2019-06-11 10:40:44,114 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/css/geoserver-ver-816F8EB03F03C35A4F2A2A150DE48E9E.css" "" 
+2019-06-11 10:40:44,122 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/img/icons/silk/magnifier.png" took 8ms
+2019-06-11 10:42:41,610 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://rls.tpac.org.au/help/examples.html/" "" 
+2019-06-11 10:42:41,620 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver" took 10ms
+2019-06-11 10:42:41,788 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/index.html" "" 
+2019-06-11 10:42:41,826 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/" took 38ms
+2019-06-11 10:42:47,142 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" "" 
+2019-06-11 10:42:47,151 WARN [geoserver.web] - Unable to find property: 'format.wms.application/vnd.google-earth.kml' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,152 WARN [geoserver.web] - Unable to find property: 'format.wms.rss' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,152 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,152 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,153 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,162 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,162 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,163 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,163 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,164 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,164 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,165 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,165 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,166 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,166 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,167 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,167 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,168 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,168 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,169 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,169 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,170 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,170 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,171 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,171 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,172 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,172 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,173 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,173 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,174 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,174 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,175 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,175 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:42:47,207 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage" took 65ms
+2019-06-11 10:42:47,263 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/web/" "" 
+2019-06-11 10:42:47,271 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" took 8ms
+2019-06-11 10:42:58,116 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_212" "" "" 
+2019-06-11 10:42:58,123 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:42:58,124 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:42:58,127 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-06-11 10:42:58,305 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 189ms
+2019-06-11 10:43:00,648 INFO [geoserver.filters] - 66.102.7.42 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)" "" "" 
+2019-06-11 10:43:00,657 INFO [geoserver.filters] - 66.102.7.42 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1" took 8ms
+2019-06-11 10:43:00,875 INFO [geoserver.filters] - 66.102.7.42 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=7D26206204C049A3C0FD34FC60FF96ED" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)" "" "" 
+2019-06-11 10:43:00,882 WARN [geoserver.web] - Unable to find property: 'format.wms.application/vnd.google-earth.kml' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wms.rss' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,883 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,884 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,887 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,887 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,888 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,888 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,889 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,889 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,890 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,890 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,891 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,891 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,892 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,892 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,893 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,893 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,894 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,894 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,896 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,896 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,897 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,897 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,898 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,898 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,899 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,899 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,900 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,900 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,901 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-restricted-column' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,901 WARN [geoserver.web] - Unable to find property: 'format.wfs.csv-with-metadata-header' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-11 10:43:00,924 INFO [geoserver.filters] - 66.102.7.42 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=7D26206204C049A3C0FD34FC60FF96ED" took 49ms
+2019-06-11 10:43:01,354 INFO [geoserver.filters] - 66.102.7.38 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=7D26206204C049A3C0FD34FC60FF96ED?0" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)" "" "" 
+2019-06-11 10:43:01,363 INFO [geoserver.filters] - 66.102.7.38 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=7D26206204C049A3C0FD34FC60FF96ED?0" took 9ms
+2019-06-11 10:43:14,543 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-141.37481689453125%2C-61.435546875%2C-70.35919189453125%2C9.580078125" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:14,549 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:14,552 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:15,310 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[-141.37481689453125 : -70.35919189453125, -61.435546875 : 9.580078125]
+ layers: RLS:SiteList
+ styles: point
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=RLS:SiteList, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-141.37481689453125,-61.435546875,-70.35919189453125,9.580078125, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=RLS:SiteList, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-11 10:43:15,335 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-141.37481689453125%2C-61.435546875%2C-70.35919189453125%2C9.580078125" took 792ms
+2019-06-11 10:43:15,424 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-139.39178466796875%2C-63.424072265625%2C-68.37615966796875%2C7.591552734375" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:15,430 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:15,431 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:15,819 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[-139.39178466796875 : -68.37615966796875, -63.424072265625 : 7.591552734375]
+ layers: RLS:SiteList
+ styles: point
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=RLS:SiteList, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-139.39178466796875,-63.424072265625,-68.37615966796875,7.591552734375, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=RLS:SiteList, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-11 10:43:15,833 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-139.39178466796875%2C-63.424072265625%2C-68.37615966796875%2C7.591552734375" took 409ms
+2019-06-11 10:43:16,513 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-140.38604736328125%2C-62.43255615234375%2C-69.37042236328125%2C8.58306884765625" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:16,519 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:16,521 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:17,266 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[-140.38604736328125 : -69.37042236328125, -62.43255615234375 : 8.58306884765625]
+ layers: RLS:SiteList
+ styles: point
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=RLS:SiteList, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-140.38604736328125,-62.43255615234375,-69.37042236328125,8.58306884765625, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=RLS:SiteList, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-11 10:43:17,292 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-140.38604736328125%2C-62.43255615234375%2C-69.37042236328125%2C8.58306884765625" took 779ms
+2019-06-11 10:43:19,960 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=118.6578369140625%2C-52.63275146484375%2C189.6734619140625%2C18.38287353515625" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:19,968 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:19,970 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:20,348 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[118.6578369140625 : 189.6734619140625, -52.63275146484375 : 18.38287353515625]
+ layers: RLS:SiteList
+ styles: point
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=RLS:SiteList, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=118.6578369140625,-52.63275146484375,189.6734619140625,18.38287353515625, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=RLS:SiteList, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-11 10:43:20,392 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=118.6578369140625%2C-52.63275146484375%2C189.6734619140625%2C18.38287353515625" took 431ms
+2019-06-11 10:43:31,187 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-453.515625%2C-97.734375%2C86.484375%2C134.296875" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:31,195 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:31,196 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:31,645 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-453.515625 : 86.484375, -97.734375 : 134.296875]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-453.515625,-97.734375,86.484375,134.296875, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:43:31,654 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-453.515625%2C-97.734375%2C86.484375%2C134.296875" took 467ms
+2019-06-11 10:43:31,830 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-318.515625%2C-56.953125%2C-48.515625%2C59.0625" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:31,836 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:31,837 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:32,187 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-318.515625 : -48.515625, -56.953125 : 59.0625]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-318.515625,-56.953125,-48.515625,59.0625, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:43:32,196 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-318.515625%2C-56.953125%2C-48.515625%2C59.0625" took 366ms
+2019-06-11 10:43:32,535 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-269.296875%2C-42.01171875%2C-134.296875%2C15.99609375" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:32,541 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:32,542 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:32,857 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-269.296875 : -134.296875, -42.01171875 : 15.99609375]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-269.296875,-42.01171875,-134.296875,15.99609375, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:43:32,867 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-269.296875%2C-42.01171875%2C-134.296875%2C15.99609375" took 332ms
+2019-06-11 10:43:33,468 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-295.3125%2C-50.2734375%2C-160.3125%2C7.734375" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:33,475 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:33,476 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:33,817 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-295.3125 : -160.3125, -50.2734375 : 7.734375]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-295.3125,-50.2734375,-160.3125,7.734375, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:43:33,826 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-295.3125%2C-50.2734375%2C-160.3125%2C7.734375" took 358ms
+2019-06-11 10:43:35,170 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-231.7236328125%2C-29.8388671875%2C-197.9736328125%2C-15.3369140625" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:35,176 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:35,177 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:35,481 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-231.7236328125 : -197.9736328125, -29.8388671875 : -15.3369140625]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=-231.7236328125,-29.8388671875,-197.9736328125,-15.3369140625, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-11 10:43:35,490 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A4326&STYLES=&WIDTH=768&HEIGHT=330&BBOX=-231.7236328125%2C-29.8388671875%2C-197.9736328125%2C-15.3369140625" took 320ms
+2019-06-11 10:43:38,021 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-212.74646759033203%2C-21.96990966796875%2C-208.30799102783203%2C-17.53143310546875" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36" "http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetMap&layers=RLS%3ASiteList&bbox=-179.135831%2C-55.046786%2C177.182721%2C78.449001&width=768&height=330&srs=EPSG%3A4326&format=application/openlayers" "" 
+2019-06-11 10:43:38,028 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-11 10:43:38,030 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:43:38,335 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8082/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[-212.74646759033203 : -208.30799102783203, -21.96990966796875 : -17.53143310546875]
+ layers: RLS:SiteList
+ styles: point
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=RLS:SiteList, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:4326, BBOX=-212.74646759033203,-21.96990966796875,-208.30799102783203,-17.53143310546875, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=RLS:SiteList, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-11 10:43:38,347 INFO [geoserver.filters] - 120.146.130.18 "GET /geoserver/RLS/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image%2Fpng&TRANSPARENT=true&QUERY_LAYERS=RLS%3ASiteList&LAYERS=RLS%3ASiteList&exceptions=application%2Fvnd.ogc.se_inimage&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=50&X=50&Y=50&SRS=EPSG%3A4326&STYLES=&WIDTH=101&HEIGHT=101&BBOX=-212.74646759033203%2C-21.96990966796875%2C-208.30799102783203%2C-17.53143310546875" took 325ms
+2019-06-11 10:45:57,432 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_212" "" "" 
+2019-06-11 10:45:57,447 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:45:57,449 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:45:57,454 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-06-11 10:45:57,483 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 51ms
+2019-06-11 10:47:01,667 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_212" "" "" 
+2019-06-11 10:47:01,680 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-06-11 10:47:01,681 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-06-11 10:47:01,685 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-06-11 10:47:01,706 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 39ms
