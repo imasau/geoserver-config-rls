@@ -40860,3 +40860,352 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2019-07-23 13:54:23,613 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 35ms
+2019-07-23 14:03:22,248 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:03:22,264 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:03:22,266 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:03:22,272 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:03:22,310 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 62ms
+2019-07-23 14:03:46,158 INFO [geoserver.filters] - 13.54.245.107 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=67.5,-45,90,-22.5&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.39.2" "" "" 
+2019-07-23 14:03:46,168 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-23 14:03:46,173 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:03:46,233 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[67.5 : 90.0, -45.0 : -22.5]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4ae9e5f]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M3_DATA, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, SRS=EPSG:4326, BBOX=67.5,-45,90,-22.5, VERSION=1.1.1, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 256
+2019-07-23 14:03:46,239 INFO [geoserver.filters] - 13.54.245.107 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=67.5,-45,90,-22.5&WIDTH=256&HEIGHT=256" took 81ms
+2019-07-23 14:04:01,736 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" "" 
+2019-07-23 14:04:01,748 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:04:01,750 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:04:01,754 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:04:02,060 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 324ms
+2019-07-23 14:04:16,968 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" "" 
+2019-07-23 14:04:16,979 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:04:16,980 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:04:16,983 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:04:28,302 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 11334ms
+2019-07-23 14:06:14,654 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:06:14,671 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:06:14,673 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:06:14,683 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:06:14,718 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 64ms
+2019-07-23 14:09:07,717 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:09:07,739 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:09:07,743 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:09:07,749 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:09:07,786 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 69ms
+2019-07-23 14:09:17,414 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:09:17,424 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:09:17,424 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:09:17,427 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:09:17,455 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 41ms
+2019-07-23 14:10:06,481 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:10:06,491 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:10:06,492 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:10:06,494 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:10:06,510 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 29ms
+2019-07-23 14:11:08,428 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000525" "python-requests/2.18.4" "" "" 
+2019-07-23 14:11:08,444 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:11:08,446 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:11:08,452 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 7000525 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-07-23 14:11:08,525 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000525" took 97ms
+2019-07-23 14:11:44,141 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000521" "python-requests/2.18.4" "" "" 
+2019-07-23 14:11:44,152 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:11:44,153 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:11:44,157 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 7000521 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-07-23 14:11:44,184 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000521" took 43ms
+2019-07-23 14:12:12,613 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:12:12,628 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:12:12,630 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:12:12,637 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:12:12,660 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 47ms
+2019-07-23 14:13:07,514 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000558" "python-requests/2.18.4" "" "" 
+2019-07-23 14:13:07,526 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:13:07,527 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:13:07,530 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 7000558 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-07-23 14:13:07,563 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=7000558" took 49ms
+2019-07-23 14:13:33,548 INFO [geoserver.filters] - 13.54.245.107 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-180,-67.5,-157.5,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.39.2" "" "" 
+2019-07-23 14:13:33,559 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-23 14:13:33,563 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:13:33,865 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-180.0 : -157.5, -67.5 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4ae9e5f]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M3_DATA, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, SRS=EPSG:4326, BBOX=-180,-67.5,-157.5,-45, VERSION=1.1.1, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 256
+2019-07-23 14:13:33,873 INFO [geoserver.filters] - 13.54.245.107 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.1.1&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&SRS=EPSG%3A4326&BBOX=-180,-67.5,-157.5,-45&WIDTH=256&HEIGHT=256" took 325ms
+2019-07-23 14:15:04,165 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:15:04,180 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:15:04,182 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:15:04,188 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:15:04,224 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 59ms
+2019-07-23 14:16:02,611 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:16:02,626 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:16:02,628 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:16:02,632 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:16:02,653 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 42ms
+2019-07-23 14:25:02,283 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:25:02,300 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:25:02,304 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:25:02,314 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:25:02,354 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 71ms
+2019-07-23 14:27:49,583 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_212" "" "" 
+2019-07-23 14:27:49,599 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-07-23 14:27:49,602 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-07-23 14:27:49,607 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-07-23 14:27:49,641 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 57ms
