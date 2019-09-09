@@ -1133,3 +1133,4279 @@ Request: getMap
 	ViewParams = null
 	Width = 256
 2019-09-09 18:58:38,031 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-90,90,-45&WIDTH=256&HEIGHT=256" took 62ms
+2019-09-09 19:00:09,124 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&downloadToken=1568019798403" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:00:09,132 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:00:09,132 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:00:09,134 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    outputFormat = csv-with-metadata-header
+    resultType = results
+2019-09-09 19:00:09,159 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2019-09-09 19:00:10,470 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M3_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&downloadToken=1568019798403" took 1346ms
+2019-09-09 19:00:57,970 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:00:57,979 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:00:57,980 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:00:57,982 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:00:57,998 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 28ms
+2019-09-09 19:03:46,398 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:03:46,410 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:03:46,412 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:03:46,415 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:03:46,450 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 52ms
+2019-09-09 19:04:11,076 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M1_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:11,077 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,135,0,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,088 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,90,0,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,090 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,097 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,099 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,100 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,102 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:11,103 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,128 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,45,-45,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,139 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,140 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,202 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M1_DATA" took 126ms
+2019-09-09 19:04:11,236 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,45,-45,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:11,241 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,45,-45,90&WIDTH=256&HEIGHT=256" took 113ms
+2019-09-09 19:04:11,283 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-45,45,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,295 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,296 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,507 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,0,-45,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,523 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,525 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,597 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,0,-45,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:11,604 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,0,-45,45&WIDTH=256&HEIGHT=256" took 97ms
+2019-09-09 19:04:11,616 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-45,90,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,630 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,631 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:11,861 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-45,45,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:11,865 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-45,90,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:11,869 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-45,45,0&WIDTH=256&HEIGHT=256" took 586ms
+2019-09-09 19:04:11,869 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-45,90,0&WIDTH=256&HEIGHT=256" took 253ms
+2019-09-09 19:04:11,911 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,90,45,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:11,922 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:11,923 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,116 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,90,-45,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,117 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-180,0,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,122 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,123 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,123 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,124 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,266 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,90,-45,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:12,271 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,90,-45,135&WIDTH=256&HEIGHT=256" took 155ms
+2019-09-09 19:04:12,306 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,90,45,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:12,311 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,90,45,135&WIDTH=256&HEIGHT=256" took 400ms
+2019-09-09 19:04:12,361 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-135,0,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,366 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,367 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,524 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-135,-45,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,579 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,580 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,135,90,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,591 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,592 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,687 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-135,-45,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:12,690 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-135,-45,-90&WIDTH=256&HEIGHT=256" took 166ms
+2019-09-09 19:04:12,708 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-135,0,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:12,711 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-135,0,-90&WIDTH=256&HEIGHT=256" took 350ms
+2019-09-09 19:04:12,925 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,0,0,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,934 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,936 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:12,972 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,45,45,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:12,982 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:12,983 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:13,040 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,0,0,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:13,044 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,0,0,45&WIDTH=256&HEIGHT=256" took 118ms
+2019-09-09 19:04:13,090 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,45,45,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:13,095 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,45,45,90&WIDTH=256&HEIGHT=256" took 123ms
+2019-09-09 19:04:13,540 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,90,0,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:13,548 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,90,0,135&WIDTH=256&HEIGHT=256" took 2460ms
+2019-09-09 19:04:13,580 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,135,45,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:13,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-180,45,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:13,590 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:13,591 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:13,592 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:13,592 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:13,882 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,0,45,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:13,889 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:13,890 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:14,107 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,0,45,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:14,111 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,0,45,45&WIDTH=256&HEIGHT=256" took 229ms
+2019-09-09 19:04:14,335 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,45,0,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:14,341 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:14,342 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:14,479 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,45,0,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:14,483 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,45,0,90&WIDTH=256&HEIGHT=256" took 148ms
+2019-09-09 19:04:14,691 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-45,0,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:14,697 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:14,698 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:14,794 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-45,0,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:14,798 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-45,0,0&WIDTH=256&HEIGHT=256" took 106ms
+2019-09-09 19:04:15,343 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,135,-45,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:15,348 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:15,349 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:19,383 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,135,0,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:19,390 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,135,0,180&WIDTH=256&HEIGHT=256" took 8313ms
+2019-09-09 19:04:19,571 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-180,-45,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:19,580 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:19,583 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:25,732 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-180,0,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:25,737 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-180,0,-135&WIDTH=256&HEIGHT=256" took 13620ms
+2019-09-09 19:04:26,019 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-45,-45,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:26,024 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:26,026 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:26,106 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-45,-45,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:26,109 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-45,-45,0&WIDTH=256&HEIGHT=256" took 90ms
+2019-09-09 19:04:26,272 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-135,45,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:26,277 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:26,277 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:26,509 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-135,45,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:26,513 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-135,45,-90&WIDTH=256&HEIGHT=256" took 241ms
+2019-09-09 19:04:26,621 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,0,90,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:26,628 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:26,629 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:26,733 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,0,90,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:26,738 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,0,90,45&WIDTH=256&HEIGHT=256" took 117ms
+2019-09-09 19:04:26,976 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,45,90,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:26,984 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:26,985 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:26,992 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,135,90,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:26,997 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,135,90,180&WIDTH=256&HEIGHT=256" took 14412ms
+2019-09-09 19:04:27,061 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,45,90,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:27,082 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,45,90,90&WIDTH=256&HEIGHT=256" took 106ms
+2019-09-09 19:04:27,259 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,90,90,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:27,265 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:27,266 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:27,338 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,90,90,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:27,342 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,90,90,135&WIDTH=256&HEIGHT=256" took 83ms
+2019-09-09 19:04:27,344 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-180,90,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:27,354 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:27,354 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:27,585 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-135,90,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:27,592 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:27,593 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:27,684 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-135,90,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:27,689 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-135,90,-90&WIDTH=256&HEIGHT=256" took 104ms
+2019-09-09 19:04:28,105 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Class" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,115 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,115 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,271 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Class" took 166ms
+2019-09-09 19:04:28,364 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,135,45,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:28,369 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-180,45,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:28,370 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,135,45,180&WIDTH=256&HEIGHT=256" took 14790ms
+2019-09-09 19:04:28,374 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-180,45,-135&WIDTH=256&HEIGHT=256" took 14788ms
+2019-09-09 19:04:28,491 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Country" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,497 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,497 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,552 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Ecoregion" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,560 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,560 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,591 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Family" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,597 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,597 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,616 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Country" took 125ms
+2019-09-09 19:04:28,661 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Family" took 70ms
+2019-09-09 19:04:28,819 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Phylum" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,820 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Realm" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:28,821 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Ecoregion" took 269ms
+2019-09-09 19:04:28,830 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,831 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,831 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:28,831 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:28,893 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Phylum" took 74ms
+2019-09-09 19:04:29,039 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Realm" took 219ms
+2019-09-09 19:04:29,125 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Taxon" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:29,126 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-90,0,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:29,130 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2019-09-09 19:04:29,130 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:29,131 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:29,132 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:29,248 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-90,0,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:29,252 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-45,-90,0,-45&WIDTH=256&HEIGHT=256" took 126ms
+2019-09-09 19:04:29,313 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-90,-45,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:29,318 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:29,319 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:29,353 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M1_MAP&propertyName=Taxon" took 228ms
+2019-09-09 19:04:29,377 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-90,-45,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:29,380 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-90,-45,-45&WIDTH=256&HEIGHT=256" took 67ms
+2019-09-09 19:04:29,441 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-90,45,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:29,446 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:29,447 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:29,580 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,135,-45,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:29,584 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,135,-45,180&WIDTH=256&HEIGHT=256" took 14241ms
+2019-09-09 19:04:29,599 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-90,90,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:29,605 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:29,606 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:29,660 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-90,90,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:29,664 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-90,90,-45&WIDTH=256&HEIGHT=256" took 65ms
+2019-09-09 19:04:29,861 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-90,45,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:29,865 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,-90,45,-45&WIDTH=256&HEIGHT=256" took 424ms
+2019-09-09 19:04:30,592 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-180,-45,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:30,596 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=-90,-180,-45,-135&WIDTH=256&HEIGHT=256" took 11025ms
+2019-09-09 19:04:31,917 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-180,90,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:31,921 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=45,-180,90,-135&WIDTH=256&HEIGHT=256" took 4577ms
+2019-09-09 19:04:39,099 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,135,-45,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,100 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,135,0,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,108 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,108 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,109 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,109 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,111 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,90,-45,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,119 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,119 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,123 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,90,45,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,125 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,90,0,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,199 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,200 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,201 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,201 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,90,-45,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:39,201 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,206 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,90,-45,135&WIDTH=256&HEIGHT=256" took 95ms
+2019-09-09 19:04:39,207 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,135,45,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,216 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,216 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,318 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,90,45,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:39,321 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,90,45,135&WIDTH=256&HEIGHT=256" took 198ms
+2019-09-09 19:04:39,456 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=%28Country+LIKE+%27Australia%27%29&count=1" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:39,465 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,467 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,470 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ Country is like Australia ]
+        typeName[0] = {RLS}M1_MAP
+    outputFormat = json
+    resultType = results
+2019-09-09 19:04:39,471 INFO [wfs.json] - about to encode JSON
+2019-09-09 19:04:39,503 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,45,0,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,514 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,515 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:39,630 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,45,0,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:39,634 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,45,0,90&WIDTH=256&HEIGHT=256" took 131ms
+2019-09-09 19:04:39,823 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-180,0,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:39,833 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:39,834 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:40,778 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,90,0,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:40,782 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,90,0,135&WIDTH=256&HEIGHT=256" took 1656ms
+2019-09-09 19:04:40,964 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,45,-45,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:40,971 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:40,972 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:41,051 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,45,-45,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:41,058 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,45,-45,90&WIDTH=256&HEIGHT=256" took 94ms
+2019-09-09 19:04:41,268 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-180,-45,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:41,276 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:41,277 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:43,669 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:04:43,679 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:04:43,680 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:43,681 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:04:43,702 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 33ms
+2019-09-09 19:04:45,044 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,135,0,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:45,048 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,135,0,180&WIDTH=256&HEIGHT=256" took 5948ms
+2019-09-09 19:04:47,192 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,45,45,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:47,199 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:47,200 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:47,308 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,45,45,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:47,312 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,45,45,90&WIDTH=256&HEIGHT=256" took 120ms
+2019-09-09 19:04:47,996 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-180,45,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:48,028 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:48,029 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:48,265 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,135,-45,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:48,269 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,135,-45,180&WIDTH=256&HEIGHT=256" took 9170ms
+2019-09-09 19:04:48,445 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,135,45,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:48,449 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,135,45,180&WIDTH=256&HEIGHT=256" took 9242ms
+2019-09-09 19:04:48,746 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,90,90,135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:48,751 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:48,752 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:48,832 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 90.0 : 135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,90,90,135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:48,835 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,90,90,135&WIDTH=256&HEIGHT=256" took 89ms
+2019-09-09 19:04:48,991 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-180,0,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:48,996 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-180,0,-135&WIDTH=256&HEIGHT=256" took 9173ms
+2019-09-09 19:04:49,007 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,135,90,180&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,015 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,016 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,200 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,0,0,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,206 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,207 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,291 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,0,0,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:49,295 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,0,0,45&WIDTH=256&HEIGHT=256" took 95ms
+2019-09-09 19:04:49,303 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-135,0,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,309 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,310 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,406 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-135,0,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:49,409 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-135,0,-90&WIDTH=256&HEIGHT=256" took 106ms
+2019-09-09 19:04:49,502 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,45,90,90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,510 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,511 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,587 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 45.0 : 90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,45,90,90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:49,590 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,45,90,90&WIDTH=256&HEIGHT=256" took 88ms
+2019-09-09 19:04:49,655 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-180,90,-135&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,662 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,663 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,806 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,0,-45,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:49,814 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:49,815 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:49,907 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,0,-45,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:49,911 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,0,-45,45&WIDTH=256&HEIGHT=256" took 105ms
+2019-09-09 19:04:50,117 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-135,-45,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:50,124 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:50,125 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:50,221 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-135,-45,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,226 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-135,-45,-90&WIDTH=256&HEIGHT=256" took 109ms
+2019-09-09 19:04:50,236 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-180,-45,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,240 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-180,-45,-135&WIDTH=256&HEIGHT=256" took 8971ms
+2019-09-09 19:04:50,415 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,0,45,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:50,422 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:50,423 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:50,461 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-135,45,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:50,468 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:50,469 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:50,504 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,0,45,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,508 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,0,45,45&WIDTH=256&HEIGHT=256" took 93ms
+2019-09-09 19:04:50,560 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-135,45,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,563 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-135,45,-90&WIDTH=256&HEIGHT=256" took 102ms
+2019-09-09 19:04:50,716 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,0,90,45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:50,724 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:50,725 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:50,779 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-135,90,-90&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:50,787 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:50,788 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:50,796 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 0.0 : 45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,0,90,45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,800 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,0,90,45&WIDTH=256&HEIGHT=256" took 84ms
+2019-09-09 19:04:50,851 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -135.0 : -90.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-135,90,-90, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:50,856 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-135,90,-90&WIDTH=256&HEIGHT=256" took 77ms
+2019-09-09 19:04:51,120 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-45,0,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,130 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-90,0,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,132 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,133 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,136 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,138 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,213 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-45,0,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,217 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-45,0,0&WIDTH=256&HEIGHT=256" took 97ms
+2019-09-09 19:04:51,227 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-45.0 : 0.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-45,-90,0,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,231 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-45,-90,0,-45&WIDTH=256&HEIGHT=256" took 101ms
+2019-09-09 19:04:51,422 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-45,-45,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,429 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,430 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,473 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-90,-45,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,479 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,480 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,505 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-45,-45,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,509 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-45,-45,0&WIDTH=256&HEIGHT=256" took 87ms
+2019-09-09 19:04:51,559 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-90.0 : -45.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=-90,-90,-45,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,563 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=-90,-90,-45,-45&WIDTH=256&HEIGHT=256" took 90ms
+2019-09-09 19:04:51,675 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-45,45,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,689 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,690 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,751 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-90,45,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,757 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,758 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:51,781 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-45,45,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,784 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-45,45,0&WIDTH=256&HEIGHT=256" took 109ms
+2019-09-09 19:04:51,889 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-90,45,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:51,894 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-90,45,-45&WIDTH=256&HEIGHT=256" took 143ms
+2019-09-09 19:04:51,986 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-45,90,0&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:51,993 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:51,994 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:52,063 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -45.0 : 0.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-45,90,0, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:52,067 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-45,90,0&WIDTH=256&HEIGHT=256" took 81ms
+2019-09-09 19:04:52,080 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-90,90,-45&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:04:52,087 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-09-09 19:04:52,088 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:04:52,169 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -90.0 : -45.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-90,90,-45, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:52,173 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-90,90,-45&WIDTH=256&HEIGHT=256" took 93ms
+2019-09-09 19:04:54,366 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 45.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,-180,45,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:54,372 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=0,-180,45,-135&WIDTH=256&HEIGHT=256" took 6376ms
+2019-09-09 19:04:54,438 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&typeName=RLS:M1_MAP&outputFormat=json&CQL_FILTER=%28Country+LIKE+%27Australia%27%29&count=1" took 14982ms
+2019-09-09 19:04:54,898 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, 135.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,135,90,180, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:54,902 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,135,90,180&WIDTH=256&HEIGHT=256" took 5895ms
+2019-09-09 19:04:55,103 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[45.0 : 90.0, -180.0 : -135.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = [[ Country is like Australia ]]
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = [[ Country is like Australia ]]
+	Filters = [[ Country is like Australia ]]
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@147f02bf]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M1_MAP, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=45,-180,90,-135, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE, CQL_FILTER=(Country LIKE 'Australia')}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point_green_circle]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2019-09-09 19:04:55,106 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM1_MAP&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&CQL_FILTER=(Country%20LIKE%20'Australia')&BBOX=45,-180,90,-135&WIDTH=256&HEIGHT=256" took 5451ms
+2019-09-09 19:05:11,073 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=(Country%20LIKE%20'Australia')&downloadToken=1568020100523" "AODN-Portal/V4.40.6" "" "" 
+2019-09-09 19:05:11,088 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:05:11,090 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:05:11,093 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ Country is like Australia ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv-with-metadata-header
+    resultType = results
+2019-09-09 19:05:11,104 WARN [wfs.response] - Invalid object name 'parameters_mapping.null_metadata_summary'.
+2019-09-09 19:09:38,820 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wfs?typeName=RLS:M1_DATA&SERVICE=WFS&outputFormat=csv-with-metadata-header&REQUEST=GetFeature&VERSION=1.0.0&CQL_FILTER=(Country%20LIKE%20'Australia')&downloadToken=1568020100523" took 267747ms
+2019-09-09 19:10:31,718 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:10:31,728 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:10:31,730 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:10:31,734 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:10:31,751 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 33ms
+2019-09-09 19:13:16,082 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:13:16,097 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:13:16,099 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:13:16,103 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:13:16,137 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 54ms
+2019-09-09 19:16:06,956 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:16:06,970 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:16:06,972 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:16:06,976 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:16:07,007 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 51ms
+2019-09-09 19:17:00,707 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:17:00,715 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:17:00,716 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:17:00,721 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:17:00,736 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 29ms
+2019-09-09 19:19:42,203 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:19:42,218 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:19:42,220 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:19:42,224 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:19:42,258 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 54ms
+2019-09-09 19:22:30,772 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:22:30,786 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:22:30,788 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:22:30,792 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:22:30,831 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 58ms
+2019-09-09 19:25:21,261 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:25:21,276 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:25:21,278 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:25:21,281 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:25:21,313 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 51ms
+2019-09-09 19:26:21,409 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_222" "" "" 
+2019-09-09 19:26:21,420 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-09 19:26:21,421 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-09 19:26:21,423 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-09 19:26:21,439 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 30ms
