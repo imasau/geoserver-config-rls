@@ -70671,3 +70671,74 @@ org.geowebcache.mime.MimeException: Unsupported format request: text/javascript
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2019-09-11 04:55:51,847 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/gwc/service/wmts?REQUEST=GetCapabilities" took 169ms
+2019-09-11 05:08:55,700 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_222" "" "" 
+2019-09-11 05:08:55,714 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-11 05:08:55,716 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-11 05:08:55,720 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-11 05:08:55,754 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 54ms
+2019-09-11 05:11:46,229 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_222" "" "" 
+2019-09-11 05:11:46,242 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-11 05:11:46,244 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-11 05:11:46,248 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-11 05:11:46,279 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 50ms
+2019-09-11 05:14:37,749 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_222" "" "" 
+2019-09-11 05:14:37,758 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-11 05:14:37,759 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-11 05:14:37,762 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-11 05:14:37,792 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 43ms
+2019-09-11 05:15:35,295 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_222" "" "" 
+2019-09-11 05:15:35,307 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-09-11 05:15:35,308 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-11 05:15:35,310 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2019-09-11 05:15:35,335 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 40ms
+2019-09-11 05:20:16,232 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver/ows?service=wcs&version=1.0.0&request=GetCapabilities" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2019-09-11 05:20:16,248 INFO [geoserver.wcs] - 
+Request: getServiceInfo
+2019-09-11 05:20:16,257 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-09-11 05:20:16,258 INFO [geoserver.wcs] - 
+Request: getCapabilities
+    section = /
+    service = wcs
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+2019-09-11 05:20:16,302 INFO [geoserver.filters] - 100.43.81.124 "GET /geoserver/ows?service=wcs&version=1.0.0&request=GetCapabilities" took 70ms
