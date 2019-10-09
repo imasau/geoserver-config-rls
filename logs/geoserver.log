@@ -61074,3 +61074,29 @@ Request: getLegendGraphic
 2019-10-10 03:50:02,097 INFO [geoserver.filters] - 66.249.79.198 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=27F892AB4D3A00DBCA8432D8DC2E8FFF?0-1.IBehaviorListener.0-srsListPanel-table-listContainer-items-2-itemProperties-0-component-link" took 137ms
 2019-10-10 03:50:10,598 INFO [geoserver.filters] - 66.249.79.200 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=239BC930B51B9A92742E566B45DBBDB9?0" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
 2019-10-10 03:50:10,612 INFO [geoserver.filters] - 66.249.79.200 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=239BC930B51B9A92742E566B45DBBDB9?0" took 14ms
+2019-10-10 04:00:39,543 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350697" "python-requests/2.18.4" "" "" 
+2019-10-10 04:00:39,558 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-10-10 04:00:39,560 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-10-10 04:00:39,565 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350697 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2019-10-10 04:00:39,641 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350697" took 98ms
+2019-10-10 04:29:36,905 INFO [geoserver.filters] - 66.249.79.202 "GET /geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2019-10-10 04:29:36,925 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-10-10 04:29:36,928 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-10-10 04:29:36,929 INFO [geoserver.wfs] - 
+Request: getCapabilities
+    acceptVersions:
+        version[0] = 1.1.0
+    baseUrl = http://localhost:8082/geoserver/
+    service = wfs
+2019-10-10 04:29:36,990 INFO [geoserver.filters] - 66.249.79.202 "GET /geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities" took 84ms
