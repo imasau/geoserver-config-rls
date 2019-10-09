@@ -61100,3 +61100,31 @@ Request: getCapabilities
     baseUrl = http://localhost:8082/geoserver/
     service = wfs
 2019-10-10 04:29:36,990 INFO [geoserver.filters] - 66.249.79.202 "GET /geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities" took 84ms
+2019-10-10 04:55:20,735 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" "" 
+2019-10-10 04:55:20,749 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-10-10 04:55:20,751 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-10-10 04:55:20,755 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2019-10-10 04:55:38,070 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 17335ms
+2019-10-10 04:55:53,280 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1" "" "" 
+2019-10-10 04:55:53,288 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-10-10 04:55:53,289 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2019-10-10 04:55:53,291 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    outputFormat = csv
+    resultType = results
+2019-10-10 04:55:57,237 INFO [geoserver.filters] - 160.111.248.39 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M2_INVERT_DATA&outputFormat=csv" took 3956ms
