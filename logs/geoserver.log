@@ -91026,3 +91026,161 @@ Request: getFeature
 2020-02-06 17:59:13,499 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=6EB168EE95FDF8EF109F6D89C053504E?279-1.IBehaviorListener.0-srsListPanel-table-filterForm-navigatorTop-navigator-last" took 57ms
 2020-02-06 17:59:14,454 INFO [geoserver.filters] - 66.249.79.77 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=FB14EDB8C4F7ADB7AB9D24D6F87CF872?0" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
 2020-02-06 17:59:14,462 INFO [geoserver.filters] - 66.249.79.77 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=FB14EDB8C4F7ADB7AB9D24D6F87CF872?0" took 8ms
+2020-02-06 18:02:37,692 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" "" "" 
+2020-02-06 18:02:37,698 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:02:37,699 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:02:37,700 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:07:08,641 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912351993" "python-requests/2.18.4" "" "" 
+2020-02-06 18:07:08,647 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:07:08,647 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:07:08,648 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912351993 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-02-06 18:07:08,694 INFO [geoserver.filters] - 144.6.236.59 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912351993" took 53ms
+2020-02-06 18:07:47,480 INFO [geoserver.servlets] - OutputStream was successfully aborted.
+2020-02-06 18:07:47,480 INFO [geoserver.filters] - 5.255.250.176 "GET /geoserver/wfs?version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 309788ms
+2020-02-06 18:08:13,346 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:08:13,351 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:08:13,351 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:08:13,352 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:08:13,366 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 20ms
+2020-02-06 18:08:41,331 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=6EB168EE95FDF8EF109F6D89C053504E?199-3.IBehaviorListener.0-srsListPanel-table-listContainer-sortableLinks-0-header-link" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-02-06 18:08:41,388 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=6EB168EE95FDF8EF109F6D89C053504E?199-3.IBehaviorListener.0-srsListPanel-table-listContainer-sortableLinks-0-header-link" took 56ms
+2020-02-06 18:08:41,758 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=5808C67EDCFBB6E4CF8CF152BB9314D1?0" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-02-06 18:08:41,765 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=5808C67EDCFBB6E4CF8CF152BB9314D1?0" took 7ms
+2020-02-06 18:11:27,726 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:11:27,732 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:11:27,732 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:11:27,733 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:11:27,758 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 32ms
+2020-02-06 18:13:22,873 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:13:22,879 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:13:22,879 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:13:22,879 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:13:22,906 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 33ms
+2020-02-06 18:14:48,121 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:14:48,126 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:14:48,127 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:14:48,127 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:14:48,152 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 31ms
+2020-02-06 18:16:03,054 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:16:03,059 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:16:03,060 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:16:03,060 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:16:03,087 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 33ms
+2020-02-06 18:16:52,812 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:16:52,818 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:16:52,818 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:16:52,818 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:16:52,833 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 21ms
+2020-02-06 18:20:07,515 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:20:07,522 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:20:07,522 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:20:07,523 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:20:07,548 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 32ms
+2020-02-06 18:21:20,712 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_242" "" "" 
+2020-02-06 18:21:20,718 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-02-06 18:21:20,719 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-02-06 18:21:20,719 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-02-06 18:21:20,732 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 20ms
+2020-02-06 18:27:37,360 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=6EB168EE95FDF8EF109F6D89C053504E?192-3.IBehaviorListener.0-srsListPanel-table-navigatorBottom-navigator-last" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-02-06 18:27:37,415 INFO [geoserver.filters] - 66.249.79.79 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=6EB168EE95FDF8EF109F6D89C053504E?192-3.IBehaviorListener.0-srsListPanel-table-navigatorBottom-navigator-last" took 55ms
+2020-02-06 18:27:38,353 INFO [geoserver.filters] - 66.249.79.77 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=E21505FED011250ADAEE4E85A16E43E4?0" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-02-06 18:27:38,360 INFO [geoserver.filters] - 66.249.79.77 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.SRSListPage;jsessionid=E21505FED011250ADAEE4E85A16E43E4?0" took 7ms
