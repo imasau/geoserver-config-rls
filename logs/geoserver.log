@@ -19252,3 +19252,646 @@ Request: getCapabilities
 	Version = 1.1.1
 2020-07-14 14:00:01,217 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 35ms
 2020-07-14 14:00:01,244 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/layers?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 39ms
+2020-07-14 14:00:02,603 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:02,610 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:02,610 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:02,610 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:02,642 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 39ms
+2020-07-14 14:00:02,656 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:02,662 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:02,663 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:02,663 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:02,693 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 37ms
+2020-07-14 14:00:03,140 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/layers?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:03,147 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:03,147 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:03,147 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:03,175 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/layers?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 35ms
+2020-07-14 14:00:03,792 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms?f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:03,799 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:03,799 ERROR [geoserver.ows] - 
+org.geoserver.platform.ServiceException: Could not determine geoserver request from http request org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@6c6b2ec9
+	at org.geoserver.ows.Dispatcher.dispatch(Dispatcher.java:640)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:254)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:69)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:73)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.controller.IpBlacklistFilter.doFilter(IpBlacklistFilter.java:89)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.ControlFlowCallback.doFilter(ControlFlowCallback.java:260)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:51)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:52)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:142)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-07-14 14:00:03,800 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms?f=json" took 8ms
+2020-07-14 14:00:03,988 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:03,996 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:03,997 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:03,997 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:04,030 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 42ms
+2020-07-14 14:00:04,119 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:04,126 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:04,126 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:04,126 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {TILED=true, REQUEST=GetCapabilities, VERSION=1.3.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.3.0
+2020-07-14 14:00:04,159 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" took 40ms
+2020-07-14 14:00:04,336 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:04,344 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:04,345 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:04,345 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:04,360 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/query?f=json&layerDefs=%7B0%3A%221%3D1%22%7D" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:04,367 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:04,367 ERROR [geoserver.ows] - 
+org.geoserver.platform.ServiceException: No such operation RLS/wms null query
+	at org.geoserver.ows.Dispatcher.dispatch(Dispatcher.java:657)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:254)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:69)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:73)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.controller.IpBlacklistFilter.doFilter(IpBlacklistFilter.java:89)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.ControlFlowCallback.doFilter(ControlFlowCallback.java:260)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:51)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:52)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:142)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-07-14 14:00:04,368 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/query?f=json&layerDefs=%7B0%3A%221%3D1%22%7D" took 8ms
+2020-07-14 14:00:04,376 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms/legend?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 40ms
+2020-07-14 14:00:04,682 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetCapabilities&f=json" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:00:04,691 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:00:04,691 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:00:04,691 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = RLS
+	RawKvp = {REQUEST=GetCapabilities, F=json, VERSION=1.1.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.1.1
+2020-07-14 14:00:04,722 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/RLS/wms?service=WMS&version=1.1.0&request=GetCapabilities&f=json" took 40ms
+2020-07-14 14:01:49,361 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:01:49,368 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:01:49,369 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:01:49,369 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:01:49,392 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 31ms
+2020-07-14 14:04:02,700 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" "" "" "" 
+2020-07-14 14:04:02,707 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:04:02,708 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:04:02,709 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesList
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:04:02,938 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesList&outputFormat=csv" took 238ms
+2020-07-14 14:04:19,319 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" "" "" "" 
+2020-07-14 14:04:19,326 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:04:19,326 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:04:19,327 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}SpeciesSurvey
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:04:31,549 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurvey&outputFormat=csv" took 12230ms
+2020-07-14 14:04:35,045 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:04:35,050 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:04:35,050 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:04:35,051 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:04:35,064 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 19ms
+2020-07-14 14:05:36,393 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:05:36,399 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:05:36,399 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:05:36,400 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:05:36,412 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 19ms
+2020-07-14 14:11:34,649 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurveyObservation&outputFormat=csv&cql_filter=SurveyDate>=2020-07-05T00:00:00" "" "" "" 
+2020-07-14 14:11:34,657 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:11:34,658 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:11:34,660 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyDate >= Sun Jul 05 00:00:00 AEST 2020 ]
+        typeName[0] = {RLS}SpeciesSurveyObservation
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:11:35,467 INFO [geoserver.filters] - 128.199.204.143 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SpeciesSurveyObservation&outputFormat=csv&cql_filter=SurveyDate>=2020-07-05T00:00:00" took 818ms
+2020-07-14 14:13:28,353 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:13:28,359 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:13:28,359 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:13:28,360 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:13:28,383 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 30ms
+2020-07-14 14:15:26,959 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:15:26,965 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:15:26,966 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:15:26,966 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:15:26,988 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 29ms
+2020-07-14 14:15:44,833 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:15:44,840 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:15:44,840 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:15:44,841 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:15:44,854 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 21ms
+2020-07-14 14:17:42,839 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:17:42,847 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:17:42,848 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:17:42,849 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:17:42,873 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 34ms
+2020-07-14 14:18:21,323 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:18:21,331 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:18:21,331 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:18:21,332 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {TILED=true, REQUEST=GetCapabilities, VERSION=1.3.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.3.0
+2020-07-14 14:18:21,408 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" took 85ms
+2020-07-14 14:18:25,197 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:18:25,204 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:18:25,204 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:18:25,205 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:18:25,217 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 20ms
+2020-07-14 14:19:04,094 INFO [geoserver.filters] - 144.6.228.238 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" "python-requests/2.18.4" "" "" 
+2020-07-14 14:19:04,101 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:19:04,102 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:19:04,103 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 2000862 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-07-14 14:19:04,184 INFO [geoserver.filters] - 144.6.228.238 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" took 90ms
+2020-07-14 14:19:09,243 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:19:09,250 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:19:09,250 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:19:09,250 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:19:09,262 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 19ms
+2020-07-14 14:19:13,595 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" "https://nationalmap.gov.au/" "" 
+2020-07-14 14:19:13,599 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-07-14 14:19:13,600 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:19:13,600 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {TILED=true, REQUEST=GetCapabilities, VERSION=1.3.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.3.0
+2020-07-14 14:19:13,629 INFO [geoserver.filters] - 124.47.132.150 "GET /geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0&tiled=true" took 34ms
+2020-07-14 14:20:31,467 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:20:31,474 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:20:31,474 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:20:31,475 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:20:31,498 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 31ms
+2020-07-14 14:22:07,443 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:22:07,450 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:22:07,450 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:22:07,450 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:22:07,473 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 30ms
+2020-07-14 14:23:10,237 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:23:10,244 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:23:10,244 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:23:10,245 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:23:10,257 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 20ms
+2020-07-14 14:23:23,000 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:23:23,006 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:23:23,007 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:23:23,007 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:23:23,019 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 19ms
+2020-07-14 14:24:23,037 INFO [geoserver.filters] - 144.6.228.238 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" "python-requests/2.18.4" "" "" 
+2020-07-14 14:24:23,044 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:24:23,045 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:24:23,046 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 2000862 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-07-14 14:24:23,079 INFO [geoserver.filters] - 144.6.228.238 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=2000862" took 42ms
+2020-07-14 14:26:06,535 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:26:06,542 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:26:06,542 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:26:06,543 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:26:06,562 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 27ms
+2020-07-14 14:27:06,309 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-07-14 14:27:06,317 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-07-14 14:27:06,318 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-07-14 14:27:06,319 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-07-14 14:27:06,331 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 22ms
