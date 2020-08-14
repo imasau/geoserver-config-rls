@@ -16368,3 +16368,1151 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2020-08-14 19:27:22,674 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 32ms
+2020-08-14 19:30:59,969 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:30:59,977 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:30:59,977 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:30:59,978 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:31:00,004 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 35ms
+2020-08-14 19:31:11,369 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:31:11,376 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:31:11,377 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:31:11,377 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:31:11,391 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 22ms
+2020-08-14 19:32:13,924 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,143.32821949906247028,-38.82972472698877908,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:13,930 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:13,931 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:13,967 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@5fe4408e (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.132835211865576 143.32821949906247, -39.132835211865576 143.94138906796465, -38.82972472698878 143.94138906796465, -38.82972472698878 143.32821949906247, -39.132835211865576 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.132835211865576 143.32821949906247, -39.132835211865576 143.94138906796465, -38.82972472698878 143.94138906796465, -38.82972472698878 143.32821949906247, -39.132835211865576 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.132835211865576 143.32821949906247, -39.132835211865576 143.94138906796465, -38.82972472698878 143.94138906796465, -38.82972472698878 143.32821949906247, -39.132835211865576 143.32821949906247)) ]
+2020-08-14 19:32:14,605 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,143.32821949906247028,-38.82972472698877908,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" took 681ms
+2020-08-14 19:32:35,746 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&RESULTTYPE=hits" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:35,751 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:35,752 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:35,760 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = hits
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@139a275b (handle: null) (abstractProjectionClause: null, abstractSelectionClause: null, abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: null, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        typeNames[0] = {RLS}SiteList
+2020-08-14 19:32:35,764 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&RESULTTYPE=hits" took 18ms
+2020-08-14 19:32:38,832 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,142.71504993016006324,-38.52531807806022357,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:38,837 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:38,838 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:38,870 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@64de2c67 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.82972472698872 142.71504993016006, -38.82972472698872 143.32821949906224, -38.525318078060224 143.32821949906224, -38.525318078060224 142.71504993016006, -38.82972472698872 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.82972472698872 142.71504993016006, -38.82972472698872 143.32821949906224, -38.525318078060224 143.32821949906224, -38.525318078060224 142.71504993016006, -38.82972472698872 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.82972472698872 142.71504993016006, -38.82972472698872 143.32821949906224, -38.525318078060224 143.32821949906224, -38.525318078060224 142.71504993016006, -38.82972472698872 142.71504993016006)) ]
+2020-08-14 19:32:39,224 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,142.71504993016006324,-38.52531807806022357,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" took 392ms
+2020-08-14 19:32:42,708 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,143.32821949906247028,-38.52531807806022357,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:42,714 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:42,714 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:42,753 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@32de3264 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.82972472698872 143.32821949906247, -38.82972472698872 143.94138906796465, -38.525318078060224 143.94138906796465, -38.525318078060224 143.32821949906247, -38.82972472698872 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.82972472698872 143.32821949906247, -38.82972472698872 143.94138906796465, -38.525318078060224 143.94138906796465, -38.525318078060224 143.32821949906247, -38.82972472698872 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.82972472698872 143.32821949906247, -38.82972472698872 143.94138906796465, -38.525318078060224 143.94138906796465, -38.525318078060224 143.32821949906247, -38.82972472698872 143.32821949906247)) ]
+2020-08-14 19:32:43,083 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,143.32821949906247028,-38.52531807806022357,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" took 375ms
+2020-08-14 19:32:45,947 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,143.94138906796484889,-38.52531807806022357,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:45,952 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:45,953 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:45,986 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@91a73b6 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.82972472698872 143.94138906796485, -38.82972472698872 144.55455863686706, -38.525318078060224 144.55455863686706, -38.525318078060224 143.94138906796485, -38.82972472698872 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.82972472698872 143.94138906796485, -38.82972472698872 144.55455863686706, -38.525318078060224 144.55455863686706, -38.525318078060224 143.94138906796485, -38.82972472698872 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.82972472698872 143.94138906796485, -38.82972472698872 144.55455863686706, -38.525318078060224 144.55455863686706, -38.525318078060224 143.94138906796485, -38.82972472698872 143.94138906796485)) ]
+2020-08-14 19:32:46,275 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.82972472698872224,143.94138906796484889,-38.52531807806022357,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" took 328ms
+2020-08-14 19:32:49,072 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,142.71504993016006324,-38.82972472698877908,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:49,076 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:49,077 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:49,108 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@3c10ee3c (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.132835211865576 142.71504993016006, -39.132835211865576 143.32821949906224, -38.82972472698878 143.32821949906224, -38.82972472698878 142.71504993016006, -39.132835211865576 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.132835211865576 142.71504993016006, -39.132835211865576 143.32821949906224, -38.82972472698878 143.32821949906224, -38.82972472698878 142.71504993016006, -39.132835211865576 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.132835211865576 142.71504993016006, -39.132835211865576 143.32821949906224, -38.82972472698878 143.32821949906224, -38.82972472698878 142.71504993016006, -39.132835211865576 142.71504993016006)) ]
+2020-08-14 19:32:49,472 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,142.71504993016006324,-38.82972472698877908,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" took 399ms
+2020-08-14 19:32:52,223 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,143.94138906796484889,-38.82972472698877908,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:32:52,227 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:32:52,227 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:32:52,258 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@58256f4f (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.132835211865576 143.94138906796485, -39.132835211865576 144.55455863686706, -38.82972472698878 144.55455863686706, -38.82972472698878 143.94138906796485, -39.132835211865576 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.132835211865576 143.94138906796485, -39.132835211865576 144.55455863686706, -38.82972472698878 144.55455863686706, -38.82972472698878 143.94138906796485, -39.132835211865576 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.132835211865576 143.94138906796485, -39.132835211865576 144.55455863686706, -38.82972472698878 144.55455863686706, -38.82972472698878 143.94138906796485, -39.132835211865576 143.94138906796485)) ]
+2020-08-14 19:32:52,631 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13283521186557579,143.94138906796484889,-38.82972472698877908,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" took 408ms
+2020-08-14 19:33:32,521 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,142.71504993016006324,-39.13283521186563263,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:33:32,527 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:33:32,528 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:33:32,570 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@12b8ce15 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.43464660480874 142.71504993016006, -39.43464660480874 143.32821949906224, -39.13283521186563 143.32821949906224, -39.13283521186563 142.71504993016006, -39.43464660480874 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.43464660480874 142.71504993016006, -39.43464660480874 143.32821949906224, -39.13283521186563 143.32821949906224, -39.13283521186563 142.71504993016006, -39.43464660480874 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.43464660480874 142.71504993016006, -39.43464660480874 143.32821949906224, -39.13283521186563 143.32821949906224, -39.13283521186563 142.71504993016006, -39.43464660480874 142.71504993016006)) ]
+2020-08-14 19:33:32,873 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,142.71504993016006324,-39.13283521186563263,143.3282194990622429,urn:ogc:def:crs:EPSG::4326" took 352ms
+2020-08-14 19:33:38,360 INFO [geoserver.filters] - 66.249.79.203 "GET /geoserver/gwc/service/tms/1.0.0/RLS:SpeciesSurvey@EPSG:900913@jpeg/11" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-08-14 19:33:38,367 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:33:38,369 ERROR [geowebcache.GeoWebCacheDispatcher] - 1 http://localhost:8082/geoserver/gwc/service/tms/1.0.0/RLS:SpeciesSurvey@EPSG:900913@jpeg/11
+2020-08-14 19:33:38,369 ERROR [geowebcache.GeoWebCacheDispatcher] - Request failed
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.geowebcache.service.tms.TMSService.splitParams(TMSService.java:195)
+	at org.geowebcache.service.tms.TMSService.getConveyor(TMSService.java:101)
+	at org.geowebcache.service.tms.TMSService.getConveyor(TMSService.java:47)
+	at org.geowebcache.service.tms.TMSService$$FastClassBySpringCGLIB$$34b3521.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.geoserver.gwc.config.GWCServiceEnablementInterceptor.invoke(GWCServiceEnablementInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.geowebcache.service.tms.TMSService$$EnhancerBySpringCGLIB$$35693b4b.getConveyor(<generated>)
+	at org.geowebcache.GeoWebCacheDispatcher.handleServiceRequest(GeoWebCacheDispatcher.java:397)
+	at org.geowebcache.GeoWebCacheDispatcher.handleRequestInternal(GeoWebCacheDispatcher.java:275)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.geoserver.gwc.dispatch.GwcServiceProxy.dispatch(GwcServiceProxy.java:82)
+	at sun.reflect.GeneratedMethodAccessor570.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.geoserver.ows.Dispatcher.execute(Dispatcher.java:877)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:264)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:69)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:73)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.controller.IpBlacklistFilter.doFilter(IpBlacklistFilter.java:89)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.flow.ControlFlowCallback.doFilter(ControlFlowCallback.java:260)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:51)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:52)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:142)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:620)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-14 19:33:38,372 INFO [geoserver.filters] - 66.249.79.203 "GET /geoserver/gwc/service/tms/1.0.0/RLS:SpeciesSurvey@EPSG:900913@jpeg/11" took 12ms
+2020-08-14 19:34:00,156 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:34:00,163 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:34:00,164 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:34:00,164 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:34:00,177 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 21ms
+2020-08-14 19:34:01,201 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:34:01,206 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:34:01,206 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:34:01,207 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:34:01,222 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 21ms
+2020-08-14 19:35:02,202 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:35:02,208 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:35:02,208 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:35:02,209 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:35:02,223 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 21ms
+2020-08-14 19:36:39,941 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:36:39,949 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:36:39,950 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:36:39,950 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:36:39,981 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 40ms
+2020-08-14 19:37:22,429 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,143.32821949906247028,-39.13283521186563263,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:37:22,433 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:37:22,433 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:37:22,464 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@30949858 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.43464660480874 143.32821949906247, -39.43464660480874 143.94138906796465, -39.13283521186563 143.94138906796465, -39.13283521186563 143.32821949906247, -39.43464660480874 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.43464660480874 143.32821949906247, -39.43464660480874 143.94138906796465, -39.13283521186563 143.94138906796465, -39.13283521186563 143.32821949906247, -39.43464660480874 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.43464660480874 143.32821949906247, -39.43464660480874 143.94138906796465, -39.13283521186563 143.94138906796465, -39.13283521186563 143.32821949906247, -39.43464660480874 143.32821949906247)) ]
+2020-08-14 19:37:22,812 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,143.32821949906247028,-39.13283521186563263,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" took 383ms
+2020-08-14 19:37:25,996 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,143.94138906796484889,-39.13283521186563263,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:37:26,000 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:37:26,001 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:37:26,029 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@765a51b9 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.43464660480874 143.94138906796485, -39.43464660480874 144.55455863686706, -39.13283521186563 144.55455863686706, -39.13283521186563 143.94138906796485, -39.43464660480874 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.43464660480874 143.94138906796485, -39.43464660480874 144.55455863686706, -39.13283521186563 144.55455863686706, -39.13283521186563 143.94138906796485, -39.43464660480874 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.43464660480874 143.94138906796485, -39.43464660480874 144.55455863686706, -39.13283521186563 144.55455863686706, -39.13283521186563 143.94138906796485, -39.43464660480874 143.94138906796485)) ]
+2020-08-14 19:37:26,291 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.43464660480874073,143.94138906796484889,-39.13283521186563263,144.55455863686705698,urn:ogc:def:crs:EPSG::4326" took 295ms
+2020-08-14 19:37:43,113 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:37:43,117 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:37:43,118 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:37:43,118 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:37:43,131 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 18ms
+2020-08-14 19:37:45,721 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13320316882852268,143.32821949906247028,-38.8293551894504958,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:37:45,725 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:37:45,726 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:37:45,767 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@438ca9e4 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.13320316882852 143.32821949906247, -39.13320316882852 143.94138906796465, -38.829355189450496 143.94138906796465, -38.829355189450496 143.32821949906247, -39.13320316882852 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.13320316882852 143.32821949906247, -39.13320316882852 143.94138906796465, -38.829355189450496 143.94138906796465, -38.829355189450496 143.32821949906247, -39.13320316882852 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.13320316882852 143.32821949906247, -39.13320316882852 143.94138906796465, -38.829355189450496 143.94138906796465, -38.829355189450496 143.32821949906247, -39.13320316882852 143.32821949906247)) ]
+2020-08-14 19:37:46,033 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.13320316882852268,143.32821949906247028,-38.8293551894504958,143.94138906796464994,urn:ogc:def:crs:EPSG::4326" took 312ms
+2020-08-14 19:37:55,425 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.14614651571127268,143.32821949906247028,-38.81635379423781984,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:37:55,429 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:37:55,430 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:37:55,471 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@3cd84305 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.14614651571127 143.32821949906247, -39.14614651571127 143.9413890679651, -38.81635379423782 143.9413890679651, -38.81635379423782 143.32821949906247, -39.14614651571127 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.14614651571127 143.32821949906247, -39.14614651571127 143.9413890679651, -38.81635379423782 143.9413890679651, -38.81635379423782 143.32821949906247, -39.14614651571127 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.14614651571127 143.32821949906247, -39.14614651571127 143.9413890679651, -38.81635379423782 143.9413890679651, -38.81635379423782 143.32821949906247, -39.14614651571127 143.32821949906247)) ]
+2020-08-14 19:37:55,746 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.14614651571127268,143.32821949906247028,-38.81635379423781984,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" took 321ms
+2020-08-14 19:38:04,953 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,143.32821949906247028,-38.80937832304150703,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:38:04,957 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:38:04,958 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:38:04,989 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2599b24 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.153088888372324 143.32821949906247, -39.153088888372324 143.9413890679651, -38.80937832304151 143.9413890679651, -38.80937832304151 143.32821949906247, -39.153088888372324 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.153088888372324 143.32821949906247, -39.153088888372324 143.9413890679651, -38.80937832304151 143.9413890679651, -38.80937832304151 143.32821949906247, -39.153088888372324 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.153088888372324 143.32821949906247, -39.153088888372324 143.9413890679651, -38.80937832304151 143.9413890679651, -38.80937832304151 143.32821949906247, -39.153088888372324 143.32821949906247)) ]
+2020-08-14 19:38:05,251 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,143.32821949906247028,-38.80937832304150703,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" took 298ms
+2020-08-14 19:39:09,429 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,142.71504993016006324,-38.46400137384318185,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:09,433 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:09,433 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:09,463 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@1f8603ae (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.80937832304148 142.71504993016006, -38.80937832304148 143.3282194990627, -38.46400137384318 143.3282194990627, -38.46400137384318 142.71504993016006, -38.80937832304148 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.80937832304148 142.71504993016006, -38.80937832304148 143.3282194990627, -38.46400137384318 143.3282194990627, -38.46400137384318 142.71504993016006, -38.80937832304148 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.80937832304148 142.71504993016006, -38.80937832304148 143.3282194990627, -38.46400137384318 143.3282194990627, -38.46400137384318 142.71504993016006, -38.80937832304148 142.71504993016006)) ]
+2020-08-14 19:39:09,724 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,142.71504993016006324,-38.46400137384318185,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" took 295ms
+2020-08-14 19:39:11,099 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,143.32821949906247028,-38.46400137384318185,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:11,102 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:11,103 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:11,134 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2d9cddb4 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.80937832304148 143.32821949906247, -38.80937832304148 143.9413890679651, -38.46400137384318 143.9413890679651, -38.46400137384318 143.32821949906247, -38.80937832304148 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.80937832304148 143.32821949906247, -38.80937832304148 143.9413890679651, -38.46400137384318 143.9413890679651, -38.46400137384318 143.32821949906247, -38.80937832304148 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.80937832304148 143.32821949906247, -38.80937832304148 143.9413890679651, -38.46400137384318 143.9413890679651, -38.46400137384318 143.32821949906247, -38.80937832304148 143.32821949906247)) ]
+2020-08-14 19:39:11,393 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,143.32821949906247028,-38.46400137384318185,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" took 294ms
+2020-08-14 19:39:12,875 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,143.94138906796484889,-38.46400137384318185,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:12,879 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:12,879 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:12,910 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2ac9ff58 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-38.80937832304148 143.94138906796485, -38.80937832304148 144.5545586368675, -38.46400137384318 144.5545586368675, -38.46400137384318 143.94138906796485, -38.80937832304148 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-38.80937832304148 143.94138906796485, -38.80937832304148 144.5545586368675, -38.46400137384318 144.5545586368675, -38.46400137384318 143.94138906796485, -38.80937832304148 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-38.80937832304148 143.94138906796485, -38.80937832304148 144.5545586368675, -38.46400137384318 144.5545586368675, -38.46400137384318 143.94138906796485, -38.80937832304148 143.94138906796485)) ]
+2020-08-14 19:39:13,218 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-38.80937832304147861,143.94138906796484889,-38.46400137384318185,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" took 343ms
+2020-08-14 19:39:14,147 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,142.71504993016006324,-38.80937832304150703,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:14,150 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:14,151 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:14,182 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@605e3128 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.153088888372324 142.71504993016006, -39.153088888372324 143.3282194990627, -38.80937832304151 143.3282194990627, -38.80937832304151 142.71504993016006, -39.153088888372324 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.153088888372324 142.71504993016006, -39.153088888372324 143.3282194990627, -38.80937832304151 143.3282194990627, -38.80937832304151 142.71504993016006, -39.153088888372324 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.153088888372324 142.71504993016006, -39.153088888372324 143.3282194990627, -38.80937832304151 143.3282194990627, -38.80937832304151 142.71504993016006, -39.153088888372324 142.71504993016006)) ]
+2020-08-14 19:39:14,443 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,142.71504993016006324,-38.80937832304150703,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" took 296ms
+2020-08-14 19:39:15,424 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,143.94138906796484889,-38.80937832304150703,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:15,428 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:15,428 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:15,467 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@7b0c324f (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.153088888372324 143.94138906796485, -39.153088888372324 144.5545586368675, -38.80937832304151 144.5545586368675, -38.80937832304151 143.94138906796485, -39.153088888372324 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.153088888372324 143.94138906796485, -39.153088888372324 144.5545586368675, -38.80937832304151 144.5545586368675, -38.80937832304151 143.94138906796485, -39.153088888372324 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.153088888372324 143.94138906796485, -39.153088888372324 144.5545586368675, -38.80937832304151 144.5545586368675, -38.80937832304151 143.94138906796485, -39.153088888372324 143.94138906796485)) ]
+2020-08-14 19:39:15,725 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.15308888837232359,143.94138906796484889,-38.80937832304150703,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" took 301ms
+2020-08-14 19:39:16,780 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,142.71504993016006324,-39.15308888837235202,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:16,784 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:16,784 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:16,814 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2de03a8c (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.495128800724295 142.71504993016006, -39.495128800724295 143.3282194990627, -39.15308888837235 143.3282194990627, -39.15308888837235 142.71504993016006, -39.495128800724295 142.71504993016006)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.495128800724295 142.71504993016006, -39.495128800724295 143.3282194990627, -39.15308888837235 143.3282194990627, -39.15308888837235 142.71504993016006, -39.495128800724295 142.71504993016006)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.495128800724295 142.71504993016006, -39.495128800724295 143.3282194990627, -39.15308888837235 143.3282194990627, -39.15308888837235 142.71504993016006, -39.495128800724295 142.71504993016006)) ]
+2020-08-14 19:39:17,073 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,142.71504993016006324,-39.15308888837235202,143.32821949906269765,urn:ogc:def:crs:EPSG::4326" took 293ms
+2020-08-14 19:39:18,071 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,143.32821949906247028,-39.15308888837235202,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:18,075 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:18,075 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:18,103 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2a0341a6 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.495128800724295 143.32821949906247, -39.495128800724295 143.9413890679651, -39.15308888837235 143.9413890679651, -39.15308888837235 143.32821949906247, -39.495128800724295 143.32821949906247)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.495128800724295 143.32821949906247, -39.495128800724295 143.9413890679651, -39.15308888837235 143.9413890679651, -39.15308888837235 143.32821949906247, -39.495128800724295 143.32821949906247)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.495128800724295 143.32821949906247, -39.495128800724295 143.9413890679651, -39.15308888837235 143.9413890679651, -39.15308888837235 143.32821949906247, -39.495128800724295 143.32821949906247)) ]
+2020-08-14 19:39:18,376 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,143.32821949906247028,-39.15308888837235202,143.94138906796510469,urn:ogc:def:crs:EPSG::4326" took 305ms
+2020-08-14 19:39:19,752 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,143.94138906796484889,-39.15308888837235202,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:39:19,756 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:39:19,757 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:39:19,787 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@2538f7dc (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-39.495128800724295 143.94138906796485, -39.495128800724295 144.5545586368675, -39.15308888837235 144.5545586368675, -39.15308888837235 143.94138906796485, -39.495128800724295 143.94138906796485)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-39.495128800724295 143.94138906796485, -39.495128800724295 144.5545586368675, -39.15308888837235 144.5545586368675, -39.15308888837235 143.94138906796485, -39.495128800724295 143.94138906796485)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-39.495128800724295 143.94138906796485, -39.495128800724295 144.5545586368675, -39.15308888837235 144.5545586368675, -39.15308888837235 143.94138906796485, -39.495128800724295 143.94138906796485)) ]
+2020-08-14 19:39:20,048 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-39.4951288007242951,143.94138906796484889,-39.15308888837235202,144.55455863686751172,urn:ogc:def:crs:EPSG::4326" took 296ms
+2020-08-14 19:42:40,104 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,108.41200202463903679,-6.9616034374251754,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:42:40,109 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:42:40,110 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:42:40,164 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@7286275e (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-30.333161572709944 108.41200202463904, -30.333161572709944 142.91407857688677, -6.961603437425175 142.91407857688677, -6.961603437425175 108.41200202463904, -30.333161572709944 108.41200202463904)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-30.333161572709944 108.41200202463904, -30.333161572709944 142.91407857688677, -6.961603437425175 142.91407857688677, -6.961603437425175 108.41200202463904, -30.333161572709944 108.41200202463904)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-30.333161572709944 108.41200202463904, -30.333161572709944 142.91407857688677, -6.961603437425175 142.91407857688677, -6.961603437425175 108.41200202463904, -30.333161572709944 108.41200202463904)) ]
+2020-08-14 19:42:40,448 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,108.41200202463903679,-6.9616034374251754,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" took 344ms
+2020-08-14 19:42:53,091 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,73.90992547239156352,17.61637998256986748,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:42:53,094 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:42:53,095 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:42:53,137 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@3a1fb4a8 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-6.961603437425198 73.90992547239156, -6.961603437425198 108.41200202463929, 17.616379982569867 108.41200202463929, 17.616379982569867 73.90992547239156, -6.961603437425198 73.90992547239156)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-6.961603437425198 73.90992547239156, -6.961603437425198 108.41200202463929, 17.616379982569867 108.41200202463929, 17.616379982569867 73.90992547239156, -6.961603437425198 73.90992547239156)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-6.961603437425198 73.90992547239156, -6.961603437425198 108.41200202463929, 17.616379982569867 108.41200202463929, 17.616379982569867 73.90992547239156, -6.961603437425198 73.90992547239156)) ]
+2020-08-14 19:42:53,483 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,73.90992547239156352,17.61637998256986748,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" took 392ms
+2020-08-14 19:42:57,433 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,108.41200202463903679,17.61637998256986748,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:42:57,437 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:42:57,438 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:42:57,474 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@6ae1ce9d (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-6.961603437425198 108.41200202463904, -6.961603437425198 142.91407857688677, 17.616379982569867 142.91407857688677, 17.616379982569867 108.41200202463904, -6.961603437425198 108.41200202463904)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-6.961603437425198 108.41200202463904, -6.961603437425198 142.91407857688677, 17.616379982569867 142.91407857688677, 17.616379982569867 108.41200202463904, -6.961603437425198 108.41200202463904)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-6.961603437425198 108.41200202463904, -6.961603437425198 142.91407857688677, 17.616379982569867 142.91407857688677, 17.616379982569867 108.41200202463904, -6.961603437425198 108.41200202463904)) ]
+2020-08-14 19:42:57,735 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,108.41200202463903679,17.61637998256986748,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" took 302ms
+2020-08-14 19:43:27,310 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,142.91407857688648164,17.61637998256986748,177.41615512913375596,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:43:27,314 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:27,315 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:27,362 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@716f0fbf (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-6.961603437425198 142.91407857688648, -6.961603437425198 177.41615512913376, 17.616379982569867 177.41615512913376, 17.616379982569867 142.91407857688648, -6.961603437425198 142.91407857688648)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-6.961603437425198 142.91407857688648, -6.961603437425198 177.41615512913376, 17.616379982569867 177.41615512913376, 17.616379982569867 142.91407857688648, -6.961603437425198 142.91407857688648)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-6.961603437425198 142.91407857688648, -6.961603437425198 177.41615512913376, 17.616379982569867 177.41615512913376, 17.616379982569867 142.91407857688648, -6.961603437425198 142.91407857688648)) ]
+2020-08-14 19:43:27,636 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-6.9616034374251976,142.91407857688648164,17.61637998256986748,177.41615512913375596,urn:ogc:def:crs:EPSG::4326" took 326ms
+2020-08-14 19:43:36,791 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,73.90992547239156352,-6.9616034374251754,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:43:36,795 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:36,795 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:36,830 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@6e9d69f6 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-30.333161572709944 73.90992547239156, -30.333161572709944 108.41200202463929, -6.961603437425175 108.41200202463929, -6.961603437425175 73.90992547239156, -30.333161572709944 73.90992547239156)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-30.333161572709944 73.90992547239156, -30.333161572709944 108.41200202463929, -6.961603437425175 108.41200202463929, -6.961603437425175 73.90992547239156, -30.333161572709944 73.90992547239156)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-30.333161572709944 73.90992547239156, -30.333161572709944 108.41200202463929, -6.961603437425175 108.41200202463929, -6.961603437425175 73.90992547239156, -30.333161572709944 73.90992547239156)) ]
+2020-08-14 19:43:37,101 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,73.90992547239156352,-6.9616034374251754,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" took 310ms
+2020-08-14 19:43:42,982 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,142.91407857688648164,-6.9616034374251754,177.41615512913375596,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:43:42,987 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:42,987 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:43,031 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@776406ae (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-30.333161572709944 142.91407857688648, -30.333161572709944 177.41615512913376, -6.961603437425175 177.41615512913376, -6.961603437425175 142.91407857688648, -30.333161572709944 142.91407857688648)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-30.333161572709944 142.91407857688648, -30.333161572709944 177.41615512913376, -6.961603437425175 177.41615512913376, -6.961603437425175 142.91407857688648, -30.333161572709944 142.91407857688648)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-30.333161572709944 142.91407857688648, -30.333161572709944 177.41615512913376, -6.961603437425175 177.41615512913376, -6.961603437425175 142.91407857688648, -30.333161572709944 142.91407857688648)) ]
+2020-08-14 19:43:43,304 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.33316157270994395,142.91407857688648164,-6.9616034374251754,177.41615512913375596,urn:ogc:def:crs:EPSG::4326" took 322ms
+2020-08-14 19:43:48,274 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-49.24196452055154083,73.90992547239156352,-30.33316157270992619,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:43:48,279 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:48,279 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:48,314 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@56fc2549 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-49.24196452055154 73.90992547239156, -49.24196452055154 108.41200202463929, -30.333161572709926 108.41200202463929, -30.333161572709926 73.90992547239156, -49.24196452055154 73.90992547239156)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-49.24196452055154 73.90992547239156, -49.24196452055154 108.41200202463929, -30.333161572709926 108.41200202463929, -30.333161572709926 73.90992547239156, -49.24196452055154 73.90992547239156)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-49.24196452055154 73.90992547239156, -49.24196452055154 108.41200202463929, -30.333161572709926 108.41200202463929, -30.333161572709926 73.90992547239156, -49.24196452055154 73.90992547239156)) ]
+2020-08-14 19:43:48,588 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-49.24196452055154083,73.90992547239156352,-30.33316157270992619,108.41200202463929259,urn:ogc:def:crs:EPSG::4326" took 314ms
+2020-08-14 19:43:52,764 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:43:52,770 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:52,770 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:52,770 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:43:52,786 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 22ms
+2020-08-14 19:43:57,026 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-49.24196452055154083,108.41200202463903679,-30.33316157270992619,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:43:57,030 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:43:57,031 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:43:57,060 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@52ef003f (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-49.24196452055154 108.41200202463904, -49.24196452055154 142.91407857688677, -30.333161572709926 142.91407857688677, -30.333161572709926 108.41200202463904, -49.24196452055154 108.41200202463904)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-49.24196452055154 108.41200202463904, -49.24196452055154 142.91407857688677, -30.333161572709926 142.91407857688677, -30.333161572709926 108.41200202463904, -49.24196452055154 108.41200202463904)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-49.24196452055154 108.41200202463904, -49.24196452055154 142.91407857688677, -30.333161572709926 142.91407857688677, -30.333161572709926 108.41200202463904, -49.24196452055154 108.41200202463904)) ]
+2020-08-14 19:43:57,329 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-49.24196452055154083,108.41200202463903679,-30.33316157270992619,142.91407857688676586,urn:ogc:def:crs:EPSG::4326" took 303ms
+2020-08-14 19:44:32,209 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-90,-180,90,180,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:44:32,213 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:44:32,214 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:44:32,244 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@102d4db5 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-90 -180, -90 180, 90 180, 90 -180, -90 -180)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-90 -180, -90 180, 90 180, 90 -180, -90 -180)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-90 -180, -90 180, 90 180, 90 -180, -90 -180)) ]
+2020-08-14 19:44:32,601 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-90,-180,90,180,urn:ogc:def:crs:EPSG::4326" took 392ms
+2020-08-14 19:45:55,911 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/ows?SERVICE=WFS&REQUEST=GetCapabilities&ACCEPTVERSIONS=2.0.0,1.1.0,1.0.0" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:45:55,916 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:45:55,916 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:45:55,916 INFO [geoserver.wfs] - 
+Request: getCapabilities
+    acceptVersions:
+        version[0] = 2.0.0version[0] = 1.1.0version[0] = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    service = WFS
+2020-08-14 19:45:55,936 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/ows?SERVICE=WFS&REQUEST=GetCapabilities&ACCEPTVERSIONS=2.0.0,1.1.0,1.0.0" took 25ms
+2020-08-14 19:45:56,297 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=DescribeFeatureType&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:45:56,300 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:45:56,300 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:45:56,301 INFO [geoserver.wfs] - 
+Request: describeFeatureType
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    typeName[0] = {RLS}SiteList
+    outputFormat = application/gml+xml; version=3.2
+2020-08-14 19:45:56,307 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=DescribeFeatureType&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList" took 10ms
+2020-08-14 19:45:56,593 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=1&SRSNAME=urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:45:56,596 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:45:56,596 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:45:56,620 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 1
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@32ecc81b (handle: null) (abstractProjectionClause: null, abstractSelectionClause: null, abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+2020-08-14 19:45:56,641 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=1&SRSNAME=urn:ogc:def:crs:EPSG::4326" took 48ms
+2020-08-14 19:46:09,888 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:46:09,893 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:46:09,893 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:46:09,894 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:46:09,906 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 18ms
+2020-08-14 19:46:40,588 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-48.93543573440782524,132.18906302028437949,-32.05877857590508029,163.24430456905747633,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:46:40,592 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:46:40,593 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:46:40,626 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@267a1d57 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-48.935435734407825 132.18906302028438, -48.935435734407825 163.24430456905748, -32.05877857590508 163.24430456905748, -32.05877857590508 132.18906302028438, -48.935435734407825 132.18906302028438)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-48.935435734407825 132.18906302028438, -48.935435734407825 163.24430456905748, -32.05877857590508 163.24430456905748, -32.05877857590508 132.18906302028438, -48.935435734407825 132.18906302028438)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-48.935435734407825 132.18906302028438, -48.935435734407825 163.24430456905748, -32.05877857590508 163.24430456905748, -32.05877857590508 132.18906302028438, -48.935435734407825 132.18906302028438)) ]
+2020-08-14 19:46:40,895 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-48.93543573440782524,132.18906302028437949,-32.05877857590508029,163.24430456905747633,urn:ogc:def:crs:EPSG::4326" took 307ms
+2020-08-14 19:47:10,630 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&RESULTTYPE=hits" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-14 19:47:10,634 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:47:10,635 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:47:10,644 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = hits
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@e677f9d (handle: null) (abstractProjectionClause: null, abstractSelectionClause: null, abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: null, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        typeNames[0] = {RLS}SiteList
+2020-08-14 19:47:10,648 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&RESULTTYPE=hits" took 18ms
+2020-08-14 19:48:06,820 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:48:06,825 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:48:06,825 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:48:06,826 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:48:06,838 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 18ms
+2020-08-14 19:48:49,722 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:48:49,727 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:48:49,727 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:48:49,727 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:48:49,753 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 31ms
+2020-08-14 19:51:40,853 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:51:40,860 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:51:40,861 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:51:40,863 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:51:40,888 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 35ms
+2020-08-14 19:55:19,198 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:55:19,204 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:55:19,205 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:55:19,206 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:55:19,230 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 32ms
+2020-08-14 19:56:29,225 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:56:29,229 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:56:29,230 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:56:29,230 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:56:29,246 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 21ms
+2020-08-14 19:58:19,517 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:58:19,525 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:58:19,525 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:58:19,526 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:58:19,550 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 33ms
+2020-08-14 19:59:18,578 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-08-14 19:59:18,585 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:59:18,586 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:59:18,586 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:59:18,602 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 24ms
+2020-08-14 19:59:21,207 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-14 19:59:21,215 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-14 19:59:21,215 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-14 19:59:21,215 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-14 19:59:21,228 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 21ms
