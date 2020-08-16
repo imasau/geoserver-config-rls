@@ -65900,3 +65900,1361 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2020-08-16 09:28:40,910 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 17ms
+2020-08-16 09:30:06,623 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350172" "python-requests/2.18.4" "" "" 
+2020-08-16 09:30:06,628 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:06,628 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:06,629 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350172 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:30:06,655 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350172" took 32ms
+2020-08-16 09:30:11,966 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-33.7607272430456149,114.78769095016232882,-33.11898289052950162,115.89235369655476404,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:11,970 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:11,970 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:12,003 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@367ff178 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-33.760727243045615 114.78769095016233, -33.760727243045615 115.89235369655476, -33.1189828905295 115.89235369655476, -33.1189828905295 114.78769095016233, -33.760727243045615 114.78769095016233)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-33.760727243045615 114.78769095016233, -33.760727243045615 115.89235369655476, -33.1189828905295 115.89235369655476, -33.1189828905295 114.78769095016233, -33.760727243045615 114.78769095016233)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-33.760727243045615 114.78769095016233, -33.760727243045615 115.89235369655476, -33.1189828905295 115.89235369655476, -33.1189828905295 114.78769095016233, -33.760727243045615 114.78769095016233)) ]
+2020-08-16 09:30:12,278 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-33.7607272430456149,114.78769095016232882,-33.11898289052950162,115.89235369655476404,urn:ogc:def:crs:EPSG::4326" took 312ms
+2020-08-16 09:30:14,792 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.05793006014853574,114.46578302849447084,-33.4184008976574134,115.57044577488689185,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:14,796 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:14,797 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:14,831 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@765bf53f (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-34.057930060148536 114.46578302849447, -34.057930060148536 115.57044577488689, -33.41840089765741 115.57044577488689, -33.41840089765741 114.46578302849447, -34.057930060148536 114.46578302849447)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-34.057930060148536 114.46578302849447, -34.057930060148536 115.57044577488689, -33.41840089765741 115.57044577488689, -33.41840089765741 114.46578302849447, -34.057930060148536 114.46578302849447)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-34.057930060148536 114.46578302849447, -34.057930060148536 115.57044577488689, -33.41840089765741 115.57044577488689, -33.41840089765741 114.46578302849447, -34.057930060148536 114.46578302849447)) ]
+2020-08-16 09:30:15,101 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.05793006014853574,114.46578302849447084,-33.4184008976574134,115.57044577488689185,urn:ogc:def:crs:EPSG::4326" took 309ms
+2020-08-16 09:30:17,642 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.23931267861962624,113.9628630536091265,-32.95821739984406662,116.17218854639337167,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:17,646 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:17,647 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:17,677 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@e31386e (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-34.239312678619626 113.96286305360913, -34.239312678619626 116.17218854639337, -32.95821739984407 116.17218854639337, -32.95821739984407 113.96286305360913, -34.239312678619626 113.96286305360913)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-34.239312678619626 113.96286305360913, -34.239312678619626 116.17218854639337, -32.95821739984407 116.17218854639337, -32.95821739984407 113.96286305360913, -34.239312678619626 113.96286305360913)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-34.239312678619626 113.96286305360913, -34.239312678619626 116.17218854639337, -32.95821739984407 116.17218854639337, -32.95821739984407 113.96286305360913, -34.239312678619626 113.96286305360913)) ]
+2020-08-16 09:30:17,951 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.23931267861962624,113.9628630536091265,-32.95821739984406662,116.17218854639337167,urn:ogc:def:crs:EPSG::4326" took 309ms
+2020-08-16 09:30:19,474 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.90157359870011788,113.81022586278788822,-33.63047740885383519,116.01955135557213339,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:19,478 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:19,479 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:19,509 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@e6d1667 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-34.90157359870012 113.81022586278789, -34.90157359870012 116.01955135557213, -33.630477408853835 116.01955135557213, -33.630477408853835 113.81022586278789, -34.90157359870012 113.81022586278789)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-34.90157359870012 113.81022586278789, -34.90157359870012 116.01955135557213, -33.630477408853835 116.01955135557213, -33.630477408853835 113.81022586278789, -34.90157359870012 113.81022586278789)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-34.90157359870012 113.81022586278789, -34.90157359870012 116.01955135557213, -33.630477408853835 116.01955135557213, -33.630477408853835 113.81022586278789, -34.90157359870012 113.81022586278789)) ]
+2020-08-16 09:30:19,844 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-34.90157359870011788,113.81022586278788822,-33.63047740885383519,116.01955135557213339,urn:ogc:def:crs:EPSG::4326" took 370ms
+2020-08-16 09:30:21,677 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-35.35769784787782299,112.64000739982510879,-32.81031750051064932,117.05865838539358492,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:21,681 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:21,681 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:21,711 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@19679148 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-35.35769784787782 112.64000739982511, -35.35769784787782 117.05865838539358, -32.81031750051065 117.05865838539358, -32.81031750051065 112.64000739982511, -35.35769784787782 112.64000739982511)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-35.35769784787782 112.64000739982511, -35.35769784787782 117.05865838539358, -32.81031750051065 117.05865838539358, -32.81031750051065 112.64000739982511, -35.35769784787782 112.64000739982511)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-35.35769784787782 112.64000739982511, -35.35769784787782 117.05865838539358, -32.81031750051065 117.05865838539358, -32.81031750051065 112.64000739982511, -35.35769784787782 112.64000739982511)) ]
+2020-08-16 09:30:21,979 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-35.35769784787782299,112.64000739982510879,-32.81031750051064932,117.05865838539358492,urn:ogc:def:crs:EPSG::4326" took 302ms
+2020-08-16 09:30:24,420 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-35.44064456391638629,110.98839471965690961,-30.27569612455991432,119.82569669079390451,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:24,425 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:24,425 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:24,472 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@1ac56a28 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-35.440644563916386 110.98839471965691, -35.440644563916386 119.8256966907939, -30.275696124559914 119.8256966907939, -30.275696124559914 110.98839471965691, -35.440644563916386 110.98839471965691)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-35.440644563916386 110.98839471965691, -35.440644563916386 119.8256966907939, -30.275696124559914 119.8256966907939, -30.275696124559914 110.98839471965691, -35.440644563916386 110.98839471965691)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-35.440644563916386 110.98839471965691, -35.440644563916386 119.8256966907939, -30.275696124559914 119.8256966907939, -30.275696124559914 110.98839471965691, -35.440644563916386 110.98839471965691)) ]
+2020-08-16 09:30:24,741 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-35.44064456391638629,110.98839471965690961,-30.27569612455991432,119.82569669079390451,urn:ogc:def:crs:EPSG::4326" took 321ms
+2020-08-16 09:30:27,280 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-33.24345597923989004,111.31715174604109109,-27.95082619073890484,120.15445371717808598,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:27,284 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:27,285 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:27,316 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@10c0b40c (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-33.24345597923989 111.31715174604109, -33.24345597923989 120.15445371717809, -27.950826190738905 120.15445371717809, -27.950826190738905 111.31715174604109, -33.24345597923989 111.31715174604109)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-33.24345597923989 111.31715174604109, -33.24345597923989 120.15445371717809, -27.950826190738905 120.15445371717809, -27.950826190738905 111.31715174604109, -33.24345597923989 111.31715174604109)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-33.24345597923989 111.31715174604109, -33.24345597923989 120.15445371717809, -27.950826190738905 120.15445371717809, -27.950826190738905 111.31715174604109, -33.24345597923989 111.31715174604109)) ]
+2020-08-16 09:30:27,585 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-33.24345597923989004,111.31715174604109109,-27.95082619073890484,120.15445371717808598,urn:ogc:def:crs:EPSG::4326" took 305ms
+2020-08-16 09:30:30,284 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.16085024257066038,108.68318176084389393,-26.4400884576926849,113.10183274641239848,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:30,288 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:30,288 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:30,321 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@1ad9d6a0 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-29.16085024257066 108.6831817608439, -29.16085024257066 113.1018327464124, -26.440088457692685 113.1018327464124, -26.440088457692685 108.6831817608439, -29.16085024257066 108.6831817608439)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-29.16085024257066 108.6831817608439, -29.16085024257066 113.1018327464124, -26.440088457692685 113.1018327464124, -26.440088457692685 108.6831817608439, -29.16085024257066 108.6831817608439)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-29.16085024257066 108.6831817608439, -29.16085024257066 113.1018327464124, -26.440088457692685 113.1018327464124, -26.440088457692685 108.6831817608439, -29.16085024257066 108.6831817608439)) ]
+2020-08-16 09:30:30,588 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.16085024257066038,108.68318176084389393,-26.4400884576926849,113.10183274641239848,urn:ogc:def:crs:EPSG::4326" took 304ms
+2020-08-16 09:30:30,980 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.39054785768427536,112.65957627044321043,-27.70161906223192361,117.0782272560117292,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:30,984 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:30,984 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:31,014 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@23240416 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-30.390547857684275 112.65957627044321, -30.390547857684275 117.07822725601173, -27.701619062231924 117.07822725601173, -27.701619062231924 112.65957627044321, -30.390547857684275 112.65957627044321)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-30.390547857684275 112.65957627044321, -30.390547857684275 117.07822725601173, -27.701619062231924 117.07822725601173, -27.701619062231924 112.65957627044321, -30.390547857684275 112.65957627044321)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-30.390547857684275 112.65957627044321, -30.390547857684275 117.07822725601173, -27.701619062231924 117.07822725601173, -27.701619062231924 112.65957627044321, -30.390547857684275 112.65957627044321)) ]
+2020-08-16 09:30:31,287 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-30.39054785768427536,112.65957627044321043,-27.70161906223192361,117.0782272560117292,urn:ogc:def:crs:EPSG::4326" took 307ms
+2020-08-16 09:30:33,153 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.682425557983386,112.29559527694644316,-26.97500751702306232,116.71424626251493351,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:33,157 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:33,157 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:33,186 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@60f90486 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-29.682425557983386 112.29559527694644, -29.682425557983386 116.71424626251493, -26.975007517023062 116.71424626251493, -26.975007517023062 112.29559527694644, -29.682425557983386 112.29559527694644)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-29.682425557983386 112.29559527694644, -29.682425557983386 116.71424626251493, -26.975007517023062 116.71424626251493, -26.975007517023062 112.29559527694644, -29.682425557983386 112.29559527694644)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-29.682425557983386 112.29559527694644, -29.682425557983386 116.71424626251493, -26.975007517023062 116.71424626251493, -26.975007517023062 112.29559527694644, -29.682425557983386 112.29559527694644)) ]
+2020-08-16 09:30:33,449 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.682425557983386,112.29559527694644316,-26.97500751702306232,116.71424626251493351,urn:ogc:def:crs:EPSG::4326" took 295ms
+2020-08-16 09:30:36,143 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:30:36,148 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:36,148 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:36,148 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:30:36,163 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 20ms
+2020-08-16 09:30:36,910 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.93372654419371059,111.82202860798825839,-27.23282096777347405,116.24067959355674873,urn:ogc:def:crs:EPSG::4326" "Mozilla/5.0 QGIS/31203" "" "" 
+2020-08-16 09:30:36,914 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:30:36,914 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:30:36,955 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 2.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    count = 20000000
+    outputFormat = application/gml+xml; version=3.2
+    resolve = none
+    resolveDepth = *
+    resolveTimeout = 300
+    resultType = results
+    startIndex = 0
+    abstractQueryExpressionGroup[0] = wfs:abstractQueryExpression=net.opengis.wfs20.impl.QueryTypeImpl@60acb8d5 (handle: null) (abstractProjectionClause: null, abstractSelectionClause: [  bbox POLYGON ((-29.93372654419371 111.82202860798826, -29.93372654419371 116.24067959355675, -27.232820967773474 116.24067959355675, -27.232820967773474 111.82202860798826, -29.93372654419371 111.82202860798826)) ], abstractSortingClause: null, aliases: null, typeNames: [{RLS}SiteList]) (featureVersion: null, srsName: urn:ogc:def:crs:EPSG::4326, filter: null, propertyNames: null, sortBy: null)
+    abstractQueryExpression[0]:
+        abstractSelectionClause = [  bbox POLYGON ((-29.93372654419371 111.82202860798826, -29.93372654419371 116.24067959355675, -27.232820967773474 116.24067959355675, -27.232820967773474 111.82202860798826, -29.93372654419371 111.82202860798826)) ]
+        typeNames[0] = {RLS}SiteList
+        srsName = urn:ogc:def:crs:EPSG::4326
+        filter = [  bbox POLYGON ((-29.93372654419371 111.82202860798826, -29.93372654419371 116.24067959355675, -27.232820967773474 116.24067959355675, -27.232820967773474 111.82202860798826, -29.93372654419371 111.82202860798826)) ]
+2020-08-16 09:30:37,227 INFO [geoserver.filters] - 118.208.212.162 "GET /geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=RLS:SiteList&TYPENAME=RLS:SiteList&STARTINDEX=0&COUNT=20000000&SRSNAME=urn:ogc:def:crs:EPSG::4326&BBOX=-29.93372654419371059,111.82202860798825839,-27.23282096777347405,116.24067959355674873,urn:ogc:def:crs:EPSG::4326" took 317ms
+2020-08-16 09:31:20,641 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350176" "python-requests/2.18.4" "" "" 
+2020-08-16 09:31:20,646 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:31:20,646 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:31:20,647 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350176 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:31:20,665 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350176" took 24ms
+2020-08-16 09:31:39,888 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350177" "python-requests/2.18.4" "" "" 
+2020-08-16 09:31:39,893 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:31:39,893 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:31:39,894 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350177 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:31:39,911 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350177" took 23ms
+2020-08-16 09:32:00,686 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350178" "python-requests/2.18.4" "" "" 
+2020-08-16 09:32:00,730 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:32:00,730 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:32:00,731 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350178 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:32:00,747 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350178" took 61ms
+2020-08-16 09:32:20,040 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350181" "python-requests/2.18.4" "" "" 
+2020-08-16 09:32:20,045 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:32:20,045 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:32:20,046 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350181 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:32:20,061 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350181" took 21ms
+2020-08-16 09:32:39,478 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350184" "python-requests/2.18.4" "" "" 
+2020-08-16 09:32:39,483 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:32:39,483 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:32:39,484 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350184 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:32:39,501 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350184" took 23ms
+2020-08-16 09:32:58,237 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350188" "python-requests/2.18.4" "" "" 
+2020-08-16 09:32:58,242 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:32:58,242 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:32:58,243 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350188 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:32:58,258 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350188" took 21ms
+2020-08-16 09:33:19,065 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350190" "python-requests/2.18.4" "" "" 
+2020-08-16 09:33:19,070 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:33:19,070 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:33:19,071 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350190 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:33:19,087 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350190" took 22ms
+2020-08-16 09:33:34,319 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:33:34,324 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:33:34,324 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:33:34,324 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:33:34,338 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 19ms
+2020-08-16 09:33:38,291 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350191" "python-requests/2.18.4" "" "" 
+2020-08-16 09:33:38,296 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:33:38,296 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:33:38,297 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350191 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:33:38,313 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350191" took 22ms
+2020-08-16 09:33:59,708 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350192" "python-requests/2.18.4" "" "" 
+2020-08-16 09:33:59,713 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:33:59,714 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:33:59,714 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350192 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:33:59,733 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350192" took 25ms
+2020-08-16 09:34:20,368 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350198" "python-requests/2.18.4" "" "" 
+2020-08-16 09:34:20,373 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:34:20,373 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:34:20,374 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350198 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:34:20,391 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350198" took 23ms
+2020-08-16 09:34:35,145 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:34:35,150 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:34:35,150 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:34:35,150 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:34:35,162 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 17ms
+2020-08-16 09:34:49,731 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350200" "python-requests/2.18.4" "" "" 
+2020-08-16 09:34:49,736 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:34:49,737 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:34:49,737 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350200 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:34:49,760 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350200" took 28ms
+2020-08-16 09:35:14,984 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350204" "python-requests/2.18.4" "" "" 
+2020-08-16 09:35:14,989 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:35:14,990 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:35:14,990 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350204 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:35:15,007 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350204" took 23ms
+2020-08-16 09:35:51,506 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350206" "python-requests/2.18.4" "" "" 
+2020-08-16 09:35:51,511 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:35:51,511 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:35:51,512 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350206 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:35:51,529 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350206" took 23ms
+2020-08-16 09:36:23,186 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350208" "python-requests/2.18.4" "" "" 
+2020-08-16 09:36:23,191 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:36:23,192 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:36:23,193 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350208 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:36:23,210 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350208" took 24ms
+2020-08-16 09:36:54,762 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350210" "python-requests/2.18.4" "" "" 
+2020-08-16 09:36:54,766 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:36:54,766 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:36:54,767 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350210 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:36:54,783 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350210" took 21ms
+2020-08-16 09:37:32,387 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350213" "python-requests/2.18.4" "" "" 
+2020-08-16 09:37:32,393 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:37:32,393 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:37:32,394 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350213 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:37:32,411 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350213" took 24ms
+2020-08-16 09:38:14,997 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350214" "python-requests/2.18.4" "" "" 
+2020-08-16 09:38:15,002 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:38:15,003 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:38:15,003 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350214 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:38:15,019 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350214" took 22ms
+2020-08-16 09:39:07,610 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350216" "python-requests/2.18.4" "" "" 
+2020-08-16 09:39:07,615 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:39:07,615 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:39:07,616 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350216 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:39:07,634 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350216" took 24ms
+2020-08-16 09:39:33,633 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350223" "python-requests/2.18.4" "" "" 
+2020-08-16 09:39:33,638 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:39:33,638 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:39:33,639 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350223 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:39:33,656 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350223" took 23ms
+2020-08-16 09:40:14,121 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350225" "python-requests/2.18.4" "" "" 
+2020-08-16 09:40:14,125 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:40:14,125 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:40:14,126 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350225 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:40:14,143 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350225" took 22ms
+2020-08-16 09:41:30,020 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350228" "python-requests/2.18.4" "" "" 
+2020-08-16 09:41:30,025 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:41:30,025 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:41:30,026 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350228 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:41:30,054 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350228" took 34ms
+2020-08-16 09:42:09,389 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350232" "python-requests/2.18.4" "" "" 
+2020-08-16 09:42:09,395 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:42:09,395 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:42:09,396 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350232 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:42:09,415 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350232" took 25ms
+2020-08-16 09:42:54,972 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350233" "python-requests/2.18.4" "" "" 
+2020-08-16 09:42:54,977 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:42:54,977 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:42:54,978 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350233 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:42:54,995 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350233" took 23ms
+2020-08-16 09:43:47,655 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350238" "python-requests/2.18.4" "" "" 
+2020-08-16 09:43:47,661 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:43:47,662 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:43:47,663 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350238 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:43:47,681 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350238" took 26ms
+2020-08-16 09:44:39,837 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350239" "python-requests/2.18.4" "" "" 
+2020-08-16 09:44:39,843 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:44:39,844 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:44:39,845 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350239 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:44:39,863 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350239" took 26ms
+2020-08-16 09:45:28,758 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/RLS/wms/kml?layers=RLS:SpeciesList" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-08-16 09:45:28,765 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-08-16 09:45:28,767 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:45:28,772 INFO [geoserver.wms] - 
+Request: kml
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = null
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = null
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = null
+	FormatOptions = {}
+	Get = true
+	Height = 0
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {LAYERS=RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = null
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = null
+	ViewParams = null
+	Width = 0
+2020-08-16 09:45:28,778 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/RLS/wms/kml?layers=RLS:SpeciesList" took 20ms
+2020-08-16 09:45:39,342 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350240" "python-requests/2.18.4" "" "" 
+2020-08-16 09:45:39,347 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:45:39,347 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:45:39,348 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350240 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:45:39,493 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350240" took 151ms
+2020-08-16 09:45:45,687 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:45:45,692 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:45:45,692 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:45:45,693 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:45:45,706 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 19ms
+2020-08-16 09:45:54,725 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350348" "python-requests/2.18.4" "" "" 
+2020-08-16 09:45:54,730 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:45:54,731 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:45:54,732 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350348 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:45:54,749 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350348" took 24ms
+2020-08-16 09:46:31,392 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350353" "python-requests/2.18.4" "" "" 
+2020-08-16 09:46:31,397 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:46:31,398 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:46:31,398 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350353 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:46:31,414 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350353" took 22ms
+2020-08-16 09:47:20,461 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912342428" "python-requests/2.18.4" "" "" 
+2020-08-16 09:47:20,466 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:47:20,467 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:47:20,468 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912342428 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:47:20,487 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912342428" took 26ms
+2020-08-16 09:47:21,745 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350381" "python-requests/2.18.4" "" "" 
+2020-08-16 09:47:21,749 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:47:21,749 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:47:21,750 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350381 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:47:21,767 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350381" took 22ms
+2020-08-16 09:47:26,822 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-08-16 09:47:26,827 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:47:26,827 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:47:26,828 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:47:26,842 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 20ms
+2020-08-16 09:47:42,579 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350384" "python-requests/2.18.4" "" "" 
+2020-08-16 09:47:42,584 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:47:42,584 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:47:42,585 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350384 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:47:42,601 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350384" took 22ms
+2020-08-16 09:48:02,522 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:48:02,527 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:48:02,528 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:48:02,529 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:48:02,542 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 20ms
+2020-08-16 09:49:07,213 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350385" "python-requests/2.18.4" "" "" 
+2020-08-16 09:49:07,217 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:49:07,218 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:49:07,219 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350385 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:49:07,238 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350385" took 25ms
+2020-08-16 09:49:31,323 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350049" "python-requests/2.18.4" "" "" 
+2020-08-16 09:49:31,327 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:49:31,328 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:49:31,329 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350049 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:49:31,345 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350049" took 22ms
+2020-08-16 09:49:34,053 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350389" "python-requests/2.18.4" "" "" 
+2020-08-16 09:49:34,058 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:49:34,058 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:49:34,059 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350389 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:49:34,077 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350389" took 24ms
+2020-08-16 09:49:59,298 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:49:59,306 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:49:59,307 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:49:59,307 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:49:59,321 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 23ms
+2020-08-16 09:50:07,054 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350423" "python-requests/2.18.4" "" "" 
+2020-08-16 09:50:07,060 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:50:07,061 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:50:07,061 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350423 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:50:07,081 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350423" took 27ms
+2020-08-16 09:50:15,206 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-08-16 09:50:15,211 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:50:15,211 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:50:15,212 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:50:15,224 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 18ms
+2020-08-16 09:50:42,195 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:50:42,203 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:50:42,203 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:50:42,204 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:50:42,219 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 24ms
+2020-08-16 09:51:07,148 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:51:07,155 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:51:07,155 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:51:07,156 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:51:07,170 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 22ms
+2020-08-16 09:51:23,089 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350606" "python-requests/2.18.4" "" "" 
+2020-08-16 09:51:23,097 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:51:23,097 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:51:23,098 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350606 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:51:23,117 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350606" took 28ms
+2020-08-16 09:51:48,128 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350051" "python-requests/2.18.4" "" "" 
+2020-08-16 09:51:48,136 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:51:48,136 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:51:48,137 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350051 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:51:48,154 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350051" took 26ms
+2020-08-16 09:51:51,848 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350616" "python-requests/2.18.4" "" "" 
+2020-08-16 09:51:51,855 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:51:51,855 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:51:51,856 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350616 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:51:51,872 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350616" took 24ms
+2020-08-16 09:52:23,960 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350625" "python-requests/2.18.4" "" "" 
+2020-08-16 09:52:23,967 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:52:23,967 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:52:23,968 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350625 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:52:23,986 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350625" took 26ms
+2020-08-16 09:52:58,823 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-08-16 09:52:58,832 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:52:58,832 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:52:58,833 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:52:58,847 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 23ms
+2020-08-16 09:53:25,215 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350054" "python-requests/2.18.4" "" "" 
+2020-08-16 09:53:25,222 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:53:25,222 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:53:25,223 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350054 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:53:25,240 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350054" took 25ms
+2020-08-16 09:53:27,260 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350629" "python-requests/2.18.4" "" "" 
+2020-08-16 09:53:27,269 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:53:27,269 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:53:27,270 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350629 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:53:27,286 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350629" took 26ms
+2020-08-16 09:54:03,230 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-08-16 09:54:03,238 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:54:03,239 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:54:03,239 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:54:03,252 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 22ms
+2020-08-16 09:54:36,972 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350634" "python-requests/2.18.4" "" "" 
+2020-08-16 09:54:36,978 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:54:36,978 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:54:36,979 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350634 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:54:36,998 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350634" took 26ms
+2020-08-16 09:54:43,566 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:54:43,574 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:54:43,574 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:54:43,575 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:54:43,588 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 22ms
+2020-08-16 09:55:36,421 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350055" "python-requests/2.18.4" "" "" 
+2020-08-16 09:55:36,429 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:55:36,429 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:55:36,430 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350055 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:55:36,463 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350055" took 42ms
+2020-08-16 09:55:39,020 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350637" "python-requests/2.18.4" "" "" 
+2020-08-16 09:55:39,026 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:55:39,027 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:55:39,027 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350637 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:55:39,043 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350637" took 23ms
+2020-08-16 09:56:16,513 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350641" "python-requests/2.18.4" "" "" 
+2020-08-16 09:56:16,521 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:56:16,522 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:56:16,522 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350641 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:56:16,541 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350641" took 28ms
+2020-08-16 09:56:47,367 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350643" "python-requests/2.18.4" "" "" 
+2020-08-16 09:56:47,375 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:56:47,375 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:56:47,376 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350643 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:56:47,394 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350643" took 27ms
+2020-08-16 09:57:17,413 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350644" "python-requests/2.18.4" "" "" 
+2020-08-16 09:57:17,421 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:57:17,421 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:57:17,422 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350644 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:57:17,438 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350644" took 25ms
+2020-08-16 09:57:41,180 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:57:41,187 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:57:41,188 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:57:41,188 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:57:41,201 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 21ms
+2020-08-16 09:57:43,502 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350645" "python-requests/2.18.4" "" "" 
+2020-08-16 09:57:43,510 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:57:43,510 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:57:43,511 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350645 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:57:43,528 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350645" took 26ms
+2020-08-16 09:57:49,038 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350056" "python-requests/2.18.4" "" "" 
+2020-08-16 09:57:49,047 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:57:49,047 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:57:49,048 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350056 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:57:49,065 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350056" took 27ms
+2020-08-16 09:58:08,749 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350646" "python-requests/2.18.4" "" "" 
+2020-08-16 09:58:08,755 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:58:08,756 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:58:08,756 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350646 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:58:08,773 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350646" took 24ms
+2020-08-16 09:58:31,118 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350647" "python-requests/2.18.4" "" "" 
+2020-08-16 09:58:31,126 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:58:31,127 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:58:31,128 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350647 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:58:31,147 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350647" took 29ms
+2020-08-16 09:58:41,541 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_252" "" "" 
+2020-08-16 09:58:41,549 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:58:41,550 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:58:41,550 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-08-16 09:58:41,565 INFO [geoserver.filters] - 144.6.226.149 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 24ms
+2020-08-16 09:59:14,831 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350648" "python-requests/2.18.4" "" "" 
+2020-08-16 09:59:14,839 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:59:14,839 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:59:14,840 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350648 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:59:14,860 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350648" took 29ms
+2020-08-16 09:59:43,129 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350060" "python-requests/2.18.4" "" "" 
+2020-08-16 09:59:43,137 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:59:43,137 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:59:43,138 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350060 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:59:43,156 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350060" took 27ms
+2020-08-16 09:59:45,686 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350652" "python-requests/2.18.4" "" "" 
+2020-08-16 09:59:45,694 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-08-16 09:59:45,694 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-08-16 09:59:45,695 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ SurveyID = 912350652 ]
+        typeName[0] = {RLS}SurveyList
+    outputFormat = GML2
+    resultType = results
+2020-08-16 09:59:45,715 INFO [geoserver.filters] - 144.6.231.135 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:SurveyList&cql_filter=SurveyID=912350652" took 29ms
