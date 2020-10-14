@@ -8392,3 +8392,723 @@ Request: getFeature
     outputFormat = CSV
     resultType = results
 2020-10-14 12:56:56,385 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 451ms
+2020-10-14 13:05:57,977 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:05:57,986 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:05:57,987 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:05:57,989 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Leeuwin ] AND [ Phylum = Mollusca ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:05:58,167 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" took 189ms
+2020-10-14 13:10:38,434 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:10:38,444 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:10:38,444 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:10:38,445 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:11:02,175 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 23741ms
+2020-10-14 13:11:06,047 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:11:06,052 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:11:06,053 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:11:06,053 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:11:06,416 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 369ms
+2020-10-14 13:11:06,588 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:11:06,593 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:11:06,593 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:11:06,594 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:11:08,380 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1792ms
+2020-10-14 13:11:08,835 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:11:08,841 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:11:08,841 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:11:08,842 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:11:09,174 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 339ms
+2020-10-14 13:11:43,622 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:11:43,628 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:11:43,629 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:11:43,629 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:11:43,642 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 20ms
+2020-10-14 13:12:07,261 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:12:07,267 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:12:07,267 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:12:07,268 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:12:07,282 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 21ms
+2020-10-14 13:12:48,379 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:12:48,385 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:12:48,385 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:12:48,386 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:13:12,093 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 23714ms
+2020-10-14 13:13:16,094 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:13:16,099 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:13:16,099 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:13:16,100 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:13:16,463 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 369ms
+2020-10-14 13:13:16,777 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:13:16,782 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:13:16,782 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:13:16,783 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:13:18,560 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1783ms
+2020-10-14 13:13:19,019 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:13:19,025 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:13:19,026 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:13:19,026 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:13:19,403 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 383ms
+2020-10-14 13:13:53,624 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:13:53,630 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:13:53,630 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:13:53,631 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:13:59,919 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:13:59,925 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:13:59,925 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:13:59,926 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:13:59,946 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 27ms
+2020-10-14 13:14:17,292 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 23668ms
+2020-10-14 13:14:21,231 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:14:21,236 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:14:21,236 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:14:21,237 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:14:21,614 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 383ms
+2020-10-14 13:14:21,888 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:14:21,893 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:14:21,894 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:14:21,894 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:14:23,718 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1830ms
+2020-10-14 13:14:24,195 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:14:24,200 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:14:24,201 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:14:24,201 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:14:24,587 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 392ms
+2020-10-14 13:15:05,597 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:15:05,602 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:05,602 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:05,602 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:15:12,251 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:15:12,257 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:12,257 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:12,258 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:15:19,182 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:15:19,188 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:19,188 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:19,189 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:15:19,208 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 26ms
+2020-10-14 13:15:26,777 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 21180ms
+2020-10-14 13:15:33,819 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=describeFeatureType&typename=RLS:M1_DATA" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:15:33,824 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:33,825 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:33,826 INFO [geoserver.wfs] - 
+Request: describeFeatureType
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    typeName[0] = {RLS}M1_DATA
+    outputFormat = XMLSCHEMA
+2020-10-14 13:15:33,864 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=describeFeatureType&typename=RLS:M1_DATA" took 45ms
+2020-10-14 13:15:35,028 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=(BBOX(geom,144,-44,149,-40))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:15:35,034 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:35,034 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:35,035 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:35,369 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=(BBOX(geom,144,-44,149,-40))" took 341ms
+2020-10-14 13:15:35,755 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 23504ms
+2020-10-14 13:15:38,021 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Phylum='Mollusca')AND(BBOX(geom,144,-44,149,-40)))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:15:38,026 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:38,026 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:38,027 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Mollusca ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:38,067 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Phylum='Mollusca')AND(BBOX(geom,144,-44,149,-40)))" took 46ms
+2020-10-14 13:15:39,238 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:15:39,243 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:39,243 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:39,244 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Leeuwin ] AND [ Phylum = Mollusca ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:39,406 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" took 167ms
+2020-10-14 13:15:40,108 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:15:40,112 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:40,113 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:40,113 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:40,432 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 324ms
+2020-10-14 13:15:40,845 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:15:40,850 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:40,850 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:40,851 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:42,430 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1585ms
+2020-10-14 13:15:42,905 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:15:42,910 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:15:42,911 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:15:42,912 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:15:43,231 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 326ms
+2020-10-14 13:16:03,998 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:16:04,004 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:16:04,004 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:16:04,005 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:16:04,018 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 20ms
+2020-10-14 13:16:32,873 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:16:32,879 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:16:32,879 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:16:32,880 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:16:50,962 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:16:50,968 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:16:50,968 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:16:50,969 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:16:50,994 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 31ms
+2020-10-14 13:16:53,401 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 20528ms
+2020-10-14 13:16:58,422 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=describeFeatureType&typename=RLS:M1_DATA" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:16:58,427 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:16:58,427 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:16:58,427 INFO [geoserver.wfs] - 
+Request: describeFeatureType
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    typeName[0] = {RLS}M1_DATA
+    outputFormat = XMLSCHEMA
+2020-10-14 13:16:58,432 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=describeFeatureType&typename=RLS:M1_DATA" took 10ms
+2020-10-14 13:16:59,635 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=(BBOX(geom,144,-44,149,-40))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:16:59,640 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:16:59,640 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:16:59,641 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:16:59,975 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=(BBOX(geom,144,-44,149,-40))" took 340ms
+2020-10-14 13:17:02,677 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Phylum='Mollusca')AND(BBOX(geom,144,-44,149,-40)))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:17:02,683 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:17:02,683 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:17:02,684 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Mollusca ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:17:02,724 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Phylum='Mollusca')AND(BBOX(geom,144,-44,149,-40)))" took 47ms
+2020-10-14 13:17:03,896 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:17:03,901 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:17:03,901 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:17:03,902 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Leeuwin ] AND [ Phylum = Mollusca ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:17:04,064 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" took 168ms
+2020-10-14 13:17:29,503 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:17:29,509 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:17:29,509 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:17:29,510 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:17:53,342 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 23839ms
+2020-10-14 13:17:57,451 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:17:57,457 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:17:57,457 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:17:57,458 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:17:57,817 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 366ms
+2020-10-14 13:17:58,165 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:17:58,170 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:17:58,170 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:17:58,171 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:17:59,941 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1776ms
+2020-10-14 13:18:00,386 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:18:00,391 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:18:00,391 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:18:00,392 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:18:00,753 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 367ms
+2020-10-14 13:18:27,917 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:18:27,923 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:18:27,924 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:18:27,924 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:18:27,938 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 21ms
+2020-10-14 13:18:55,181 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:18:55,187 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:18:55,187 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:18:55,188 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:19:02,987 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:19:02,993 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:19:02,993 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:19:02,994 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Leeuwin ] AND [ Phylum = Mollusca ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:19:03,167 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" took 179ms
+2020-10-14 13:19:17,977 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 22796ms
+2020-10-14 13:19:21,895 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:19:21,900 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:19:21,900 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:19:21,901 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:19:22,231 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 336ms
+2020-10-14 13:19:22,540 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:19:22,545 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:19:22,545 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:19:22,546 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:19:24,115 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1575ms
+2020-10-14 13:19:24,538 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:19:24,543 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:19:24,543 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:19:24,544 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:19:24,874 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 336ms
+2020-10-14 13:19:40,734 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-10-14 13:19:40,739 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:19:40,739 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:19:40,740 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:19:40,752 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 18ms
+2020-10-14 13:20:41,585 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" "rstudio.cloud R (4.0.0 x86_64-pc-linux-gnu x86_64 linux-gnu)" "" "" 
+2020-10-14 13:20:41,590 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:20:41,590 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:20:41,591 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Leeuwin ] AND [ Phylum = Mollusca ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:20:41,759 INFO [geoserver.filters] - 54.204.34.9 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=((Ecoregion='Leeuwin')AND(Phylum='Mollusca'))" took 172ms
+2020-10-14 13:20:44,441 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:20:44,447 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:20:44,447 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:20:44,448 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = csv
+    resultType = results
+2020-10-14 13:21:07,027 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv" took 22586ms
+2020-10-14 13:21:10,844 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:21:10,850 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:21:10,850 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:21:10,851 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:21:11,217 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28BBOX%28geom,144,-44,149,-40%29%29" took 373ms
+2020-10-14 13:21:11,619 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:21:11,624 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:21:11,624 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:21:11,625 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Ecoregion = Lord Howe and Norfolk Islands ] AND [ Phylum = Chordata ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:21:13,428 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Ecoregion=%27Lord+Howe+and+Norfolk+Islands%27%29AND%28Phylum=%27Chordata%27%29%29" took 1809ms
+2020-10-14 13:21:13,819 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" "MATLAB 9.8.0.1417392 (R2020a) Update 4" "" "" 
+2020-10-14 13:21:13,825 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-14 13:21:13,825 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-14 13:21:13,826 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        filter = [[ Phylum = Chordata ] AND [ geom bbox POLYGON ((144 -44, 144 -40, 149 -40, 149 -44, 144 -44)) ]]
+        typeName[0] = {RLS}M1_DATA
+    outputFormat = CSV
+    resultType = results
+2020-10-14 13:21:14,193 INFO [geoserver.filters] - 220.240.38.85 "GET /geoserver/wfs?VERSION=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=CSV&CQL_FILTER=%28%28Phylum=%27Chordata%27%29AND%28BBOX%28geom,144,-44,149,-40%29%29%29" took 374ms
