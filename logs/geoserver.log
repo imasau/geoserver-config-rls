@@ -12431,3 +12431,2552 @@ Request: getFeature
 2020-10-22 22:54:25,262 INFO [geoserver.filters] - 66.249.66.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=5110C80C39EC4E01337890F644552A56?393-2.IBehaviorListener.0-form-targetCRS-srs&fromSRS=EPSG:2069" took 29ms
 2020-10-22 22:54:25,569 INFO [geoserver.filters] - 66.249.66.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=9BF5A281760557CEBABAF1A292C92AAB?0&fromSRS=EPSG:2069" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
 2020-10-22 22:54:25,581 INFO [geoserver.filters] - 66.249.66.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=9BF5A281760557CEBABAF1A292C92AAB?0&fromSRS=EPSG:2069" took 12ms
+2020-10-22 23:01:20,524 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:01:20,534 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:01:20,534 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:01:20,535 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:01:20,565 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 41ms
+2020-10-22 23:04:41,064 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:04:41,073 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:04:41,074 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:04:41,074 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:04:41,116 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 52ms
+2020-10-22 23:07:58,624 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:07:58,634 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:07:58,635 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:07:58,635 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:07:58,683 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 59ms
+2020-10-22 23:08:03,194 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,135,22.5,157.5&WIDTH=256&HEIGHT=256" "AODN-Portal/V4.42.0" "" "" 
+2020-10-22 23:08:03,204 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:08:03,207 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:08:03,251 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[0.0 : 22.5, 135.0 : 157.5]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_xml
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 256
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4ae9e5f]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {FORMAT=image/png, CRS=EPSG:4326, STYLES=, QUERYABLE=true, WIDTH=256, HEIGHT=256, LAYERS=RLS:M3_DATA, EXCEPTIONS=application/vnd.ogc.se_xml, TILED=true, REQUEST=GetMap, BBOX=0,135,22.5,157.5, VERSION=1.3.0, SERVICE=WMS, TRANSPARENT=TRUE}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = true
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 256
+2020-10-22 23:08:03,255 INFO [geoserver.filters] - 127.0.0.1 "GET /geoserver/wms?LAYERS=RLS%3AM3_DATA&TRANSPARENT=TRUE&VERSION=1.3.0&FORMAT=image%2Fpng&EXCEPTIONS=application%2Fvnd.ogc.se_xml&TILED=true&SERVICE=WMS&REQUEST=GetMap&STYLES=&QUERYABLE=true&CRS=EPSG%3A4326&BBOX=0,135,22.5,157.5&WIDTH=256&HEIGHT=256" took 61ms
+2020-10-22 23:08:44,296 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:08:44,306 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:08:44,306 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:08:44,307 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:08:44,325 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 29ms
+2020-10-22 23:09:15,555 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:09:15,565 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:09:15,565 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:09:15,566 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:09:15,588 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 32ms
+2020-10-22 23:10:13,615 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=5110C80C39EC4E01337890F644552A56?572-3.IBehaviorListener.0-form-sourceCRS-srs&fromSRS=EPSG:2069" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-10-22 23:10:13,646 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=5110C80C39EC4E01337890F644552A56?572-3.IBehaviorListener.0-form-sourceCRS-srs&fromSRS=EPSG:2069" took 31ms
+2020-10-22 23:10:14,793 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=FB1E611ADCFB1568C7416A67673FEB3B?0&fromSRS=EPSG:2069" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-10-22 23:10:14,806 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=FB1E611ADCFB1568C7416A67673FEB3B?0&fromSRS=EPSG:2069" took 13ms
+2020-10-22 23:11:00,595 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:11:00,605 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:11:00,605 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:11:00,606 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:11:00,636 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 41ms
+2020-10-22 23:13:04,939 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:13:04,948 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:13:04,948 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:13:04,949 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:13:04,983 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 44ms
+2020-10-22 23:13:52,100 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:13:52,109 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:13:52,110 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:13:52,111 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:13:52,135 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 35ms
+2020-10-22 23:16:22,691 INFO [geoserver.filters] - 66.249.66.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=5110C80C39EC4E01337890F644552A56?290-3.IBehaviorListener.0-form-sourceCRS-wkt&fromSRS=EPSG:2069" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-10-22 23:16:22,722 INFO [geoserver.filters] - 66.249.66.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=5110C80C39EC4E01337890F644552A56?290-3.IBehaviorListener.0-form-sourceCRS-wkt&fromSRS=EPSG:2069" took 31ms
+2020-10-22 23:16:23,688 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=BF38D8C97AE0441E46537C2CFA083CF5?0&fromSRS=EPSG:2069" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2020-10-22 23:16:23,701 INFO [geoserver.filters] - 66.249.66.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=BF38D8C97AE0441E46537C2CFA083CF5?0&fromSRS=EPSG:2069" took 13ms
+2020-10-22 23:24:15,858 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://researchdata.edu.au/reef-life-survey-service-wms/1370570" "" 
+2020-10-22 23:24:15,869 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:24:15,869 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:24:15,871 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {REQUEST=GetCapabilities, VERSION=1.3.0, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.3.0
+2020-10-22 23:24:15,960 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" took 102ms
+2020-10-22 23:25:10,361 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/content.html?view=table&sortOrder=desc&sortField=modified&folder=33bf3d41d7bd4f0ca43cf6d1e1498205" "" 
+2020-10-22 23:25:10,372 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:25:10,373 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:25:10,373 INFO [geoserver.wms] - 
+Request: getCapabilities
+	BaseUrl = http://localhost:8082/geoserver/
+	Get = false
+	Namespace = null
+	RawKvp = {REQUEST=GetCapabilities, SERVICE=WMS}
+	Request = GetCapabilities
+	RequestCharset = null
+	UpdateSequence = null
+	Version = 1.3.0
+2020-10-22 23:25:10,403 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities" took 42ms
+2020-10-22 23:25:21,764 INFO [geoserver.filters] - 34.234.176.30 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList,RLS:SpeciesSurvey&WIDTH=800&HEIGHT=532&CRS=EPSG:4326&BBOX=-80,-180,80,180&_ts=1603369519707" "Apache-HttpClient/4.5.9 (Java/11.0.8)" "" "" 
+2020-10-22 23:25:21,773 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:25:21,776 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:04,302 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-80.0 : 80.0, -180.0 : 180.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic latitude", NORTH], 
+  AXIS["Geodetic longitude", EAST], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 532
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8, org.geoserver.wms.MapLayerInfo@e8fc272c]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:4326, BBOX=-80,-180,80,180, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=800, HEIGHT=532, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList,RLS:SpeciesSurvey, _TS=1603369519707}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 800
+2020-10-22 23:26:04,319 INFO [geoserver.filters] - 34.234.176.30 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList,RLS:SpeciesSurvey&WIDTH=800&HEIGHT=532&CRS=EPSG:4326&BBOX=-80,-180,80,180&_ts=1603369519707" took 42555ms
+2020-10-22 23:26:16,180 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1025&HEIGHT=859&CRS=EPSG:3857&BBOX=-20037508.342788905,-16808808.26801904,20037508.342788905,16808808.26801904" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:16,187 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:16,195 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:28,495 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-12574150.5561276,-4800261.409668455,1876728.2633508397,3604142.7243410107" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:28,506 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:28,510 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:32,464 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.25741505561276E7 : 1876728.2633508397, -4800261.409668455 : 3604142.7243410107]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-12574150.5561276,-4800261.409668455,1876728.2633508397,3604142.7243410107, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:32,509 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-12574150.5561276,-4800261.409668455,1876728.2633508397,3604142.7243410107" took 4014ms
+2020-10-22 23:26:32,673 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-12799181.1673991,-1972702.8593439665,1651697.6520793405,6431701.274665499" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:32,679 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:32,681 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:33,410 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-11052747.945139857,-167565.99936172366,-3827308.535400637,4034636.067643009" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:33,416 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:33,418 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:34,790 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10179531.334010236,737448.4155345224,-6566811.629140627,2838549.449036889" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:34,797 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:34,799 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:35,974 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9204806.349317929,1323261.8003119575,-7398446.496883123,2373812.3170631407" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:35,985 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:35,989 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:37,635 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9204806.349317929 : -7398446.496883123, 1323261.8003119575 : 2373812.3170631407]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9204806.349317929,1323261.8003119575,-7398446.496883123,2373812.3170631407, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:37,719 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9204806.349317929,1323261.8003119575,-7398446.496883123,2373812.3170631407" took 1744ms
+2020-10-22 23:26:38,633 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.0179531334010236E7 : -6566811.629140627, 737448.4155345224 : 2838549.449036889]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-10179531.334010236,737448.4155345224,-6566811.629140627,2838549.449036889, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:38,679 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10179531.334010236,737448.4155345224,-6566811.629140627,2838549.449036889" took 3889ms
+2020-10-22 23:26:39,059 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.1052747945139857E7 : -3827308.535400637, -167565.99936172366 : 4034636.067643009]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-11052747.945139857,-167565.99936172366,-3827308.535400637,4034636.067643009, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:39,136 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-11052747.945139857,-167565.99936172366,-3827308.535400637,4034636.067643009" took 5726ms
+2020-10-22 23:26:39,468 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.27991811673991E7 : 1651697.6520793405, -1972702.8593439665 : 6431701.274665499]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-12799181.1673991,-1972702.8593439665,1651697.6520793405,6431701.274665499, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:39,510 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-12799181.1673991,-1972702.8593439665,1651697.6520793405,6431701.274665499" took 6837ms
+2020-10-22 23:26:41,346 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9684219.390722428,722772.5061037724,-7877859.538287621,1773323.0228549556" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:41,353 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:41,383 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:42,783 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9398039.156822864,952695.0871854718,-8494859.230605267,1477970.345561177" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:42,791 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:42,793 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:43,061 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9684219.390722428 : -7877859.538287621, 722772.5061037724 : 1773323.0228549556]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9684219.390722428,722772.5061037724,-7877859.538287621,1773323.0228549556, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:43,097 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9684219.390722428,722772.5061037724,-7877859.538287621,1773323.0228549556" took 1751ms
+2020-10-22 23:26:43,405 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9398039.156822864 : -8494859.230605267, 952695.0871854718 : 1477970.345561177]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9398039.156822864,952695.0871854718,-8494859.230605267,1477970.345561177, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:43,450 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9398039.156822864,952695.0871854718,-8494859.230605267,1477970.345561177" took 667ms
+2020-10-22 23:26:48,151 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9212165.504991632,1015368.0311553105,-8986370.523437135,1146686.8457492935" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:48,157 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:48,159 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:48,490 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9212165.504991632 : -8986370.523437135, 1015368.0311553105 : 1146686.8457492935]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9212165.504991632,1015368.0311553105,-8986370.523437135,1146686.8457492935, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:48,528 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9212165.504991632,1015368.0311553105,-8986370.523437135,1146686.8457492935" took 377ms
+2020-10-22 23:26:51,028 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9165347.825166933,1034763.9270826861,-9137123.452472668,1051178.7789069056" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:26:51,034 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:26:51,036 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:26:51,375 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9165347.825166933 : -9137123.452472668, 1034763.9270826861 : 1051178.7789069056]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9165347.825166933,1034763.9270826861,-9137123.452472668,1051178.7789069056, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:26:51,416 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9165347.825166933,1034763.9270826861,-9137123.452472668,1051178.7789069056" took 388ms
+2020-10-22 23:26:58,033 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-2.0037508342788905E7 : 2.0037508342788905E7, -1.680880826801904E7 : 1.680880826801904E7]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-20037508.342788905,-16808808.26801904,20037508.342788905,16808808.26801904, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1025, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1025
+2020-10-22 23:26:58,063 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1025&HEIGHT=859&CRS=EPSG:3857&BBOX=-20037508.342788905,-16808808.26801904,20037508.342788905,16808808.26801904" took 41883ms
+2020-10-22 23:27:01,578 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9192291.87763742,1003462.9639999489,-9079394.386860367,1069122.3712968268" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:01,586 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:01,588 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:01,888 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9192291.87763742 : -9079394.386860367, 1003462.9639999489 : 1069122.3712968268]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9192291.87763742,1003462.9639999489,-9079394.386860367,1069122.3712968268, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:01,926 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9192291.87763742,1003462.9639999489,-9079394.386860367,1069122.3712968268" took 347ms
+2020-10-22 23:27:04,039 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9250842.641303988,967078.9385361281,-9025047.659749491,1098397.7531301111" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:04,045 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:04,046 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:04,350 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9250842.641303988 : -9025047.659749491, 967078.9385361281 : 1098397.7531301111]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9250842.641303988,967078.9385361281,-9025047.659749491,1098397.7531301111, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:04,388 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9250842.641303988,967078.9385361281,-9025047.659749491,1098397.7531301111" took 349ms
+2020-10-22 23:27:05,101 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9394238.506366786,913420.1446800067,-8942648.543258183,1176057.7738677457" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:05,106 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:05,108 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:05,451 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9394238.506366786 : -8942648.543258183, 913420.1446800067 : 1176057.7738677457]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9394238.506366786,913420.1446800067,-8942648.543258183,1176057.7738677457, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:05,489 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9394238.506366786,913420.1446800067,-8942648.543258183,1176057.7738677457" took 388ms
+2020-10-22 23:27:07,522 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10344503.642007913,512584.36835261993,-8538143.789573107,1563134.8851038031" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:07,528 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:07,529 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:08,926 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.0344503642007913E7 : -8538143.789573107, 512584.36835261993 : 1563134.8851038031]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-10344503.642007913,512584.36835261993,-8538143.789573107,1563134.8851038031, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:08,964 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10344503.642007913,512584.36835261993,-8538143.789573107,1563134.8851038031" took 1442ms
+2020-10-22 23:27:10,716 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-11611523.822862657,-21863.33341719024,-7998804.117993047,2079237.7000851762" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:10,722 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:10,724 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:12,158 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-14211605.77701052,-1416074.7293384345,-6986166.367271302,2786127.3376662983" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:12,164 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:12,166 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:12,553 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.1611523822862657E7 : -7998804.117993047, -21863.33341719024 : 2079237.7000851762]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-11611523.822862657,-21863.33341719024,-7998804.117993047,2079237.7000851762, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:12,596 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-11611523.822862657,-21863.33341719024,-7998804.117993047,2079237.7000851762" took 1879ms
+2020-10-22 23:27:14,818 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.421160577701052E7 : -6986166.367271302, -1416074.7293384345 : 2786127.3376662983]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-14211605.77701052,-1416074.7293384345,-6986166.367271302,2786127.3376662983, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:14,858 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-14211605.77701052,-1416074.7293384345,-6986166.367271302,2786127.3376662983" took 2700ms
+2020-10-22 23:27:17,264 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10870390.396609785,-1411182.7595281845,-3644950.986870567,2791019.307476548" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:17,270 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:17,271 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:19,728 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.0870390396609785E7 : -3644950.986870567, -1411182.7595281845 : 2791019.307476548]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-10870390.396609785,-1411182.7595281845,-3644950.986870567,2791019.307476548, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:19,765 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10870390.396609785,-1411182.7595281845,-3644950.986870567,2791019.307476548" took 2501ms
+2020-10-22 23:27:20,490 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10855714.487179035,-804578.5030571871,-3630275.077439817,3397623.5639475454" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:20,496 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:20,498 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:21,807 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10889958.275850786,-227326.06544768938,-3664518.866111567,3974876.001557043" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:21,813 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:21,815 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:23,285 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-13468026.365852527,-2732014.60829568,982852.4536259128,5672389.525713786" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:23,293 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:23,295 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:23,318 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.0855714487179035E7 : -3630275.077439817, -804578.5030571871 : 3397623.5639475454]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-10855714.487179035,-804578.5030571871,-3630275.077439817,3397623.5639475454, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:23,360 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10855714.487179035,-804578.5030571871,-3630275.077439817,3397623.5639475454" took 2870ms
+2020-10-22 23:27:24,072 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9143360.95675944,1982423.140720643,-7337001.104324634,3032973.6574718263" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:24,079 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:24,081 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:24,589 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-9143360.95675944 : -7337001.104324634, 1982423.140720643 : 3032973.6574718263]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-9143360.95675944,1982423.140720643,-7337001.104324634,3032973.6574718263, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:24,681 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-9143360.95675944,1982423.140720643,-7337001.104324634,3032973.6574718263" took 609ms
+2020-10-22 23:27:24,802 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.0889958275850786E7 : -3664518.866111567, -227326.06544768938 : 3974876.001557043]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-10889958.275850786,-227326.06544768938,-3664518.866111567,3974876.001557043, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:24,840 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-10889958.275850786,-227326.06544768938,-3664518.866111567,3974876.001557043" took 3033ms
+2020-10-22 23:27:26,165 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8338631.9229733925,2506781.1547567644,-8112836.9414188955,2638099.9693507473" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:26,171 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:26,173 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:26,429 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8338631.9229733925 : -8112836.9414188955, 2506781.1547567644 : 2638099.9693507473]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8338631.9229733925,2506781.1547567644,-8112836.9414188955,2638099.9693507473, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:26,471 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8338631.9229733925,2506781.1547567644,-8112836.9414188955,2638099.9693507473" took 306ms
+2020-10-22 23:27:27,480 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-1.3468026365852527E7 : 982852.4536259128, -2732014.60829568 : 5672389.525713786]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-13468026.365852527,-2732014.60829568,982852.4536259128,5672389.525713786, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:27,518 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-13468026.365852527,-2732014.60829568,982852.4536259128,5672389.525713786" took 4233ms
+2020-10-22 23:27:29,550 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8437388.563517706,2427286.645340288,-7985798.600409104,2689924.2745280266" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:29,557 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:29,558 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:29,822 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8437388.563517706 : -7985798.600409104, 2427286.645340288 : 2689924.2745280266]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8437388.563517706,2427286.645340288,-7985798.600409104,2689924.2745280266, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:29,864 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8437388.563517706,2427286.645340288,-7985798.600409104,2689924.2745280266" took 314ms
+2020-10-22 23:27:31,044 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8578338.443675626,2262794.1604705253,-7675158.517458029,2788069.4188462305" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:31,050 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:31,052 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:31,363 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8578338.443675626 : -7675158.517458029, 2262794.1604705253 : 2788069.4188462305]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8578338.443675626,2262794.1604705253,-7675158.517458029,2788069.4188462305, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:31,404 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8578338.443675626,2262794.1604705253,-7675158.517458029,2788069.4188462305" took 360ms
+2020-10-22 23:27:33,859 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8141730.138110786,2402673.9222323713,-7915935.156556289,2533992.736826354" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:33,867 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:33,869 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:34,081 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8141730.138110786 : -7915935.156556289, 2402673.9222323713 : 2533992.736826354]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8141730.138110786,2402673.9222323713,-7915935.156556289,2533992.736826354, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:34,122 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8141730.138110786,2402673.9222323713,-7915935.156556289,2533992.736826354" took 263ms
+2020-10-22 23:27:39,007 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8094492.054630447,2438905.073639621,-7981594.563853394,2504564.4809364993" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:39,013 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:39,015 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:39,272 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8094492.054630447 : -7981594.563853394, 2438905.073639621 : 2504564.4809364993]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8094492.054630447,2438905.073639621,-7981594.563853394,2504564.4809364993, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:39,308 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8094492.054630447,2438905.073639621,-7981594.563853394,2504564.4809364993" took 300ms
+2020-10-22 23:27:42,705 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8070987.668432787,2462218.367266569,-8014538.923044261,2495048.0709150075" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:42,712 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:42,714 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:42,945 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8070987.668432787 : -8014538.923044261, 2462218.367266569 : 2495048.0709150075]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8070987.668432787,2462218.367266569,-8014538.923044261,2495048.0709150075, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:42,983 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8070987.668432787,2462218.367266569,-8014538.923044261,2495048.0709150075" took 278ms
+2020-10-22 23:27:51,565 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8049136.232971792,2481795.801136083,-8020911.860277529,2498210.6529603023" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:51,571 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:51,573 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:51,805 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8049136.232971792 : -8020911.860277529, 2481795.801136083 : 2498210.6529603023]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8049136.232971792,2481795.801136083,-8020911.860277529,2498210.6529603023, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:51,841 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8049136.232971792,2481795.801136083,-8020911.860277529,2498210.6529603023" took 276ms
+2020-10-22 23:27:53,480 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8063601.940574742,2473253.963225226,-8007153.195186215,2506083.6668736646" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:53,489 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:53,491 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:53,721 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8063601.940574742 : -8007153.195186215, 2473253.963225226 : 2506083.6668736646]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8063601.940574742,2473253.963225226,-8007153.195186215,2506083.6668736646, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:53,764 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8063601.940574742,2473253.963225226,-8007153.195186215,2506083.6668736646" took 284ms
+2020-10-22 23:27:54,842 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8497573.168663848,2216998.825899163,-7594393.242446251,2742274.084274868" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" "https://gis-akademie.maps.arcgis.com/home/webmap/viewer.html?layers=ababa5ce6b66440586770489fd79c666" "" 
+2020-10-22 23:27:54,849 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2020-10-22 23:27:54,851 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:27:55,083 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[-8497573.168663848 : -7594393.242446251, 2216998.825899163 : 2742274.084274868]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 859
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@7ae227dd, org.geoserver.wms.MapLayerInfo@147f02bf, org.geoserver.wms.MapLayerInfo@e367f349, org.geoserver.wms.MapLayerInfo@f9c19d3, org.geoserver.wms.MapLayerInfo@30b4007, org.geoserver.wms.MapLayerInfo@1d3d55, org.geoserver.wms.MapLayerInfo@e4ae9e5f, org.geoserver.wms.MapLayerInfo@a416eedb, org.geoserver.wms.MapLayerInfo@dec685b6, org.geoserver.wms.MapLayerInfo@cf5a63a8]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-8497573.168663848,2216998.825899163,-7594393.242446251,2742274.084274868, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=1477, HEIGHT=859, TRANSPARENT=TRUE, LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point], StyleImpl[ name=point_green_circle], StyleImpl[ name=point], StyleImpl[ name=point_orange_star], StyleImpl[ name=point], StyleImpl[ name=point_blue_triangle], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point], StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 1477
+2020-10-22 23:27:55,126 INFO [geoserver.filters] - 80.151.246.94 "GET /geoserver/ows?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=&VERSION=1.3.0&LAYERS=RLS:M1_DATA,RLS:M1_MAP,RLS:M2_FISH_DATA,RLS:M2_FISH_MAP,RLS:M2_INVERT_DATA,RLS:M2_INVERT_MAP,RLS:M3_DATA,RLS:SiteList,RLS:SiteListQ,RLS:SpeciesList&WIDTH=1477&HEIGHT=859&CRS=EPSG:3857&BBOX=-8497573.168663848,2216998.825899163,-7594393.242446251,2742274.084274868" took 284ms
+2020-10-22 23:29:18,192 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_265" "" "" 
+2020-10-22 23:29:18,199 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2020-10-22 23:29:18,200 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2020-10-22 23:29:18,201 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2020-10-22 23:29:18,213 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 21ms
