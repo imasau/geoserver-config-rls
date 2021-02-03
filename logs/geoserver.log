@@ -15863,3 +15863,984 @@ Request: getMap
 2021-02-03 18:27:25,161 INFO [geoserver.filters] - 66.249.79.207 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?899-1.IBehaviorListener.0-form-forward&toSRS=EPSG:2001" took 18ms
 2021-02-03 18:27:26,069 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=47D6E4340F154B0684D1B8364195E899?0&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
 2021-02-03 18:27:26,076 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=47D6E4340F154B0684D1B8364195E899?0&toSRS=EPSG:2001" took 7ms
+2021-02-03 18:30:17,541 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.1435070946767,-29.05193785139485,114.4456417898212,-28.26469815872284" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:17,548 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:17,549 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:17,554 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.1435070946767 : 114.4456417898212, -29.05193785139485 : -28.26469815872284]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.1435070946767,-29.05193785139485,114.4456417898212,-28.26469815872284, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:17,749 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.1435070946767,-29.05193785139485,114.4456417898212,-28.26469815872284" took 208ms
+2021-02-03 18:30:17,867 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1239&width=2048&transparent=true&bbox=113.1435070946767%2C-29.05193785139485%2C114.4456417898212%2C-28.26469815872284&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:17,873 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:17,874 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:17,921 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.1435070946767 : 114.4456417898212, -29.05193785139485 : -28.26469815872284]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 1239
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=113.1435070946767,-29.05193785139485,114.4456417898212,-28.26469815872284, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=1239, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:18,007 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1239&width=2048&transparent=true&bbox=113.1435070946767%2C-29.05193785139485%2C114.4456417898212%2C-28.26469815872284&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" took 140ms
+2021-02-03 18:30:23,341 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3353359956282,-28.85465316633636,114.1889117569303,-28.33817245687964" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:23,349 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:23,350 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:23,351 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3353359956282 : 114.1889117569303, -28.85465316633636 : -28.33817245687964]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.3353359956282,-28.85465316633636,114.1889117569303,-28.33817245687964, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:23,518 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3353359956282,-28.85465316633636,114.1889117569303,-28.33817245687964" took 177ms
+2021-02-03 18:30:23,660 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1240&width=2048&transparent=true&bbox=113.3353359956282%2C-28.85465316633636%2C114.1889117569303%2C-28.33817245687964&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:23,666 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:23,667 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:23,719 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3353359956282 : 114.1889117569303, -28.85465316633636 : -28.33817245687964]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 1240
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=113.3353359956282,-28.85465316633636,114.1889117569303,-28.33817245687964, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=1240, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:23,805 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1240&width=2048&transparent=true&bbox=113.3353359956282%2C-28.85465316633636%2C114.1889117569303%2C-28.33817245687964&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" took 145ms
+2021-02-03 18:30:30,848 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3451401885665,-28.96142356567005,114.2028252312194,-28.44301970837169" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:30,854 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:30,855 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:30,856 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3451401885665 : 114.2028252312194, -28.96142356567005 : -28.44301970837169]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.3451401885665,-28.96142356567005,114.2028252312194,-28.44301970837169, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:31,027 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3451401885665,-28.96142356567005,114.2028252312194,-28.44301970837169" took 179ms
+2021-02-03 18:30:31,460 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1238&width=2048&transparent=true&bbox=113.3451401885665%2C-28.96142356567005%2C114.2028252312194%2C-28.44301970837169&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:31,467 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:31,468 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:31,518 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3451401885665 : 114.2028252312194, -28.96142356567005 : -28.44301970837169]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 1238
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=113.3451401885665,-28.96142356567005,114.2028252312194,-28.44301970837169, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=1238, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:31,603 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1238&width=2048&transparent=true&bbox=113.3451401885665%2C-28.96142356567005%2C114.2028252312194%2C-28.44301970837169&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" took 143ms
+2021-02-03 18:30:44,057 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3750215548417,-29.11594961912574,114.23583792094,-28.59652968742611" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:44,063 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:44,064 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:44,065 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3750215548417 : 114.23583792094, -29.11594961912574 : -28.59652968742611]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.3750215548417,-29.11594961912574,114.23583792094,-28.59652968742611, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:44,229 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.3750215548417,-29.11594961912574,114.23583792094,-28.59652968742611" took 171ms
+2021-02-03 18:30:44,343 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1236&width=2048&transparent=true&bbox=113.3750215548417%2C-29.11594961912574%2C114.23583792094%2C-28.59652968742611&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:30:44,349 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:30:44,349 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:30:44,396 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.3750215548417 : 114.23583792094, -29.11594961912574 : -28.59652968742611]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 1236
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=113.3750215548417,-29.11594961912574,114.23583792094,-28.59652968742611, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=1236, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:30:44,478 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1236&width=2048&transparent=true&bbox=113.3750215548417%2C-29.11594961912574%2C114.23583792094%2C-28.59652968742611&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" took 135ms
+2021-02-03 18:31:59,040 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:31:59,045 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:31:59,046 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:31:59,046 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:31:59,074 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 34ms
+2021-02-03 18:33:16,311 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:33:16,317 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:33:16,318 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:33:16,318 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:33:16,332 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 21ms
+2021-02-03 18:34:54,687 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:34:54,693 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:34:54,693 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:34:54,694 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:34:54,720 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 33ms
+2021-02-03 18:36:16,550 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.4248068023574,-28.804236264475,114.2748386585454,-28.28996328445135" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:36:16,557 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:36:16,558 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:16,559 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.4248068023574 : 114.2748386585454, -28.804236264475 : -28.28996328445135]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.4248068023574,-28.804236264475,114.2748386585454,-28.28996328445135, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:36:16,694 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.4248068023574,-28.804236264475,114.2748386585454,-28.28996328445135" took 144ms
+2021-02-03 18:36:22,149 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.5397497654828,-28.60773816889957,113.9795005934378,-28.34133915438523" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:36:22,155 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:36:22,156 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:22,157 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.5397497654828 : 113.9795005934378, -28.60773816889957 : -28.34133915438523]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.5397497654828,-28.60773816889957,113.9795005934378,-28.34133915438523, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:36:22,291 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.5397497654828,-28.60773816889957,113.9795005934378,-28.34133915438523" took 142ms
+2021-02-03 18:36:24,564 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.636378911292,-28.55166408381243,113.8755870519376,-28.40675531005154" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:36:24,572 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:36:24,573 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:24,574 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.636378911292 : 113.8755870519376, -28.55166408381243 : -28.40675531005154]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.636378911292,-28.55166408381243,113.8755870519376,-28.40675531005154, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:36:24,734 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.636378911292,-28.55166408381243,113.8755870519376,-28.40675531005154" took 170ms
+2021-02-03 18:36:28,394 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.642258300964,-28.54825165821676,113.8692531233122,-28.41074167894961" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:36:28,403 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:36:28,404 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:28,405 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.642258300964 : 113.8692531233122, -28.54825165821676 : -28.41074167894961]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/vnd.google-earth.kml xml
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 2048
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=application/vnd.google-earth.kml xml, SRS=EPSG:4326, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, BBOX=113.642258300964,-28.54825165821676,113.8692531233122,-28.41074167894961, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=2048, TRANSPARENT=false, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:36:28,536 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=application/vnd.google-earth.kml+xml&layers=RLS:SiteList&styles=point&height=2048&width=2048&transparent=false&srs=EPSG:4326&format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false&BBOX=113.642258300964,-28.54825165821676,113.8692531233122,-28.41074167894961" took 142ms
+2021-02-03 18:36:28,799 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1241&width=2048&transparent=true&bbox=113.642258300964%2C-28.54825165821676%2C113.8692531233122%2C-28.41074167894961&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" "GoogleEarth/7.3.3.7786(Windows;Microsoft Windows (6.2.9200.0);en;kml:2.2;client:Pro;type:default)" "" "" 
+2021-02-03 18:36:28,808 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-02-03 18:36:28,809 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:29,038 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8082/geoserver/
+	Bbox = SRSEnvelope[113.642258300964 : 113.8692531233122, -28.54825165821676 : -28.41074167894961]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {AUTOFIT=true, KMATTR=true, KMPLACEMARK=false, KMSCORE=40, MODE=refresh, SUPEROVERLAY=false}
+	Get = true
+	Height = 1241
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a416eedb]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=113.642258300964,-28.54825165821676,113.8692531233122,-28.41074167894961, FORMAT_OPTIONS=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false, VERSION=1.1.1, STYLES=point, SERVICE=wms, WIDTH=2048, HEIGHT=1241, TRANSPARENT=true, LAYERS=RLS:SiteList}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=point]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 2048
+2021-02-03 18:36:29,127 INFO [geoserver.filters] - 194.223.87.42 "GET /geoserver/RLS/wms?service=wms&request=GetMap&version=1.1.1&format=image%2Fpng&layers=RLS%3ASiteList&styles=point&height=1241&width=2048&transparent=true&bbox=113.642258300964%2C-28.54825165821676%2C113.8692531233122%2C-28.41074167894961&srs=EPSG%3A4326&format_options=AUTOFIT%3Atrue%3BKMATTR%3Atrue%3BKMPLACEMARK%3Afalse%3BKMSCORE%3A40%3BMODE%3Arefresh%3BSUPEROVERLAY%3Afalse" took 327ms
+2021-02-03 18:36:48,881 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:36:48,886 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:36:48,887 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:36:48,887 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:36:48,898 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 17ms
+2021-02-03 18:36:53,117 INFO [geoserver.filters] - 66.249.71.43 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1514-1.IBehaviorListener.0-form-targetCRS-srs&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:36:53,135 INFO [geoserver.filters] - 66.249.71.43 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1514-1.IBehaviorListener.0-form-targetCRS-srs&toSRS=EPSG:2001" took 18ms
+2021-02-03 18:37:15,863 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:37:15,869 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:37:15,869 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:37:15,870 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:37:15,882 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 19ms
+2021-02-03 18:38:02,849 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:38:02,855 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:38:02,855 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:38:02,856 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:38:02,868 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 19ms
+2021-02-03 18:39:58,823 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:39:58,829 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:39:58,829 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:39:58,830 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:39:58,850 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 27ms
+2021-02-03 18:40:37,961 INFO [geoserver.filters] - 66.249.79.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=0E755913FF43D6611F0D0CB1F1687ACE?0&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:40:37,969 INFO [geoserver.filters] - 66.249.79.203 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=0E755913FF43D6611F0D0CB1F1687ACE?0&toSRS=EPSG:2001" took 8ms
+2021-02-03 18:41:07,853 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:41:07,859 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:41:07,860 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:41:07,860 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:41:07,873 INFO [geoserver.filters] - 52.62.194.9 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 20ms
+2021-02-03 18:46:21,101 INFO [geoserver.filters] - 66.249.71.43 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1353-1.IBehaviorListener.0-form-backward&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:46:21,121 INFO [geoserver.filters] - 66.249.71.43 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1353-1.IBehaviorListener.0-form-backward&toSRS=EPSG:2001" took 19ms
+2021-02-03 18:46:22,102 INFO [geoserver.filters] - 66.249.71.45 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=7AD10928F7599171BE53189413BD08FD?0&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:46:22,110 INFO [geoserver.filters] - 66.249.71.45 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=7AD10928F7599171BE53189413BD08FD?0&toSRS=EPSG:2001" took 8ms
+2021-02-03 18:55:49,326 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1071-1.IBehaviorListener.0-form-targetCRS-wkt&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:55:49,354 INFO [geoserver.filters] - 66.249.79.205 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=62B84054B63D27143FEB52DBDFE3907D?1071-1.IBehaviorListener.0-form-targetCRS-wkt&toSRS=EPSG:2001" took 28ms
+2021-02-03 18:55:50,282 INFO [geoserver.filters] - 66.249.71.47 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=AF81209E6D30F6C5B81D492B3316D98B?0&toSRS=EPSG:2001" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.140 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "" "" 
+2021-02-03 18:55:50,290 INFO [geoserver.filters] - 66.249.71.47 "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.ReprojectPage;jsessionid=AF81209E6D30F6C5B81D492B3316D98B?0&toSRS=EPSG:2001" took 8ms
+2021-02-03 18:56:21,792 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:56:21,798 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:56:21,799 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:56:21,801 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:56:21,830 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 38ms
+2021-02-03 18:59:17,297 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_275" "" "" 
+2021-02-03 18:59:17,305 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-02-03 18:59:17,307 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-02-03 18:59:17,308 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-02-03 18:59:17,331 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 34ms
