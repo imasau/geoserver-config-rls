@@ -65653,3 +65653,157 @@ Request: getFeature
     outputFormat = csv
     resultType = results
 2021-06-19 01:29:10,146 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 28ms
+2021-06-19 01:31:58,979 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:31:58,987 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:31:58,987 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:31:58,988 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:31:59,003 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 24ms
+2021-06-19 01:32:57,133 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wfs?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:57,142 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:57,142 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:57,184 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wfs?request=enabledFilters&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_DATA" took 51ms
+2021-06-19 01:32:57,710 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=DescribeLayer&service=WMS&version=1.1.1&layers=RLS:M2_FISH_MAP" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:57,720 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2021-06-19 01:32:57,722 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:57,723 INFO [geoserver.wms] - 
+Request: describeLayer
+	BaseUrl = http://localhost:8082/geoserver/
+	ExeptionFormat = application/vnd.ogc.se_xml
+	Get = false
+	GetMapRequest = null
+	Layers = [org.geoserver.wms.MapLayerInfo@f9c19d3]
+	OutputFormat = application/vnd.ogc.wms_xml
+	RawKvp = {REQUEST=DescribeLayer, VERSION=1.1.1, SERVICE=WMS, LAYERS=RLS:M2_FISH_MAP}
+	Request = DescribeLayer
+	RequestCharset = null
+	Version = 1.1.1
+2021-06-19 01:32:57,727 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=DescribeLayer&service=WMS&version=1.1.1&layers=RLS:M2_FISH_MAP" took 17ms
+2021-06-19 01:32:57,778 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:57,787 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:57,787 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:57,912 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Ecoregion" took 134ms
+2021-06-19 01:32:58,210 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:58,218 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:58,219 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:58,219 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:58,226 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:58,226 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:58,273 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Country" took 55ms
+2021-06-19 01:32:58,308 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Class" took 98ms
+2021-06-19 01:32:58,707 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:58,717 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:58,717 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:58,717 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:58,725 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:58,725 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:58,754 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Phylum" took 37ms
+2021-06-19 01:32:58,799 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Family" took 92ms
+2021-06-19 01:32:59,218 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:59,227 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:59,227 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:59,342 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Realm" took 124ms
+2021-06-19 01:32:59,719 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" "Java/1.8.0_282" "" "" 
+2021-06-19 01:32:59,727 WARN [geoserver.ows] - Could not get a ServiceInfo for service layerFilters thus could not check if the service is enabled
+2021-06-19 01:32:59,727 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:32:59,874 INFO [geoserver.filters] - 54.153.239.132 "GET /geoserver/wms?request=uniqueValues&service=layerFilters&version=1.0.0&layer=RLS:M2_FISH_MAP&propertyName=Taxon" took 155ms
+2021-06-19 01:34:07,262 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:34:07,271 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:34:07,271 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:34:07,272 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:34:07,301 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 39ms
+2021-06-19 01:34:57,945 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:34:57,954 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:34:57,954 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:34:57,955 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:34:57,962 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 17ms
+2021-06-19 01:49:11,969 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:49:11,980 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:49:11,981 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:49:11,983 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M1_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:49:12,001 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M1_DATA" took 32ms
+2021-06-19 01:52:01,749 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:52:01,759 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:52:01,759 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:52:01,760 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_INVERT_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:52:01,774 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_INVERT_DATA" took 25ms
+2021-06-19 01:54:10,062 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:54:10,070 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:54:10,071 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:54:10,071 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M2_FISH_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:54:10,087 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M2_FISH_DATA" took 25ms
+2021-06-19 01:55:00,753 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" "Java/1.8.0_292" "" "" 
+2021-06-19 01:55:00,762 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2021-06-19 01:55:00,762 INFO [geoserver.flow] - Control-flow inactive, there are no configured rules
+2021-06-19 01:55:00,763 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.0.0
+    baseUrl = http://localhost:8082/geoserver/
+    query[0]:
+        typeName[0] = {RLS}M3_DATA
+    maxFeatures = 1
+    outputFormat = csv
+    resultType = results
+2021-06-19 01:55:00,769 INFO [geoserver.filters] - 13.55.155.205 "GET /geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&maxFeatures=1&outputFormat=csv&typeName=RLS:M3_DATA" took 16ms
